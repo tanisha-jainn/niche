@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "web",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://tanisha-jainn-niche.hf.space/api/:path*" },
+    { "source": "/uploads/:path*", "destination": "https://tanisha-jainn-niche.hf.space/uploads/:path*" },
+    { "source": "/curate", "destination": "/curate.html" }
+  ]
+}

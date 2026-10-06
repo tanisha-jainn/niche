@@ -1,0 +1,10 @@
+# torch + torchvision are installed first from the CPU wheel index (see Dockerfile)
+open_clip_torch
+fastapi
+uvicorn[standard]
+pillow
+numpy
+httpx
+pyyaml
+python-multipart
+anthropic

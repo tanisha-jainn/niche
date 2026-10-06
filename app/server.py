@@ -1,6 +1,7 @@
 """Niche API: relevance-first search over independent brands, one storefront, optional personal lens.
 Run: uvicorn app.server:app --reload"""
 import io
+import os
 import re
 import threading
 import time
@@ -10,7 +11,7 @@ from xml.etree import ElementTree
 
 import httpx
 import numpy as np
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from PIL import Image
@@ -48,6 +49,41 @@ def engine() -> search.Search:
             if _search is None:
                 _search = search.Search(catalog, e)
     return _search
+
+
+PID = re.compile(r"^[a-f0-9]{32}$")
+ADMIN_TOKEN = os.environ.get("NICHE_ADMIN_TOKEN")
+
+
+@app.middleware("http")
+async def visitor_cookie(request: Request, call_next):
+    """Every browser gets its own profile, keyed by an opaque id the page sends as a header
+    (kept in localStorage) with a cookie as the fallback - so it survives proxies that drop Set-Cookie."""
+    pid = request.headers.get("x-niche-id") or request.cookies.get("nid")
+    fresh = not (pid and PID.fullmatch(pid))
+    if fresh:
+        pid = uuid.uuid4().hex
+    request.state.pid = pid
+    response = await call_next(request)
+    response.headers["x-niche-id"] = pid
+    if fresh:
+        response.set_cookie("nid", pid, max_age=365 * 24 * 3600, httponly=True, samesite="lax")
+    return response
+
+
+def profile_id(request: Request) -> str:
+    return request.state.pid
+
+
+def require_admin(request: Request) -> None:
+    """Curation writes are open on a laptop and token-locked when NICHE_ADMIN_TOKEN is set."""
+    if ADMIN_TOKEN and ADMIN_TOKEN not in (request.headers.get("x-admin-token"), request.query_params.get("token")):
+        raise HTTPException(401, "admin token required")
+
+
+@app.on_event("startup")
+def warm():
+    threading.Thread(target=engine, daemon=True).start()   # model + text index ready before the first search
 
 
 def _require_llm() -> None:
@@ -93,13 +129,13 @@ class CurateIn(BaseModel):
 
 
 @app.post("/api/curate")
-def curate_decide(body: CurateIn):
+def curate_decide(body: CurateIn, _: None = Depends(require_admin)):
     curate.decide(body.key.lower(), body.decision)
     return {"summary": curate.summary()}
 
 
 @app.post("/api/curate/apply")
-def curate_apply():
+def curate_apply(_: None = Depends(require_admin)):
     """Rebuild the live index with the current tiers + decisions (a few seconds)."""
     global catalog, _search
     with _lock:
@@ -129,8 +165,8 @@ def usage():
 
 
 @app.get("/api/profile")
-def profile():
-    return {"profile": taste.public_profile(taste.load_profile())}
+def profile(pid: str = Depends(profile_id)):
+    return {"profile": taste.public_profile(taste.load_profile(pid))}
 
 
 class SettingsIn(BaseModel):
@@ -139,21 +175,21 @@ class SettingsIn(BaseModel):
 
 
 @app.post("/api/profile/settings")
-def settings(body: SettingsIn):
-    p = taste.load_profile()
+def settings(body: SettingsIn, pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     if body.sizes is not None:
         p["sizes"] = {k: v for k, v in body.sizes.items() if k in ("tops", "bottoms", "dresses") and v}
     if body.currency:
         p["currency"] = body.currency.upper()
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return taste.public_profile(p)
 
 
 @app.post("/api/profile/reset")
-def reset():
-    for im in taste.load_profile()["images"]:
+def reset(pid: str = Depends(profile_id)):
+    for im in taste.load_profile(pid)["images"]:
         (UPLOADS / f"{im['id']}.jpg").unlink(missing_ok=True)
-    return taste.public_profile(taste.reset_profile())
+    return taste.public_profile(taste.reset_profile(pid))
 
 
 # ---------- search ----------
@@ -161,11 +197,11 @@ def reset():
 @app.get("/api/search")
 def do_search(q: str = "", category: str | None = None, size: bool = False, unknown: bool = True,
               price_min: float | None = None, price_max: float | None = None, personalize: bool = False,
-              sort: str = "relevance", page: int = 0, brand: str | None = None):
+              sort: str = "relevance", page: int = 0, brand: str | None = None, pid: str = Depends(profile_id)):
     q = q.strip()
     if not q and not brand and not category:
         raise HTTPException(400, "Type what you're looking for.")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     fx = search.FX.get(p.get("currency", "USD"), 1.0)      # user's currency -> USD, which prices are indexed in
     result = engine().run(
         q or (category or ""), category=category, sizes=p.get("sizes") or None, size_filter=size,
@@ -182,11 +218,11 @@ def do_search(q: str = "", category: str | None = None, size: bool = False, unkn
 
 
 @app.get("/api/items")
-def item_detail(id: str):
+def item_detail(id: str, pid: str = Depends(profile_id)):
     it = catalog.item(id)
     if it is None:
         raise HTTPException(404, "unknown item")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     eng = engine()
     i = catalog.by_id[id]
     detail = eng.result(i, 0.0, 0.0, {"tokens": []})
@@ -203,22 +239,22 @@ class ItemFeedback(BaseModel):
 
 
 @app.post("/api/items/feedback")
-def item_feedback(body: ItemFeedback):
+def item_feedback(body: ItemFeedback, pid: str = Depends(profile_id)):
     it = catalog.item(body.id)
     if it is None:
         raise HTTPException(404, "unknown item")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     p["saved_items"] = [x for x in p.get("saved_items", []) if x != body.id]
     if body.action == "save":
         p["saved_items"].append(body.id)
         _discover(p, it["brand"], body.via or "saved a piece")
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"saved_items": p["saved_items"]}
 
 
 @app.get("/api/saved/items")
-def saved_items():
-    p = taste.load_profile()
+def saved_items(pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     eng = engine()
     out = []
     for pid in reversed(p.get("saved_items", [])):
@@ -246,18 +282,18 @@ class DiscoverIn(BaseModel):
 
 
 @app.post("/api/brands/discovered")
-def discovered_add(body: DiscoverIn):
+def discovered_add(body: DiscoverIn, pid: str = Depends(profile_id)):
     if body.brand not in catalog.brand_rows:
         raise HTTPException(404, "unknown brand")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     _discover(p, body.brand, body.via or "visited")
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"discovered": p["discovered_brands"]}
 
 
 @app.get("/api/brands/discovered")
-def discovered_list():
-    p = taste.load_profile()
+def discovered_list(pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     out = []
     for d in sorted(p.get("discovered_brands", []), key=lambda d: -d["last"]):
         rows = [i for i in catalog.brand_rows.get(d["brand"], []) if catalog.items[i]["available"]]
@@ -298,8 +334,8 @@ def _ingest_images(p: dict, blobs: list[tuple[str, bytes]], kind: str = "image",
 
 
 @app.post("/api/profile/images")
-async def add_images(files: list[UploadFile] = File(...)):
-    p = taste.load_profile()
+async def add_images(files: list[UploadFile] = File(...), pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     blobs = []
     for f in files:
         raw = await f.read()
@@ -310,7 +346,7 @@ async def add_images(files: list[UploadFile] = File(...)):
     if not entries:
         raise HTTPException(400, "No readable images.")
     p["images"].extend(entries)
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"added": [{k: v for k, v in e.items() if k != "embedding"} for e in entries],
             "profile": taste.public_profile(p)}
 
@@ -333,14 +369,14 @@ def _fetch_images(urls: list[str], limit: int = 40) -> list[tuple[str, bytes]]:
 
 
 @app.post("/api/profile/image_urls")
-def add_image_urls(body: UrlsIn):
+def add_image_urls(body: UrlsIn, pid: str = Depends(profile_id)):
     """Dragging an image from another site onto the page hands us its URL."""
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     entries = _ingest_images(p, _fetch_images(body.urls))
     if not entries:
         raise HTTPException(400, "Couldn't fetch any images from those links.")
     p["images"].extend(entries)
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"added": len(entries), "profile": taste.public_profile(p)}
 
 
@@ -349,7 +385,7 @@ class PinterestIn(BaseModel):
 
 
 @app.post("/api/profile/pinterest")
-def add_pinterest(body: PinterestIn):
+def add_pinterest(body: PinterestIn, pid: str = Depends(profile_id)):
     """A public board's RSS feed - no Pinterest developer approval needed."""
     m = re.search(r"pinterest\.[a-z.]+/([^/?#]+)/([^/?#]+)", body.url)
     if not m:
@@ -376,7 +412,7 @@ def add_pinterest(body: PinterestIn):
             pins.append((src, item.findtext("link") or src))
     if not pins:
         raise HTTPException(404, "That board's feed has no pins we can read.")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     have = {pin.get("source") for pin in p.get("pins", [])}
     url_to_link = {src: link for src, link in pins if src not in have}
     entries = _ingest_images(p, _fetch_images(list(url_to_link)), kind="pin", extra={"board": f"{user}/{board}"})
@@ -384,18 +420,18 @@ def add_pinterest(body: PinterestIn):
         e["source"] = e["name"]
         e["link"] = url_to_link.get(e["name"], e["name"])
     p.setdefault("pins", []).extend(entries)
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"added": len(entries), "board": f"{user}/{board}", "profile": taste.public_profile(p)}
 
 
 @app.delete("/api/profile/images/{image_id}")
-def remove_image(image_id: str):
-    p = taste.load_profile()
+def remove_image(image_id: str, pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     p["images"] = [im for im in p["images"] if im["id"] != image_id]
     p["pins"] = [pin for pin in p.get("pins", []) if pin["id"] != image_id]
     traits.remove_source(p, "image", image_id)
     traits.remove_source(p, "pin", image_id)
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     (UPLOADS / f"{image_id}.jpg").unlink(missing_ok=True)
     return taste.public_profile(p)
 
@@ -410,11 +446,11 @@ class QuizIn(BaseModel):
 
 
 @app.post("/api/quiz")
-def quiz_done(body: QuizIn):
+def quiz_done(body: QuizIn, pid: str = Depends(profile_id)):
     picks = [it for pid in body.picked if (it := catalog.item(pid))]
     if not picks:
         raise HTTPException(400, "Pick at least one piece.")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     p["quiz_picks"] = list(dict.fromkeys(p.get("quiz_picks", []) + [it["id"] for it in picks]))
     found = traits.from_vectors_local(embedder(), [catalog.E[catalog.by_id[it["id"]]] for it in picks])
     merged = []
@@ -422,7 +458,7 @@ def quiz_done(body: QuizIn):
         srcs = [picks[i] for i in d["images"]] or picks
         merged.append((d["text"], [{"kind": "quiz", "ref": it["id"], "url": it["image"], "label": it["brand"]} for it in srcs]))
     traits.merge(p, merged, embedder())
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"profile": taste.public_profile(p), "read": [d["text"] for d in found]}
 
 
@@ -433,16 +469,16 @@ class TraitIn(BaseModel):
 
 
 @app.post("/api/traits")
-def add_trait(body: TraitIn):
+def add_trait(body: TraitIn, pid: str = Depends(profile_id)):
     cleaned = traits.clean([body.text])
     if not cleaned:
         raise HTTPException(400, "Describe the piece itself - cut, fabric, detail, colour - not a style label.")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     if any(t["text"] == cleaned[0] for t in p["traits"]):
         raise HTTPException(409, "You already have that trait.")
     t = traits.new_trait(cleaned[0], embedder(), [{"kind": "user", "ref": "you", "label": "added by you"}], user_added=True)
     p["traits"].append(t)
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return traits.public(t)
 
 
@@ -452,8 +488,8 @@ class TraitPatch(BaseModel):
 
 
 @app.patch("/api/traits/{trait_id}")
-def patch_trait(trait_id: str, body: TraitPatch):
-    p = taste.load_profile()
+def patch_trait(trait_id: str, body: TraitPatch, pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     t = next((t for t in p["traits"] if t["id"] == trait_id), None)
     if t is None:
         raise HTTPException(404, "unknown trait")
@@ -465,23 +501,23 @@ def patch_trait(trait_id: str, body: TraitPatch):
             raise HTTPException(400, "Describe the piece itself - cut, fabric, detail, colour - not a style label.")
         t["text"] = cleaned[0]
         t["embedding"] = embedder().texts([cleaned[0]])[0].tolist()
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return traits.public(t)
 
 
 @app.delete("/api/traits/{trait_id}")
-def delete_trait(trait_id: str):
-    p = taste.load_profile()
+def delete_trait(trait_id: str, pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     p["traits"] = [t for t in p["traits"] if t["id"] != trait_id]
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"ok": True}
 
 
 @app.post("/api/traits/refine")
-def refine_traits():
+def refine_traits(pid: str = Depends(profile_id)):
     """Opt-in Claude pass (text only, ~300 tokens): rewrite the free read of screenshots, pins and quiz picks."""
     _require_llm()
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     kinds = ("image", "quiz", "pin")
     cands = [t for t in p["traits"] if any(s["kind"] in kinds for s in t["sources"])]
     if not cands:
@@ -500,7 +536,7 @@ def refine_traits():
         t["sources"] = [s for s in t["sources"] if s["kind"] not in kinds]
     p["traits"] = [t for t in p["traits"] if t["sources"] or t.get("user_added")]
     traits.merge(p, [(text, sources) for text in found], embedder())
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"profile": taste.public_profile(p), "read": found}
 
 
@@ -511,8 +547,8 @@ class BrandsIn(BaseModel):
 
 
 @app.post("/api/profile/brands")
-def set_brands(body: BrandsIn):
-    p = taste.load_profile()
+def set_brands(body: BrandsIn, pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     wanted: dict[str, str] = {}
     for b in body.brands:
         b = b.strip()
@@ -530,13 +566,13 @@ def set_brands(body: BrandsIn):
     for name in removed:
         traits.remove_source(p, "brand", name)
     p["liked_brands"] = [catalog.brand_key(b) or b for b in wanted.values()]
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"profile": taste.public_profile(p), "read": read}
 
 
 @app.get("/api/recommend")
-def recommend_brands(limit: int = 12):
-    p = taste.load_profile()
+def recommend_brands(limit: int = 12, pid: str = Depends(profile_id)):
+    p = taste.load_profile(pid)
     exclude = set(p["liked_brands"]) | set(p["dismissed_brands"])
     result = recommend.score_brands(catalog, p["traits"], exclude=exclude, limit=max(1, min(limit, 50)))
     saved = {b.lower() for b in p["saved_brands"]}
@@ -551,10 +587,10 @@ class BrandFeedback(BaseModel):
 
 
 @app.post("/api/brands/feedback")
-def brand_feedback(body: BrandFeedback):
+def brand_feedback(body: BrandFeedback, pid: str = Depends(profile_id)):
     if body.brand not in catalog.brand_rows:
         raise HTTPException(404, "unknown brand")
-    p = taste.load_profile()
+    p = taste.load_profile(pid)
     for key in ("saved_brands", "dismissed_brands"):
         p[key] = [b for b in p[key] if b != body.brand]
     if body.action == "save":
@@ -562,7 +598,7 @@ def brand_feedback(body: BrandFeedback):
         _discover(p, body.brand, "saved the brand")
     elif body.action == "dismiss":
         p["dismissed_brands"].append(body.brand)
-    taste.save_profile(p)
+    taste.save_profile(pid, p)
     return {"saved": p["saved_brands"], "dismissed": p["dismissed_brands"]}
 
 

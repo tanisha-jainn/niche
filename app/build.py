@@ -88,7 +88,7 @@ def main() -> None:
         save_cache(cache)
 
     kept = [p for p in products if url_key(p["image"]) in cache]
-    E = np.stack([cache[url_key(p["image"])] for p in kept]).astype(np.float32)
+    E = np.stack([cache[url_key(p["image"])] for p in kept]).astype(np.float16)   # Catalog upcasts at load
     np.save(EMBEDDINGS_FILE, E)
     with open(INDEX_FILE, "w") as f:
         for p in kept:

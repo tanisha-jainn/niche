@@ -1,6 +1,7 @@
 """Taste profile -> anchors -> scored, diversified feed."""
 import json
 import random
+import re
 from collections import Counter
 from collections.abc import Callable
 from dataclasses import dataclass
@@ -28,23 +29,37 @@ class Anchor:
     label: str
 
 
-# ---------- profile persistence ----------
+# ---------- profile persistence (one file per visitor; `pid` comes from the browser cookie) ----------
 
-def load_profile() -> dict:
-    if PROFILE_FILE.exists():
-        with open(PROFILE_FILE) as f:
-            return {**EMPTY_PROFILE, **json.load(f)}
+PROFILES_DIR = PROFILE_FILE.parent / "profiles"
+_PID = re.compile(r"^[a-f0-9]{32}$")
+
+
+def _path(pid: str | None):
+    if pid is None:
+        return PROFILE_FILE                       # local scripts / CLI
+    if not _PID.fullmatch(pid):
+        raise ValueError("bad profile id")
+    PROFILES_DIR.mkdir(parents=True, exist_ok=True)
+    return PROFILES_DIR / f"{pid}.json"
+
+
+def load_profile(pid: str | None = None) -> dict:
+    path = _path(pid)
+    if path.exists():
+        with open(path) as f:
+            return {**json.loads(json.dumps(EMPTY_PROFILE)), **json.load(f)}
     return json.loads(json.dumps(EMPTY_PROFILE))
 
 
-def save_profile(profile: dict) -> None:
-    with open(PROFILE_FILE, "w") as f:
+def save_profile(pid: str | None, profile: dict) -> None:
+    with open(_path(pid), "w") as f:
         json.dump(profile, f)
 
 
-def reset_profile() -> dict:
+def reset_profile(pid: str | None = None) -> dict:
     profile = json.loads(json.dumps(EMPTY_PROFILE))
-    save_profile(profile)
+    save_profile(pid, profile)
     return profile
 
 

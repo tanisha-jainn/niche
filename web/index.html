@@ -187,7 +187,14 @@ h3.sec{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const api = async (path, opts = {}) => { const r = await fetch(path, opts); if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || r.statusText); return r.json(); };
+// Visitor id: generated once per browser, sent on every call (the server also sets it as a cookie).
+const nid = (() => { try { let v = localStorage.getItem('niche_id'); if (!/^[a-f0-9]{32}$/.test(v || '')) { v = [...crypto.getRandomValues(new Uint8Array(16))].map(b => b.toString(16).padStart(2, '0')).join(''); localStorage.setItem('niche_id', v); } return v; } catch (e) { return null; } })();
+const api = async (path, opts = {}) => {
+  opts.headers = { ...(opts.headers || {}), ...(nid ? { 'x-niche-id': nid } : {}) };
+  const r = await fetch(path, opts);
+  if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || r.statusText);
+  return r.json();
+};
 const json = (method, body) => ({ method, headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
 const LETTERS = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
 const SIZE_HELP = { XXS: 'US 0 · UK 4 · EU 32', XS: 'US 0–2 · UK 6 · EU 34', S: 'US 4–6 · UK 8–10 · EU 36–38', M: 'US 8–10 · UK 12 · EU 40–42', L: 'US 12–14 · UK 14–16 · EU 44', XL: 'US 16–18 · UK 18–20 · EU 46–48', XXL: 'US 20+ · UK 22+ · EU 50+' };

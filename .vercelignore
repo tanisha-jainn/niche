@@ -1,0 +1,5 @@
+# Vercel only hosts the static front-end; the API runs in the Docker container (Hugging Face Space).
+*
+!web
+!web/**
+!vercel.json

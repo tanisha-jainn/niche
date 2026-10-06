@@ -54,7 +54,15 @@ main{padding:14px 22px 80px;max-width:1500px;margin:0 auto}
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const api = async (p, o = {}) => { const r = await fetch(p, o); if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || r.statusText); return r.json(); };
+// Curation writes need NICHE_ADMIN_TOKEN when the server sets one; asked for once, kept in this browser.
+const token = () => localStorage.getItem('niche_admin') || '';
+const api = async (p, o = {}) => {
+  o.headers = { ...(o.headers || {}), ...(token() ? { 'x-admin-token': token() } : {}) };
+  const r = await fetch(p, o);
+  if (r.status === 401) { const t = prompt('Admin token for curation:'); if (t) { localStorage.setItem('niche_admin', t.trim()); return api(p, o); } }
+  if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || r.statusText);
+  return r.json();
+};
 let rows = [], filter = 'C', find = '';
 async function load() { const r = await api('/api/curate'); rows = r.brands; sum(r.summary, r.live_brands); render(); }
 function sum(s, live) { $('#sum').textContent = `${s.brands} brands · graded A ${s.tiers.A || 0} / B ${s.tiers.B || 0} / C ${s.tiers.C || 0}${s.tiers['?'] ? ' / ungraded ' + s.tiers['?'] : ''} · you've decided ${s.decided} · would be live: ${s.live} (now ${live})`; }

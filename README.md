@@ -71,6 +71,27 @@ data/brands.yaml        seed stores to crawl
 data/known_brands.yaml  mainstream brands + descriptions used as text anchors
 ```
 
+## Deploying
+
+The app is two halves with very different needs, so it deploys as two things:
+
+- **API** — needs PyTorch + the CLIP model (~1.5 GB), so it runs in a container, not a serverless
+  function. `Dockerfile` installs CPU-only torch; `start.sh` downloads the precomputed index from
+  the GitHub release in `NICHE_DATA_RELEASE` (no 40-minute CPU re-embed on deploy) and serves on
+  `$PORT` (7860, the Hugging Face Spaces default). Tested target: a **Hugging Face Space (Docker)**;
+  Fly.io / Railway / any Docker host works the same. Set `ANTHROPIC_API_KEY` (optional) and
+  `NICHE_ADMIN_TOKEN` (locks `/curate` writes) as secrets.
+- **Front-end** — static files in `web/`, hosted on **Vercel**. `vercel.json` proxies `/api/*` and
+  `/uploads/*` to the API host and `.vercelignore` keeps Vercel from trying to bundle the Python
+  (that's the "5 GB function" error). Same-origin proxying means the visitor cookie just works.
+
+Each browser gets its own profile (an opaque `nid` cookie → `data/profiles/<id>.json`). On a host
+without a persistent disk, profiles reset on restart — fine for a demo.
+
+Refreshing the data: rerun crawl → build → categorize locally, then
+`gh release create data-vN data/index.jsonl.gz data/embeddings.npy data/categories.npz` and bump
+`NICHE_DATA_RELEASE`.
+
 ## Growing the brand list
 
 ```bash

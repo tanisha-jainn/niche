@@ -34,7 +34,7 @@ class Catalog:
         if not INDEX_FILE.exists() or not EMBEDDINGS_FILE.exists():
             raise FileNotFoundError("No index yet - run `python -m app.crawl` then `python -m app.build`.")
         self.items: list[dict] = [json.loads(line) for line in open(INDEX_FILE)]
-        self.E: np.ndarray = np.load(EMBEDDINGS_FILE)
+        self.E: np.ndarray = np.load(EMBEDDINGS_FILE).astype(np.float32)   # stored fp16 to halve the download
         assert len(self.items) == len(self.E), "index.jsonl and embeddings.npy are out of sync - rerun app.build"
         # Curation: brands graded C by the research pass, or dropped by the owner on /curate, leave the index.
         self.tiers = _load_json(BRAND_TIERS_FILE)
