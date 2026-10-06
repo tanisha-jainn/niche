@@ -1,0 +1,3397 @@
+{
+ "&daughter": {
+  "tier": "A",
+  "reason": "Heritage cashmere/knitwear label with clear identity, editorial-style imagery and a real founder-led story.",
+  "based_in": "Scotland/Ireland",
+  "evidence": "Known cashmere knitwear label, stocked by independent boutiques",
+  "verified": false
+ },
+ "astr the label": {
+  "tier": "B",
+  "reason": "LA going-out fast-fashion dresses at ~$119 median; legit brand but mass-market trend styling.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Large Instagram following; sold at Revolve-type retailers",
+  "verified": false
+ },
+ "alex eagle": {
+  "tier": "B",
+  "reason": "Photos show a pink Murano tumbler and a Mackintosh book on white; site is a London fashion-and-lifestyle studio with ready-to-wear but the indexed items are homeware, so keep only as off-register.",
+  "based_in": "London, UK",
+  "evidence": "Instagram @alexeaglestudio; ready-to-wear, accessories, home objects",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "amanda moss": {
+  "tier": "B",
+  "reason": "Small Montreal linen label with real founder but mirror-selfie style product imagery and basic range.",
+  "based_in": "Montreal, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "are you am i": {
+  "tier": "A",
+  "reason": "LA design-led label with named styles, sexy-minimal identity and polished lookbook imagery.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Active Instagram following, stocked by independent boutiques",
+  "verified": false
+ },
+ "baserange": {
+  "tier": "A",
+  "reason": "Copenhagen/Portugal-made minimal organic basics label with strong editorial identity.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "Well covered in fashion press, international stockists",
+  "verified": false
+ },
+ "beaufille": {
+  "tier": "A",
+  "reason": "Toronto contemporary label with sculptural romantic pieces and refined editorial photography.",
+  "based_in": "Toronto, Canada",
+  "evidence": "Founded by Sarah Hunter and Nicola Marin; press and stockists",
+  "verified": false
+ },
+ "bianca spender": {
+  "tier": "A",
+  "reason": "Established Sydney designer with draped tailoring and distinct identity, real designer-founder.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Australian Fashion Week designer, stockists and press",
+  "verified": false
+ },
+ "bodice": {
+  "tier": "A",
+  "reason": "Indian minimalist/sculptural label by Ruchika Sachdeva with strong identity and editorial imagery.",
+  "based_in": "Delhi, India",
+  "evidence": "Press in Vogue India and international stockists",
+  "verified": false
+ },
+ "caes": {
+  "tier": "B",
+  "reason": "Amsterdam label with trendy corset/knit staples at very low prices; legit but fast-fashion-ish.",
+  "based_in": "Amsterdam, Netherlands",
+  "evidence": "",
+  "verified": false
+ },
+ "cecilie bahnsen": {
+  "tier": "A",
+  "reason": "Copenhagen high-fashion label with romantic volume silhouettes and runway lookbooks.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "Runway label stocked at Net-a-Porter/SSENSE-tier stores",
+  "verified": false
+ },
+ "chula fashion house": {
+  "tier": "A",
+  "reason": "Hanoi atelier founded 2005 by Diego Cortizas and Laura Fontan; hand-painted art-to-wear with studio photography.",
+  "based_in": "Hanoi, Vietnam",
+  "evidence": "Two physical Hanoi boutiques; 70% artisans with disabilities",
+  "verified": false
+ },
+ "company of strangers": {
+  "tier": "A",
+  "reason": "Wellington minimalist clothing and jewelry label with a real founder-led identity and clean imagery.",
+  "based_in": "Wellington, New Zealand",
+  "evidence": "NZ independent label with local stockists",
+  "verified": false
+ },
+ "diima apparel": {
+  "tier": "C",
+  "reason": "Photos are amateur snapshots (woman in a gallery, woman on a pavement in jeans and a bag); site is a petite generic catalog with a gmail contact and no founder or story.",
+  "based_in": "",
+  "evidence": "IG @diima.apparel; no founder or press",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "dewey": {
+  "tier": "B",
+  "reason": "Photos are a plus-ish model in flare jeans on white and a flat pair of wide-leg jeans in blue and black, clean and current basics from a real petite-fit denim brand, functional rather than design-led.",
+  "based_in": "United Kingdom",
+  "evidence": "Self-described most height and size inclusive petite brand, sizes 4-22; Our Story page not read",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "drôle de monsieur": {
+  "tier": "A",
+  "reason": "Paris label with retro-preppy design identity, strong lookbooks and international stockists.",
+  "based_in": "Paris, France",
+  "evidence": "Widely stocked and covered in fashion press",
+  "verified": false
+ },
+ "ena pelly": {
+  "tier": "B",
+  "reason": "Australian premium basics/shirting label; legitimate and tidy but conventional.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "filip + inna": {
+  "tier": "A",
+  "reason": "Founded by designer Len Cabili, indigenous Philippine weaves with editorial imagery; small range.",
+  "based_in": "Philippines",
+  "evidence": "Physical shop in the Philippines",
+  "verified": false
+ },
+ "fullypaidldn": {
+  "tier": "B",
+  "reason": "Photos are flat-lay navy flared joggers and a pink/navy cropped rugby polo with big FULLYPAID graphics, a real London streetwear label but menswear-heavy with a small women's range.",
+  "based_in": "London, United Kingdom",
+  "evidence": "Instagram @fullypaid_clothing, TikTok @fullypaidldn; no founder info",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "ginew": {
+  "tier": "B",
+  "reason": "Native-owned Americana selvedge denim/outerwear brand, real and authentic but menswear-leaning and off register.",
+  "based_in": "Wisconsin, USA",
+  "evidence": "Native-owned label with press mentions",
+  "verified": false
+ },
+ "harlow": {
+  "tier": "B",
+  "reason": "Australian plus-size brand with legit range and branding; mainstream commercial styling.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "hill house home": {
+  "tier": "A",
+  "reason": "Founded by Nell Diamond, nap dress label with strong identity and good photography; some homeware/kids.",
+  "based_in": "New York, USA",
+  "evidence": "Wide press coverage, large Instagram following",
+  "verified": false
+ },
+ "innai&co": {
+  "tier": "B",
+  "reason": "Kuala Lumpur contemporary eveningwear label, legit but regional and mid-range.",
+  "based_in": "Kuala Lumpur, Malaysia",
+  "evidence": "",
+  "verified": false
+ },
+ "james street co.": {
+  "tier": "A",
+  "reason": "Small-batch ethically made knitwear/denim label with clean contemporary styling.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "kusikohc": {
+  "tier": "B",
+  "reason": "Seoul unisex streetwear/minimal label with decorative patch details; legit but trendy.",
+  "based_in": "Seoul, South Korea",
+  "evidence": "",
+  "verified": false
+ },
+ "kate sylvester": {
+  "tier": "A",
+  "reason": "Long-established NZ designer label with distinct styling and a real designer-founder.",
+  "based_in": "Wellington, New Zealand",
+  "evidence": "Decades of NZ Fashion Week presence",
+  "verified": false
+ },
+ "kitri": {
+  "tier": "C",
+  "reason": "Photos show nicely styled feather-cuff leopard dress and smocked floral maxi, but the site now displays a closure notice ('After nine unforgettable years, we're saying goodbye to KITRI') so the brand has ceased trading.",
+  "based_in": "London, UK",
+  "evidence": "Closure announcement on site",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "lameera moda": {
+  "tier": "B",
+  "reason": "Modest-wear/abaya label with a real range but amateur-looking photography.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "lisa says gah": {
+  "tier": "A",
+  "reason": "Reference label: playful vintage-inspired pieces with strong identity.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Large Instagram following",
+  "verified": false
+ },
+ "marrknull": {
+  "tier": "A",
+  "reason": "Deconstructed minimalist designer label with distinctive pieces and editorial imagery.",
+  "based_in": "China",
+  "evidence": "Stocked in concept stores",
+  "verified": false
+ },
+ "marree": {
+  "tier": "B",
+  "reason": "Photos are a naturally dyed silk scarf and a floral raglan top on a dress-form mannequin (Fox Model Form), a craft-market look, but the site shows a real founder-led natural dye label (Jenny Fong) with in-person craft show presence.",
+  "based_in": "US",
+  "evidence": "Founder Jenny Fong; Smithsonian Craft2Wear",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "miaou": {
+  "tier": "A",
+  "reason": "LA corset-forward label with clear identity, current styling and good photography.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Celebrity-worn, strong Instagram following",
+  "verified": false
+ },
+ "modaccio": {
+  "tier": "B",
+  "reason": "Tall-sized quiet-luxury basics at low price; legit niche brand, small range.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "move modestly": {
+  "tier": "C",
+  "reason": "Both photos are promo flyers for 'Step by Faith' Christian fitness classes and ticket prices, and the site sells class passes and event tickets alongside basic modest activewear.",
+  "based_in": "Northampton, UK",
+  "evidence": "Instagram community chat; no founder named",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "nazz collection": {
+  "tier": "B",
+  "reason": "Photos show a styled lookbook-quality shoot of a white sequin feather-cuff gown and black sequin jumpsuit; site is a real own-design occasion label with social presence, but mass going-out register and keyword-heavy titles.",
+  "based_in": "UK",
+  "evidence": "Instagram @nazzcollectionclothing, 'as featured in' press strip, About Us page",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "nobody's child": {
+  "tier": "B",
+  "reason": "UK high-street feminine print dresses; legit mass brand.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "obakki": {
+  "tier": "C",
+  "reason": "Both photos are framed tapestries/textile art on white and the site sells artisan home decor, vases, candles and skincare, not clothing.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "Instagram @obakki; press in Forbes, NYT, Dwell, AD; real brand but home decor",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "ong shunmugam": {
+  "tier": "A",
+  "reason": "Singapore label reimagining kebaya with embroidery and playful identity; real design team.",
+  "based_in": "Singapore",
+  "evidence": "Singapore design-label press coverage",
+  "verified": false
+ },
+ "payal khandwala": {
+  "tier": "A",
+  "reason": "Indian designer label with painterly color-blocking and clean studio photography.",
+  "based_in": "India",
+  "evidence": "Established designer, stocked at design stores",
+  "verified": false
+ },
+ "pink city prints": {
+  "tier": "A",
+  "reason": "London label of hand block-printed dresses made in Jaipur with clear romantic identity.",
+  "based_in": "London, UK",
+  "evidence": "Active Instagram following",
+  "verified": false
+ },
+ "poster girl": {
+  "tier": "B",
+  "reason": "London celeb-worn bodycon/latex label; real brand but sexy-party register.",
+  "based_in": "London, UK",
+  "evidence": "Celebrity wear",
+  "verified": false
+ },
+ "rus": {
+  "tier": "A",
+  "reason": "Spanish slow-fashion knit label with Japanese-named minimalist pieces and cohesive identity.",
+  "based_in": "Spain",
+  "evidence": "Independent stockists",
+  "verified": false
+ },
+ "rebellious fashion": {
+  "tier": "C",
+  "reason": "Photos show Oh-Polly-style bodycon mini and halter maxi on studio models, and the site has no founder or about story, only 'EXTRA 21% OFF SITEWIDE' banners with Halloween wings and witch hats in the catalog.",
+  "based_in": "UK",
+  "evidence": "Instagram/TikTok links only; no founder, press or stockists",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "rouje": {
+  "tier": "A",
+  "reason": "Photos show a zebra-hair hobo bag and a black mesh sweetheart top on a bob-haired model in soft editorial light; site is Jeanne Damas's Paris label with boutiques and Galeries Lafayette stockists.",
+  "based_in": "Paris, France",
+  "evidence": "Founder Jeanne Damas; Instagram @rouje; boutiques in Paris, Bordeaux, Nice; Galeries Lafayette",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "samantha pleet": {
+  "tier": "A",
+  "reason": "Brooklyn-founded romantic whimsical label with a clear designer-led identity.",
+  "based_in": "New York, USA",
+  "evidence": "Long-running indie label with press",
+  "verified": false
+ },
+ "sentaler": {
+  "tier": "A",
+  "reason": "Canadian luxury alpaca outerwear label with editorial imagery and high price point.",
+  "based_in": "Toronto, Canada",
+  "evidence": "Luxury stockists",
+  "verified": false
+ },
+ "skall studio": {
+  "tier": "A",
+  "reason": "Scandinavian sustainable tailoring and natural-fibre label with clean contemporary imagery.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "Stocked at design retailers",
+  "verified": false
+ },
+ "soulland": {
+  "tier": "B",
+  "reason": "Copenhagen label, but indexed items are resale 'Reseller' listings and menswear-leaning.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "",
+  "verified": false
+ },
+ "stolen girlfriends club": {
+  "tier": "B",
+  "reason": "Both photos are gold gemstone rings on white and the site says jewellery is its strongest expression, though it has a secondary clothing line and three NZ stores.",
+  "based_in": "Auckland, New Zealand",
+  "evidence": "Stores in Wellington, Newmarket and Ponsonby; Instagram @stolengirlfriendsclub",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "sustain by kat": {
+  "tier": "B",
+  "reason": "Photos are a plant-dyed plaid scarf and a swirl of fabric on plain backgrounds (no models); site is a real founder-led plant-dyed organic apparel brand but much of the index is fabric and elastic supplies.",
+  "based_in": "",
+  "evidence": "Founder Kat; Instagram @sustainbykat; featured in My Green Closet, Sustainably Chic blog",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "the amateur weather observers": {
+  "tier": "A",
+  "reason": "Photos are a film-grain editorial shot of a hand-knit landscape vest and an original ink-drawn The End print, a distinctive artist-led knitwear identity that no catalog brand has.",
+  "based_in": "United Kingdom",
+  "evidence": "Shop of knitwear, prints and patterns; about page not read",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "thrills co": {
+  "tier": "B",
+  "reason": "Photos are a clean denim short on a model and a white crew sock with logo embroidery; site is the Byron Bay streetwear brand with official store, seasonal sales and consistent branding.",
+  "based_in": "Byron Bay, Australia",
+  "evidence": "Instagram thrillsco",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "ura": {
+  "tier": "A",
+  "reason": "Quiet-luxury tailoring label with structured trousers and refined imagery.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "viktoria & woods": {
+  "tier": "A",
+  "reason": "Australian designer label with minimal natural-fibre pieces and refined imagery.",
+  "based_in": "Melbourne, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "yumi kim": {
+  "tier": "B",
+  "reason": "Long-running US print dress label; legit but conventional going-out look.",
+  "based_in": "San Francisco, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "3sixteen": {
+  "tier": "B",
+  "reason": "Respected NYC raw-denim/workwear label, but menswear-centric and heritage-workwear rather than her register.",
+  "based_in": "New York, USA",
+  "evidence": "Known in denim community",
+  "verified": false
+ },
+ "ax paris": {
+  "tier": "B",
+  "reason": "UK high-street going-out and knitwear brand, mass fast fashion at ~$60 median.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "aligne": {
+  "tier": "B",
+  "reason": "London contemporary womenswear with clean relaxed tailoring, legit but mid-market and generic in identity.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "ameris bloomer": {
+  "tier": "C",
+  "reason": "Photos are a cropped plain bra shot and a fragrance-sachet package graphic; site sells petite intimates plus men's tees, bath products and accessories at ~$10, no founder or story.",
+  "based_in": "",
+  "evidence": "IG @amerisbloomerlingerie; no founder",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "ashlyn": {
+  "tier": "A",
+  "reason": "NYC architectural knitwear/tailoring label with minimal-luxury identity and ~$1100 median price.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "bassike": {
+  "tier": "A",
+  "reason": "Sydney elevated-basics label with strong editorial imagery and established stockists.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Widely stocked, long-running label",
+  "verified": false
+ },
+ "beaumont organic": {
+  "tier": "B",
+  "reason": "Real UK organic cotton label but soft, conventional styling and an older catalog feel.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "big bud press": {
+  "tier": "A",
+  "reason": "Colourful playful unisex workwear with a distinct illustrated identity and loyal following.",
+  "based_in": "USA",
+  "evidence": "Strong Instagram following",
+  "verified": false
+ },
+ "boyko": {
+  "tier": "A",
+  "reason": "Woman-owned whimsical colour-forward label; sculptural beaded hand bag shot on saturated red backdrop, strong identity.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "cfcl": {
+  "tier": "A",
+  "reason": "Tokyo knitwear label with technical 3D-knit identity, strong runway-level imagery.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "Stocked at major boutiques, runway presence",
+  "verified": false
+ },
+ "celia b": {
+  "tier": "A",
+  "reason": "Bold-print artisanal label with a clear creative identity and lookbook-style images.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "ciao lucia": {
+  "tier": "A",
+  "reason": "Design-led 60s-Italian summer label, collaboration with Hatch, editorial imagery.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Hatch collaboration",
+  "verified": false
+ },
+ "connally goods": {
+  "tier": "B",
+  "reason": "Genuine Vancouver size-inclusive made-to-order shirt maker; real person photos but plain and small catalog.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "damson madder": {
+  "tier": "A",
+  "reason": "Quirky London label with prints, puff sleeves and current styling; strong youthful following.",
+  "based_in": "London, UK",
+  "evidence": "Large Instagram following",
+  "verified": false
+ },
+ "dime mtl": {
+  "tier": "B",
+  "reason": "Real Montreal skate/streetwear brand with graphic tees, a different register from hers.",
+  "based_in": "Montreal, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "dôen": {
+  "tier": "A",
+  "reason": "Romantic prairie-style California label with editorial photography; clear reference-level peer.",
+  "based_in": "California, USA",
+  "evidence": "Press and major stockists",
+  "verified": false
+ },
+ "encircled": {
+  "tier": "B",
+  "reason": "Legit Canadian B-Corp travel-wear, functional minimal basics with sample-sale clutter.",
+  "based_in": "Canada",
+  "evidence": "B-Corp",
+  "verified": false
+ },
+ "flood clothing": {
+  "tier": "C",
+  "reason": "Photos are one-off upcycled pieces on a white mannequin/head form (rainbow-panel hoodie dress, button-trim argyle hat), a craft-fair look; site is handmade recycled clothing with poetic names.",
+  "based_in": "Portland, Oregon, US",
+  "evidence": "Instagram @flood_clothing; no press",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "g'wan by charon": {
+  "tier": "B",
+  "reason": "Photos are an amateur makeup-palette flat lay and a model in bright wax-print jogger set outside; site says Charon makes patterns and prints in-house, but catalog is mixed (makeup, clutches) with unpolished imagery.",
+  "based_in": "New Jersey, USA",
+  "evidence": "Founder Charon designs and constructs; Instagram @GwanbyCharon; Journey of G'wan page",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "giveh": {
+  "tier": "B",
+  "reason": "Small handcrafted knitwear label with artisan story; only 30 items and loose styling.",
+  "based_in": "Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "harly jae": {
+  "tier": "A",
+  "reason": "Vintage-inspired natural-fibre label with warm film-style lookbook imagery and clear identity.",
+  "based_in": "Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "hope macaulay": {
+  "tier": "A",
+  "reason": "Handmade colourful chunky knitwear with striking editorial photography; real designer.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "iron & resin": {
+  "tier": "B",
+  "reason": "Real California surf-workwear brand but menswear-leaning and outside her register.",
+  "based_in": "California, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "jennifer glasgow": {
+  "tier": "B",
+  "reason": "Real Montreal minimalist designer label, eco-conscious, fine but quiet.",
+  "based_in": "Montreal, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "kabayare fashion": {
+  "tier": "B",
+  "reason": "Photos are clean studio shots of a sheer olive ruffle abaya and a brown mock-neck maxi with pockets, current and tidy, and the site shows seasonal collections and named styles, though it is a modest-wear catalog at ~$17.",
+  "based_in": "United States",
+  "evidence": "Instagram @kabayarefashion; founder not disclosed; no drop-ship tells",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "kato": {
+  "tier": "B",
+  "reason": "Legit selvedge denim brand but menswear focused.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "kolor": {
+  "tier": "A",
+  "reason": "Japanese architectural colour-blocked label (Abe Junichi), runway brand with serious pedigree.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "Paris fashion week, major stockists",
+  "verified": false
+ },
+ "lauren manoogian": {
+  "tier": "A",
+  "reason": "NYC architectural handknit label with minimalist cult following.",
+  "based_in": "New York, USA",
+  "evidence": "Press and boutique stockists",
+  "verified": false
+ },
+ "little tienda": {
+  "tier": "A",
+  "reason": "Australian handmade slow-fashion label with gingham feminine pieces and film-style photos; clear identity.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "mas montréal": {
+  "tier": "B",
+  "reason": "Real Montreal natural-fibre minimalist label, tidy but less distinctive.",
+  "based_in": "Montreal, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "mary benson": {
+  "tier": "B",
+  "reason": "London textile-artist bridal/heirloom label with velvet and berets; real but niche and off her register.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "michaela corning": {
+  "tier": "B",
+  "reason": "Modest wear designer with handmade ethos, mixed catalog including girls items and bags.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "mode mischief studios": {
+  "tier": "B",
+  "reason": "Australian it-girl going-out label, trendy but fast-fashion tier.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "musier paris": {
+  "tier": "A",
+  "reason": "Parisian retro-feminine label with current styling and good imagery.",
+  "based_in": "Paris, France",
+  "evidence": "",
+  "verified": false
+ },
+ "neems": {
+  "tier": "B",
+  "reason": "Photos are clean studio shots of a blonde model in wide-leg and straight dark jeans, current but utilitarian, and the site is a legit made-to-measure denim company with phone body scan and Business Insider/CNN Underscored coverage.",
+  "based_in": "",
+  "evidence": "Press: Business Insider, CNN Underscored; 6,000+ reviews",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "nom*d": {
+  "tier": "A",
+  "reason": "Dunedin avant-garde label, iconic NZ designer brand with distinct identity.",
+  "based_in": "Dunedin, New Zealand",
+  "evidence": "Long-running NZ designer label",
+  "verified": false
+ },
+ "oge ajibe": {
+  "tier": "B",
+  "reason": "Handcrafted deadstock colourful pieces plus scrunchies; photos are amateur on-hanger shots.",
+  "based_in": "Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "online ceramics": {
+  "tier": "A",
+  "reason": "Cult LA graphic-tee/tie-dye brand with a clear art-led identity and large following.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Large Instagram following, celebrity wearers",
+  "verified": false
+ },
+ "paynter": {
+  "tier": "A",
+  "reason": "Photos are clean product shots of a brown wool trucker jacket and an olive mac with the red Paynter label, and the site has named founders, a batch-drop model and 1% for the Planet, though skewed to menswear.",
+  "based_in": "Cornwall, United Kingdom",
+  "evidence": "Founders Becky & Huw; Instagram @paynterjacket; stories and about page",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "pipatchara": {
+  "tier": "A",
+  "reason": "Thai handwoven colourful resortwear/bags with distinct identity at ~$700 median.",
+  "based_in": "Bangkok, Thailand",
+  "evidence": "",
+  "verified": false
+ },
+ "pradegal": {
+  "tier": "B",
+  "reason": "Vancouver wardrobe staples in wool-silk; only 19 items, nicely shot but small.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "rachel antonoff": {
+  "tier": "A",
+  "reason": "Designer with distinctive quirky vintage-inspired point of view, established since 2008.",
+  "based_in": "New York, USA",
+  "evidence": "Press and stockists",
+  "verified": false
+ },
+ "rejina pyo": {
+  "tier": "A",
+  "reason": "London designer with sculptural artistic tailoring, runway brand.",
+  "based_in": "London, UK",
+  "evidence": "Press, LFW, major stockists",
+  "verified": false
+ },
+ "rue sophie": {
+  "tier": "B",
+  "reason": "Quiet-luxury tailored essentials, polished but derivative.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "sante grace": {
+  "tier": "B",
+  "reason": "Photos are a plus-size model in a pink satin slip (casual video-still look) and a mannequin shot of a printed dress; the site lists Harper's Bazaar/ELLE/Essence press and silk pieces, but the catalog is a mixed bag with fascinators and ties.",
+  "based_in": "",
+  "evidence": "Press logos: Harper's Bazaar, ELLE, Essence, TIME, Glamour; Instagram",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "short girl jean": {
+  "tier": "B",
+  "reason": "Petite no-hem denim brand with only 3 items; real but tiny and single-purpose.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "skateboard cafe": {
+  "tier": "B",
+  "reason": "Photos are a black graphic tee with CAFE neck label and a foil-print skate deck; site is a real skate brand with tees/hoodies and international stockists but decks dominate.",
+  "based_in": "London, UK",
+  "evidence": "Footer lists INTL stockists and distribution; no founder story found",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "source unknown": {
+  "tier": "B",
+  "reason": "Contemporary basics and tailoring, minimal and polished but generic.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "storets": {
+  "tier": "B",
+  "reason": "Mass-market contemporary casual at ~$86, trend-driven catalog.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "swahlee": {
+  "tier": "B",
+  "reason": "Photos are a batik halter on a hanger against a wall and a smiling model in a natural linen set on a plain studio floor (unpolished), but the site describes a real handmade sustainable label made in India with own studio design.",
+  "based_in": "India (production)",
+  "evidence": "own studio, natural fibers, upcycled sari line; no IG or press found",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "the drift collective": {
+  "tier": "B",
+  "reason": "Photos are flat-lay logo and Portland,ME baby tees on grey, and the site is a woman-owned small-batch Maine upcycled label with remade pieces, though it also sells air fresheners, fragrance and kids items.",
+  "based_in": "Maine, USA",
+  "evidence": "Woman-owned, made in small batches in Maine; Instagram @thedriftcollective; physical locations",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "tiger mist": {
+  "tier": "B",
+  "reason": "Photos are a model in a cut-out white top and brown micro skirt and a hot-pink halter with lace, polished social-style shoots; site is Australias fast-fashion going-out retailer with Afterpay and sale banners.",
+  "based_in": "Australia",
+  "evidence": "Instagram tigermist",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "vici collection": {
+  "tier": "B",
+  "reason": "US boutique fast-fashion going-out brand.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "wrstbhvr": {
+  "tier": "B",
+  "reason": "Berlin gender-fluid streetwear with hoodies/caps; legit but streetwear register.",
+  "based_in": "Berlin, Germany",
+  "evidence": "",
+  "verified": false
+ },
+ "zero waste daniel": {
+  "tier": "A",
+  "reason": "Daniel Silverstein's zero-waste upcycled label with clear identity and wide press.",
+  "based_in": "New York, USA",
+  "evidence": "Widely press-covered",
+  "verified": false
+ },
+ "45r": {
+  "tier": "A",
+  "reason": "Japanese heritage label with indigo-dyed natural-fibre pieces and a distinct identity, though very high priced.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "Long-running label with global stockists",
+  "verified": false
+ },
+ "ayr": {
+  "tier": "B",
+  "reason": "Legit DTC elevated-basics and denim brand with named-style products, clean but mainstream.",
+  "based_in": "New York, USA",
+  "evidence": "Large Instagram following",
+  "verified": false
+ },
+ "allison izu": {
+  "tier": "B",
+  "reason": "Real Hawaii-designed petite-fit label with comfortable ponte basics, practical rather than design-led.",
+  "based_in": "Hawaii, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "amy lynn": {
+  "tier": "B",
+  "reason": "Photos are a model in red foil-coated denim strapless top and trousers with gold heels and a striped lace-trim satin skirt set on a cobbled street, polished but trend-driven, and the site has an About page, stockists and Instagram.",
+  "based_in": "London, UK",
+  "evidence": "Instagram @amylynnofficial; stockists page; journal",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "atelier b": {
+  "tier": "A",
+  "reason": "Montreal zero-waste minimalist label with numbered styles, natural fibres and curated Japanese objects, clear identity.",
+  "based_in": "Montreal, Canada",
+  "evidence": "Own boutique and independent design practice",
+  "verified": false
+ },
+ "bastet noir": {
+  "tier": "A",
+  "reason": "Small modular travel-wear label with convertible trenches and denim jackets, distinct design concept.",
+  "based_in": "Europe",
+  "evidence": "",
+  "verified": false
+ },
+ "bec + bridge": {
+  "tier": "B",
+  "reason": "Photos are a red strapless knotted maxi and a white lace one-shoulder top on clean studio models, polished designer-adjacent; site is an established Australian label with Afterpay and celebrity-style marketing.",
+  "based_in": "Australia",
+  "evidence": "Instagram becandbridge",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "birds of north america": {
+  "tier": "A",
+  "reason": "Photos are a bird-print dress flat and a street photo of a mint-haired model in a Canary Restaurant tee, quirky and personal, and the site is a vegan, Canadian-made label with prints, stockists and a buyback program.",
+  "based_in": "Montreal, Canada",
+  "evidence": "Made in Canada; stockists page; ReNests buyback; Instagram",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "brain dead": {
+  "tier": "A",
+  "reason": "Art-driven LA streetwear label with collabs (Coach, Magic, UD) and strong cultural presence.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Major collabs and press",
+  "verified": false
+ },
+ "chlo. by cokluch": {
+  "tier": "B",
+  "reason": "Made-in-Montreal casual knit label, legitimate but plain and includes jewelry.",
+  "based_in": "Montreal, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "charcoal clothing": {
+  "tier": "B",
+  "reason": "Photos are clean editorial shots (a Billini sandal flatlay and a brown thong wedge) and the site is an own-label Australian fashion brand with current minimal styling, though it also stocks Billini shoes and has no named founder.",
+  "based_in": "Australia",
+  "evidence": "Instagram @charcoal_clothing",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "cleobella": {
+  "tier": "B",
+  "reason": "Boho embroidered brand with real artisan detail, but a more dated bohemian register.",
+  "based_in": "California, USA",
+  "evidence": "Stockists at boutiques",
+  "verified": false
+ },
+ "copper union apparel": {
+  "tier": "B",
+  "reason": "Real Portland plus-size slow-fashion brand with quirky prints, but also stickers and aprons and off her register.",
+  "based_in": "Portland, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "dancing leopard": {
+  "tier": "B",
+  "reason": "Photos show a brown chunky knit with jeans and a black basics tee on current-looking editorial model shots; site says prints are hand-drawn in-house, Ibiza-inspired, press logos shown, though very cheap and mass.",
+  "based_in": "UK",
+  "evidence": "Hand-drawn prints; press logos Cosmopolitan, Vogue, Drapers; app",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "dissh": {
+  "tier": "A",
+  "reason": "Photos are crisp editorial images (sheer white dotted top and trousers, white lace maxi dress on a beach) and the site shows a female-founded Australian label with Fall 26 and resort collections and stores in LA and London.",
+  "based_in": "Australia",
+  "evidence": "Instagram @dissh; retail in LA, London, Ounass; Thread Together partnership",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "e.l.v. denim": {
+  "tier": "A",
+  "reason": "London upcycled-denim label with small-batch handmade pieces and strong identity.",
+  "based_in": "London, UK",
+  "evidence": "Press and celebrity following",
+  "verified": false
+ },
+ "envelope1976": {
+  "tier": "A",
+  "reason": "Scandinavian minimalist luxury label with cashmere and tailoring and runway-style imagery.",
+  "based_in": "Oslo, Norway",
+  "evidence": "",
+  "verified": false
+ },
+ "flore flore": {
+  "tier": "A",
+  "reason": "Amsterdam label with current colourful baby tees and tanks, strong styled imagery.",
+  "based_in": "Amsterdam, Netherlands",
+  "evidence": "Sizable Instagram following",
+  "verified": false
+ },
+ "gia/irl": {
+  "tier": "B",
+  "reason": "Legit small plus-size contemporary label, fine but generic styling.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "goddiva": {
+  "tier": "C",
+  "reason": "Photos are standard catalog occasion dresses (sequin off-shoulder midi, baby-blue bow dress) and the site is mainly a multi-brand reseller (Chi Chi London, Bella Barnett, Pink Vanilla) with no founder story.",
+  "based_in": "United Kingdom",
+  "evidence": "Instagram @goddivafashion, press page; reseller model",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "harvest & mill": {
+  "tier": "B",
+  "reason": "Photos are plain flat-lay product shots (natural v-neck tee, black drawstring shorts) and the site is a real US-grown organic cotton brand established 2012 with traceable supply chain, but plain lounge staples.",
+  "based_in": "California, US",
+  "evidence": "Established 2012; Instagram @harvestandmill",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "houdini sportswear": {
+  "tier": "B",
+  "reason": "Real Swedish technical outdoor brand, legitimate but outdoor gear off her register.",
+  "based_in": "Sweden",
+  "evidence": "Established brand with global stockists",
+  "verified": false
+ },
+ "isabella eve": {
+  "tier": "B",
+  "reason": "Small made-to-order size-inclusive label with colourful sets, legitimate but fairly niche/basic.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "jennifer rothwell": {
+  "tier": "C",
+  "reason": "Photos are a ghost-mannequin printed dress and a flat silk necktie on white; the site is an Irish heritage silk accessories and art-print studio (scarves, ties, scrunchies, A4 prints, religious imagery), not a fashion label.",
+  "based_in": "Ireland",
+  "evidence": "Designer-led; Irish Times, Irish Independent, National Gallery of Ireland mentions",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "kai collective": {
+  "tier": "B",
+  "reason": "UK size-inclusive label with printed swim and tops, legit but mass contemporary.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "kestin": {
+  "tier": "A",
+  "reason": "Scottish menswear label with workwear-inspired design and strong identity, though menswear.",
+  "based_in": "Edinburgh, Scotland",
+  "evidence": "Press and stockists",
+  "verified": false
+ },
+ "kowtow": {
+  "tier": "A",
+  "reason": "NZ organic minimal label with a clear ethical design identity and strong imagery.",
+  "based_in": "New Zealand",
+  "evidence": "Established stockists internationally",
+  "verified": false
+ },
+ "le kilt": {
+  "tier": "B",
+  "reason": "Scottish modern-tartan and knitwear label, real and distinctive but niche and costly.",
+  "based_in": "Scotland",
+  "evidence": "",
+  "verified": false
+ },
+ "little women atelier": {
+  "tier": "B",
+  "reason": "Handmade cottagecore linen dresses with a literary theme, real but off current register.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "mukzin": {
+  "tier": "B",
+  "reason": "Photos are a gold slip dress in a moody gallery set and a palm-tree necklace flat; the site shows a real brand (est. 2014, founders Kate Han and George Feng, concept stores) but the catalog is uneven with jewelry collabs.",
+  "based_in": "China",
+  "evidence": "Founders Kate Han and George Feng; Instagram @mukzin_official; concept stores in China; Doja Cat wore it",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "maya meyer": {
+  "tier": "A",
+  "reason": "Upcycled vintage-fabric label with numbered one-off pieces and relaxed styling, current and independent.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "minga london": {
+  "tier": "B",
+  "reason": "London y2k/alt indie label with graphic tops and accessories, real but niche and trendy.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "modern citizen": {
+  "tier": "B",
+  "reason": "LA elevated basics, solid but mid-market contemporary.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "nia": {
+  "tier": "B",
+  "reason": "Slip and occasion dress label, pretty but mid-market generic.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "nehera": {
+  "tier": "A",
+  "reason": "Independent Slovak minimalist label with refined tailoring and editorial imagery.",
+  "based_in": "Bratislava, Slovakia",
+  "evidence": "Stockists at luxury retailers",
+  "verified": false
+ },
+ "nookie": {
+  "tier": "B",
+  "reason": "Australian cocktail and gown brand, established but occasion-wear mainstream.",
+  "based_in": "Australia",
+  "evidence": "Stockists in department stores",
+  "verified": false
+ },
+ "oh seven days": {
+  "tier": "B",
+  "reason": "Small deadstock minimalist womenswear label, legitimate and pleasant but low profile.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "organic basics": {
+  "tier": "B",
+  "reason": "Danish sustainable basics sold in multipacks, legitimate but mass basics.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "Large press presence",
+  "verified": false
+ },
+ "peggy hartanto": {
+  "tier": "A",
+  "reason": "Jakarta designer label with structured contemporary ready-to-wear and bags, strong identity.",
+  "based_in": "Jakarta, Indonesia",
+  "evidence": "International press and stockists",
+  "verified": false
+ },
+ "pixie market": {
+  "tier": "B",
+  "reason": "NYC trend-led label with editorial-style photography but generic descriptive titles and unclear design origin.",
+  "based_in": "New York, USA",
+  "evidence": "Active Instagram",
+  "verified": false
+ },
+ "prairie girl the label": {
+  "tier": "C",
+  "reason": "Photos show a mirror selfie in a boutique and Pika & Bear earrings on a card; site is a Saskatchewan retail boutique reselling Z Supply, Silver Jeans, Steve Madden etc. beside a small in-house line.",
+  "based_in": "Esterhazy, Saskatchewan, Canada",
+  "evidence": "Instagram @prairiegirlthelabel; no founder named",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "rachel comey": {
+  "tier": "A",
+  "reason": "Established NYC designer label with artsy tailored identity.",
+  "based_in": "New York, USA",
+  "evidence": "Extensive press and stockists",
+  "verified": false
+ },
+ "rentrayage": {
+  "tier": "A",
+  "reason": "Deadstock and upcycled label with pastoral romantic identity, though shop also carries homewares.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "runaway the label": {
+  "tier": "B",
+  "reason": "Photos show a striped tie-front knit co-ord in a garden and a lilac beaded halter gown, polished current imagery; site is a Sydney label with in-house designers and sub-labels, fast-fashion going-out register.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Instagram @runawaythelabel; founder page; sub-labels Seven Wonders, Tulum Sun",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "scarlet & sam": {
+  "tier": "B",
+  "reason": "Melbourne capsule-drop vintage-inspired basics label, legit but plain.",
+  "based_in": "Melbourne, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "show me your mumu": {
+  "tier": "B",
+  "reason": "Established US party and bridesmaid dress brand, mainstream with resold shoes.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "sky dolls": {
+  "tier": "C",
+  "reason": "Photos are cropped plain-background shots of a brown zip jacket (lululemon-style dupe) and low-rise white jeans; site is a generic tall-size loungewear/athleisure shop with no founder or story.",
+  "based_in": "",
+  "evidence": "IG @skydollsclothing; no founder",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "sports banger": {
+  "tier": "B",
+  "reason": "Photos are a K2 hi-vis waterproof jacket and a kid in a skull-and-crossbones hoodie; a real UK satirical streetwear label with Adidas/Tommy collabs and gallery projects, though merch-leaning.",
+  "based_in": "UK",
+  "evidence": "IG @sportsbanger; collabs with Adidas Confirmed, Tommy Hilfiger, ICA",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "story mfg.": {
+  "tier": "A",
+  "reason": "UK craft label with natural dyes, hand-repaired pieces and strong identity.",
+  "based_in": "UK",
+  "evidence": "Cult following and stockists",
+  "verified": false
+ },
+ "tjl collection": {
+  "tier": "B",
+  "reason": "Photos show polished studio shots of a tall model in a red suit set and adidas-style track pants, and the site is founder-led (Tiffany Jones-Lewis, 'For Tall. By Tall.') with a tall-sizing identity but fairly generic joggers and suits.",
+  "based_in": "US",
+  "evidence": "Founder Tiffany Jones-Lewis",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "the frankie shop": {
+  "tier": "A",
+  "reason": "Reference-list label.",
+  "based_in": "New York, USA",
+  "evidence": "Named by owner as reference",
+  "verified": false
+ },
+ "tradlands": {
+  "tier": "B",
+  "reason": "Size-inclusive vintage-inspired shirting and dresses, legitimate but dated register.",
+  "based_in": "Portland, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "vrg grl": {
+  "tier": "B",
+  "reason": "Australian y2k going-out label, real but trend fast-fashion.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "wildflo studio": {
+  "tier": "B",
+  "reason": "Photos show a model in a blue striped shirt and shorts set and a black linen slip dress against a plain wall with wood floor, a simple current lookbook feel; the site loaded only with testimonials and tagline 'Find Your Everyday Ease' and I could not confirm the founder.",
+  "based_in": "Toronto, Canada",
+  "evidence": "Customer testimonials; wholesale page",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "zulu & zephyr": {
+  "tier": "B",
+  "reason": "Australian coastal swim and resort label, legit but swim-centred.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "a bronze age": {
+  "tier": "A",
+  "reason": "Vancouver label with named-style womenswear and joyful, current styling; made in Canada.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "adanola": {
+  "tier": "B",
+  "reason": "Scaled UK activewear/basics brand with clean studio shots; mass-market rather than design-led.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "allison wonderland": {
+  "tier": "B",
+  "reason": "Established Vancouver boutique-designer label with ethical production; styling is a bit dated.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "anekdot": {
+  "tier": "A",
+  "reason": "Small handmade deadstock lingerie/swim label with named pieces and intimate editorial feel.",
+  "based_in": "Europe",
+  "evidence": "",
+  "verified": false
+ },
+ "auguste the label": {
+  "tier": "B",
+  "reason": "Byron Bay boho resortwear label; legitimate but trend-dependent and mid-market.",
+  "based_in": "Byron Bay, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "batch1": {
+  "tier": "B",
+  "reason": "Photos are flat product shots of food-pun graphic sweatshirt and crepes tee; site says an independent South London label designing and printing in small batches with organic fabrics, but novelty-graphic, merch-adjacent.",
+  "based_in": "London, UK",
+  "evidence": "Self-described independent in-house small-batch brand",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "bee petite": {
+  "tier": "C",
+  "reason": "Photos are amateur street/Christmas-backdrop snapshots of lace pants and white trousers, and the catalog mixes in acrylic shelf risers, despite a genuine petite founder story.",
+  "based_in": "United States",
+  "evidence": "Founder Bee Yang (5'0\"); Instagram @shopbeepetite",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "black milk clothing": {
+  "tier": "B",
+  "reason": "Real Australian brand with a large following but costume/fandom print dresses, off her register.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "buci": {
+  "tier": "A",
+  "reason": "NYC cashmere knit label with premium pricing and refined, current identity.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "cihuah": {
+  "tier": "A",
+  "reason": "Mexico City architectural minimal womenswear with strong lookbook-style imagery.",
+  "based_in": "Mexico City, Mexico",
+  "evidence": "",
+  "verified": false
+ },
+ "cherri cheeks": {
+  "tier": "B",
+  "reason": "Photos show a plus-size model in a Barbie-box themed white set and a turquoise one-piece with cherry embroidery in a garden; site is a real XL-5XL swim brand with playful prints, though home-shoot feel and calendars in catalog.",
+  "based_in": "USA",
+  "evidence": "Instagram and TikTok; email cherri.cheeks20@gmail.com",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "clothing the gaps": {
+  "tier": "C",
+  "reason": "Both photos are enamel pins on branded retail cards (Torres Strait flag, Together for Treaty), and the site sells tees plus pins, stickers, lanyards and digital downloads, so it reads as social-enterprise merch.",
+  "based_in": "Brunswick, Victoria, Australia",
+  "evidence": "Aboriginal social enterprise; Brunswick flagship store and stockist locator",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "cotton ink": {
+  "tier": "B",
+  "reason": "Photos are clean studio shots (a canvas tote carried by a model, a pastel embroidered short-sleeve shirt) and the site is an Indonesian contemporary label with physical stores, sister brands and a Studio FW26 line, but it is mass retail with heavy discounting.",
+  "based_in": "Jakarta, Indonesia",
+  "evidence": "Physical stores and stockists page; sister brands GIL, Syaline, The Life Of",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "danielle guizio": {
+  "tier": "A",
+  "reason": "Reference brand: NYC y2k going-out label.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "dolls kill": {
+  "tier": "B",
+  "reason": "Big alt/rave multi-brand retailer; real but off her register.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "es made by me": {
+  "tier": "A",
+  "reason": "Made-to-order natural-fibre minimalist label with named designs and quality fabrics.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "faible and failure": {
+  "tier": "A",
+  "reason": "Handcrafted knitwear/silk label with minimalist identity and premium pricing.",
+  "based_in": "Europe",
+  "evidence": "",
+  "verified": false
+ },
+ "free label": {
+  "tier": "B",
+  "reason": "Vancouver wire-free bras and basics; legitimate but functional basics.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "gx1000": {
+  "tier": "B",
+  "reason": "SF skate brand with real identity but skate-hardgoods mixed in; niche for her.",
+  "based_in": "San Francisco, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "gramicci": {
+  "tier": "B",
+  "reason": "Established climbing-pant brand with strong heritage; menswear-leaning functional.",
+  "based_in": "USA / Japan",
+  "evidence": "",
+  "verified": false
+ },
+ "hayley elsaesser": {
+  "tier": "B",
+  "reason": "Real Toronto designer with playful graphic prints but flat mockup imagery and samples sale items.",
+  "based_in": "Toronto, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "house of sunny": {
+  "tier": "A",
+  "reason": "London 70s-retro knitwear label with strong identity and good imagery, widely stocked.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "ivy city co": {
+  "tier": "B",
+  "reason": "Modest romantic brand with kids and pajama lines; mid-market, partly off register.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "jiberish": {
+  "tier": "B",
+  "reason": "Ski-influenced streetwear label with some tech outerwear; menswear leaning.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "kallmeyer": {
+  "tier": "A",
+  "reason": "NYC modern tailoring label at luxury prices with refined imagery.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "kika vargas": {
+  "tier": "A",
+  "reason": "Designer occasionwear/tailoring label at high price point with editorial imagery.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "kuna": {
+  "tier": "A",
+  "reason": "Peruvian baby alpaca knitwear with minimalist heritage identity and good photography.",
+  "based_in": "Peru",
+  "evidence": "",
+  "verified": false
+ },
+ "lealealove clothing": {
+  "tier": "B",
+  "reason": "Small plus-size occasion/corset label with real model shots; niche and mid quality.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "liv tall": {
+  "tier": "B",
+  "reason": "Photos are clean white-studio shots of a tailored white vest and skirt and teal colorblock leggings; site is founder-led (Angela Zdrale, 6'1\", ex-Tory Burch and Saks) tall-women brand made in USA, functional basics.",
+  "based_in": "US",
+  "evidence": "Founder Angela Zdrale; press referenced on site; Instagram @liv_tall",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "maggie marilyn": {
+  "tier": "A",
+  "reason": "Auckland sustainable contemporary designer label with distinctive named styles and press.",
+  "based_in": "Auckland, New Zealand",
+  "evidence": "",
+  "verified": false
+ },
+ "meemoza": {
+  "tier": "B",
+  "reason": "Montreal ethical casual-chic label; legit but plain and mid-market.",
+  "based_in": "Montreal, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "mirror palais": {
+  "tier": "A",
+  "reason": "Vintage-glam sheer designer label with distinct identity and high price point.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "modern prairie": {
+  "tier": "C",
+  "reason": "Photos are blue stoneware crocks and a floral oven mitt; site describes itself as mature womens apparel and decor with kitchen, linens and candles beside dated catalog clothing.",
+  "based_in": "",
+  "evidence": "Instagram officialmodernprairie",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "nadine merabi": {
+  "tier": "B",
+  "reason": "UK glamorous occasion label; real designer but mass-glam rather than her taste.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "nelle atelier": {
+  "tier": "A",
+  "reason": "Photos are clean modern studio shots of a model in cream wide-leg jeans and two people holding up washed denim with a bandana-lined detail; petite-fit denim brand at ~$268 with Vogue/Elle/Glamour coverage and collabs.",
+  "based_in": "USA",
+  "evidence": "press: Vogue, Elle, Glamour, Zoe Report; IG @nelleatelier; Gabi Made collab",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "noon goons": {
+  "tier": "B",
+  "reason": "LA streetwear label with real following; graphic menswear-leaning.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "okayok": {
+  "tier": "B",
+  "reason": "Photos show a tomato-print sweatshirt and fish-print shirt on models and chunky socks with Birkenstocks, with a real independent Toronto brand story (2017, antique knitting machines), though socks-led.",
+  "based_in": "Toronto, Canada",
+  "evidence": "IG @its.okayok; press page; studio; founded 2017",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "orseund iris": {
+  "tier": "A",
+  "reason": "NYC sculptural corset and shirting label with strong identity, editorial coverage.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "peppermayo": {
+  "tier": "B",
+  "reason": "Photos are a brown strapless asymmetrical ruffle mini and a black bustier lace mini on plain backdrops, clean but trend-fast-fashion; site is an Australian going-out retailer.",
+  "based_in": "Australia",
+  "evidence": "Instagram peppermayo",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "pizza skateboards": {
+  "tier": "B",
+  "reason": "Photos are cut-outs of a burgundy ZA Jeans baggy denim and a yellow 'Za Boy Club' deck; site is a real skate brand with lookbooks, team, stockists page and apparel lines, but deck/sticker heavy and off register.",
+  "based_in": "New York City, USA",
+  "evidence": "Instagram @pizzaskateboards; stockist page; lookbooks",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "pretty & petite": {
+  "tier": "B",
+  "reason": "Photos are casual customer-style snapshots (jeans and tie crop top on a street, silver metallic shorts), but the site says designed and handmade by petite women with an own-label bestseller leggings line and a brand story page.",
+  "based_in": "US",
+  "evidence": "Instagram/TikTok @prettyandpetites",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "railcar fine goods": {
+  "tier": "B",
+  "reason": "Photos show a folded raw selvedge jean with leather patch and a Brixton shirt on a model; site says own vertically integrated El Monte workshop making denim, alongside resold Pendleton/Brixton, and is menswear-heavy.",
+  "based_in": "El Monte, California, USA",
+  "evidence": "Founders Steven and Tawny; own workshop and store; carries Red Wing, Pendleton, Barbour",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "retrofete": {
+  "tier": "A",
+  "reason": "LA sequin party-dress label with strong identity, premium pricing and press.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "róhe": {
+  "tier": "A",
+  "reason": "Amsterdam sculptural minimalism label with premium tailoring and strong editorial imagery.",
+  "based_in": "Amsterdam, Netherlands",
+  "evidence": "",
+  "verified": false
+ },
+ "scuffers": {
+  "tier": "B",
+  "reason": "Madrid unisex streetwear brand with large Spanish following; mass streetwear.",
+  "based_in": "Madrid, Spain",
+  "evidence": "",
+  "verified": false
+ },
+ "sid neigum": {
+  "tier": "A",
+  "reason": "Edmonton avant-garde sculptural designer with pleated, architectural pieces.",
+  "based_in": "Edmonton, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "sleeper": {
+  "tier": "A",
+  "reason": "Feather-trim loungewear and party pajamas with distinctive identity and wide press.",
+  "based_in": "Ukraine / Europe",
+  "evidence": "",
+  "verified": false
+ },
+ "st agni": {
+  "tier": "A",
+  "reason": "Australian minimalist elevated basics, denim and knits with polished imagery.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "studio nicholson": {
+  "tier": "A",
+  "reason": "London contemporary tailoring label with proportion-led identity and wide stockists.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "tove": {
+  "tier": "A",
+  "reason": "London modern tailoring and draping label with strong editorial imagery and stockists.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "the modest barbie": {
+  "tier": "C",
+  "reason": "Photos are close-up hijab model shots (grey and burgundy modal) in a basic catalog style at ~$23, and the site gives no founder or design story, just hijabs, gowns and jewelry.",
+  "based_in": "",
+  "evidence": "Instagram/TikTok/Facebook; physical store link, no founder info",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "trash queen": {
+  "tier": "B",
+  "reason": "Photos are flat white-background product shots of a pixel-print skater skirt and colorblock joggers, and the site describes a fat-owned, designed, made-to-order alt label with hand-drawn art, quirky and small but genuine.",
+  "based_in": "United States",
+  "evidence": "Fat woman designer-owned; Instagram @shoptrashqueen; restructuring after tariffs",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "venroy": {
+  "tier": "B",
+  "reason": "Bondi leisurewear brand with real following; resort basics.",
+  "based_in": "Sydney, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "with jéan": {
+  "tier": "A",
+  "reason": "Reference brand: Australian romantic feminine label.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "beautiful people": {
+  "tier": "A",
+  "reason": "Tokyo contemporary minimalist label with layered construction and distinct identity.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "",
+  "verified": false
+ },
+ "a kind of guise": {
+  "tier": "A",
+  "reason": "Munich design label with earthy tailoring and knitwear and a distinct editorial identity.",
+  "based_in": "Munich, Germany",
+  "evidence": "Stocked at independent boutiques and concept stores",
+  "verified": false
+ },
+ "adriana degreas": {
+  "tier": "A",
+  "reason": "Brazilian resort and swim label with signature polka-dot sculptural prints and polished lookbook imagery.",
+  "based_in": "Sao Paulo, Brazil",
+  "evidence": "Stocked at Net-a-Porter and Matches; founder-led",
+  "verified": false
+ },
+ "almada label": {
+  "tier": "A",
+  "reason": "Portuguese quiet-luxury knit and leather label with a clear seasonless identity and editorial photography.",
+  "based_in": "Portugal",
+  "evidence": "Founder-led, sold at independent boutiques",
+  "verified": false
+ },
+ "anna quan": {
+  "tier": "A",
+  "reason": "Sydney modern-tailoring label with a founder, polished minimal styling and current imagery.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Stocked at Net-a-Porter and Shopbop",
+  "verified": false
+ },
+ "avo activewear": {
+  "tier": "B",
+  "reason": "Small legitimate UK petite activewear brand, functional and off her register.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "batsheva": {
+  "tier": "A",
+  "reason": "NYC prairie-print label with strong founder-led identity and distinctive editorial imagery.",
+  "based_in": "New York, USA",
+  "evidence": "Widely covered in Vogue and NYT; strong Instagram",
+  "verified": false
+ },
+ "belle anna": {
+  "tier": "B",
+  "reason": "LA going-out and swim label, trend-driven and fine but not distinctive.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "blackhorse lane ateliers": {
+  "tier": "B",
+  "reason": "Real London craft denim maker, menswear-leaning with fabric listings; legitimate but off her register.",
+  "based_in": "London, UK",
+  "evidence": "Press in menswear titles",
+  "verified": false
+ },
+ "butter goods": {
+  "tier": "B",
+  "reason": "Real Perth skate streetwear label with graphic tees; legitimate but not her register.",
+  "based_in": "Perth, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "cabbages & roses": {
+  "tier": "C",
+  "reason": "Both photos are floral wallpaper swatches and the site sells wallpaper, fabric, cushions and lampshades, with womenswear only as a bespoke side section.",
+  "based_in": "England, UK",
+  "evidence": "Family-run; press in Elle, Harper's Bazaar, The Telegraph",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "cherry la": {
+  "tier": "B",
+  "reason": "LA biker and menswear label with logo tees and cargo pants, legitimate but off register.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "club l london": {
+  "tier": "B",
+  "reason": "Photos are polished studio shots of a white feather-cuff gown and a purple sequin feather mini; legit UK occasion-wear label with international sites but mass-market.",
+  "based_in": "UK",
+  "evidence": "multi-region sites, rewards program",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "cou cou intimates": {
+  "tier": "A",
+  "reason": "LA minimalist organic-cotton intimates label with a clear identity and current styling.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Covered in fashion press; real Instagram following",
+  "verified": false
+ },
+ "dauphinette": {
+  "tier": "A",
+  "reason": "NYC upcycled whimsical label with a real founder, strong identity and press.",
+  "based_in": "New York, USA",
+  "evidence": "Press in Vogue and NYT; celebrity wearers",
+  "verified": false
+ },
+ "doodlage": {
+  "tier": "B",
+  "reason": "Photos are a blue button tunic and a hand-illustrated skirt over a white top, simple catalog-style Indian studio shots, but the site is a real Delhi made-from-waste label with take-back program.",
+  "based_in": "Delhi, India",
+  "evidence": "Made From Waste; fair-wage factories and artisan partners; studio by appointment",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "esse": {
+  "tier": "B",
+  "reason": "Singapore sustainable basics brand, legitimate but plain and mid-register.",
+  "based_in": "Singapore",
+  "evidence": "B-Corp",
+  "verified": false
+ },
+ "faithfull the brand": {
+  "tier": "A",
+  "reason": "Bali-born resort label with printed dresses and current vacation styling, strong identity.",
+  "based_in": "Bali, Indonesia",
+  "evidence": "Large Instagram following; widely stocked",
+  "verified": false
+ },
+ "freenote cloth": {
+  "tier": "B",
+  "reason": "Real California workwear and raw-denim brand, menswear-leaning and off her register.",
+  "based_in": "California, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "gaia conceptions": {
+  "tier": "B",
+  "reason": "Made-to-order natural-dye bohemian label, legitimate but dated hippie styling.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "hyke": {
+  "tier": "A",
+  "reason": "Tokyo minimalist military-inspired label from respected designers with strong editorial identity.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "Stocked at global luxury retailers",
+  "verified": false
+ },
+ "helas": {
+  "tier": "B",
+  "reason": "Photos are a Hélas branded handheld fan on white and a flat-lay of a rust striped tee with small logo; real French skater-founded brand (2011) with collabs, but cap/streetwear and off-register.",
+  "based_in": "South of France",
+  "evidence": "founded 2011 by Lucas Puig, Clément Brunel, Stephen Khou; IG @helas_caps; Kappa/Adidas/Paraboot collabs",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "hunza g": {
+  "tier": "A",
+  "reason": "Iconic London crinkle swimwear label with a strong 80s identity and distinctive imagery.",
+  "based_in": "London, UK",
+  "evidence": "Decades of press; stocked internationally",
+  "verified": false
+ },
+ "joytoast": {
+  "tier": "C",
+  "reason": "Photos are a pink lighter and a punch card held in a hand; site sells size-inclusive clothing but index is lighters, hooks, stickers, charms and coin purses.",
+  "based_in": "",
+  "evidence": "Instagram shopjoytoast; About Us page exists, not read in detail",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "jieda": {
+  "tier": "A",
+  "reason": "Tokyo tailoring and streetwear label with distinctive 90s-retro design and strong imagery.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "Followed by Japanese fashion press",
+  "verified": false
+ },
+ "kamperett": {
+  "tier": "A",
+  "reason": "SF artsy minimal label with sculptural dresses and refined editorial imagery.",
+  "based_in": "San Francisco, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "kiltane": {
+  "tier": "B",
+  "reason": "Edinburgh heritage cashmere brand, legitimate but conventional and catalog-like.",
+  "based_in": "Edinburgh, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "l'été indien the label": {
+  "tier": "B",
+  "reason": "Boho silk kimono and kaftan resort label, legitimate but a bit dated.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "leal daccarett": {
+  "tier": "A",
+  "reason": "Colombian handmade resort label with vivid craft-led identity and a real founder.",
+  "based_in": "Colombia",
+  "evidence": "Press in Vogue; stocked at luxury retailers",
+  "verified": false
+ },
+ "long legs london": {
+  "tier": "B",
+  "reason": "Small tall-fit basics brand, functional and mass-register.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "mame kurogouchi": {
+  "tier": "A",
+  "reason": "Tokyo designer label with sculptural knitwear and strong runway-level imagery.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "Shows at Tokyo Fashion Week; global stockists",
+  "verified": false
+ },
+ "memery": {
+  "tier": "B",
+  "reason": "Photos are a green 1940s suede wedge sandal and black lace-up boots styled with vintage props; real UK vintage-reproduction shoe maker (7,791 reviews, 100-day returns) but overtly retro and shoe-heavy.",
+  "based_in": "UK",
+  "evidence": "IG @memeryshoes; led by Mette; 4.9 rating on 7791 reviews",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "mishka nyc": {
+  "tier": "B",
+  "reason": "Photos are a quirky illustrated sticker and a camo trucker cap with a red bear; real NYC streetwear label since 2003 ('cut & sew powerhouse') but off-register and merch-leaning.",
+  "based_in": "New York, USA",
+  "evidence": "founded 2003; IG @mishkagram",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "modest pop": {
+  "tier": "C",
+  "reason": "Photos are bright AI-looking/stock-style catalog shots of floral puff-sleeve tops and a hoodie in a staged fall living room, and the site is a generic modest boutique with 100+ dress styles and no founder or own-label story.",
+  "based_in": "US",
+  "evidence": "",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "naked cashmere": {
+  "tier": "B",
+  "reason": "Photos are clean studio shots of a mock-neck cashmere tank with matching skirt and a camel fuzzy sweater with corduroy; site shows an ethical luxury cashmere label with major press, conventional basics.",
+  "based_in": "New York, USA",
+  "evidence": "Press: Vogue, Forbes, Vanity Fair, Harper's Bazaar, Elle, WWD; retail locations",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "never fully dressed": {
+  "tier": "B",
+  "reason": "UK colourful party and wrap-skirt brand, legitimate but fast-fashion adjacent.",
+  "based_in": "London, UK",
+  "evidence": "Sold widely in UK",
+  "verified": false
+ },
+ "nooworks": {
+  "tier": "B",
+  "reason": "Indexed photos were a letterpress anniversary card and poodle hair clips (novelty), but the site shows a woman-owned California label making artist-print dresses and jumpsuits with pockets.",
+  "based_in": "San Francisco, California, USA",
+  "evidence": "Instagram @nooworks; California-made; artist collaborations; SF locations page",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "olim london": {
+  "tier": "B",
+  "reason": "Tiny UK tall-fit brand with basic catalog pieces.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "outland denim": {
+  "tier": "B",
+  "reason": "Ethical Australian denim brand with a real story, but mainstream catalog styling.",
+  "based_in": "Australia",
+  "evidence": "Press for Meghan Markle wearing it",
+  "verified": false
+ },
+ "percival": {
+  "tier": "A",
+  "reason": "London menswear label with reworked classics, strong identity and current styling.",
+  "based_in": "London, UK",
+  "evidence": "Strong Instagram and boutique stockists",
+  "verified": false
+ },
+ "playful promises": {
+  "tier": "B",
+  "reason": "Photos are polished studio shots of a blue crinkle knot bikini top and teal embroidered lingerie set on a styled set; site is a legit women-run UK lingerie and swim brand with D+ sizing, just mass-market.",
+  "based_in": "UK",
+  "evidence": "Women-founded; family of lingerie labels",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "priory": {
+  "tier": "A",
+  "reason": "Vancouver label with considered relaxed pieces, quirky identity and strong imagery.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "rainbeau curves": {
+  "tier": "C",
+  "reason": "Photos are plain white-background catalog shots of a black capri legging and a grey tank on plus models at ~$10 median, dated basic activewear, though it is a genuine 30-year San Francisco family business.",
+  "based_in": "San Francisco, USA",
+  "evidence": "Family-owned 30+ years; press in Cosmopolitan, BuzzFeed, Bustle; @rainbeaucurves",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "rimzim dadu": {
+  "tier": "A",
+  "reason": "Indian textile-innovation designer with sculptural couture-level pieces and press.",
+  "based_in": "India",
+  "evidence": "Showcased at fashion weeks; Vogue India coverage",
+  "verified": false
+ },
+ "rūpahaus": {
+  "tier": "B",
+  "reason": "Artisan plant-dyed label also selling homewares, legitimate but mixed and off register.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "sea new york": {
+  "tier": "A",
+  "reason": "NYC romantic boyish label with embroidery and lace, strong identity and press.",
+  "based_in": "New York, USA",
+  "evidence": "Stocked at Net-a-Porter and Matches",
+  "verified": false
+ },
+ "simon miller": {
+  "tier": "A",
+  "reason": "NYC design label with sculptural 70s colourful pieces, strong identity and current styling.",
+  "based_in": "New York, USA",
+  "evidence": "Stocked at luxury retailers",
+  "verified": false
+ },
+ "sol alpaca": {
+  "tier": "B",
+  "reason": "Peruvian alpaca knitwear brand, legitimate but conventional.",
+  "based_in": "Peru",
+  "evidence": "",
+  "verified": false
+ },
+ "stable of ireland": {
+  "tier": "B",
+  "reason": "Photos show a model in linen top and striped linen trousers against a carved door (nice editorial) and a flat-lay of linen napkins; real Dublin design shop with linen/knitwear but heavily homewares and accessories.",
+  "based_in": "Dublin, Ireland",
+  "evidence": "Founders Sonia Reynolds and Francie Duff; physical shop off Grafton Street; Image Creative Businesswoman award",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "sukkhacitta": {
+  "tier": "B",
+  "reason": "Indonesian artisan natural-dye label with a founder story, mixed with fragrance and trinkets.",
+  "based_in": "Indonesia",
+  "evidence": "",
+  "verified": false
+ },
+ "talia byre": {
+  "tier": "A",
+  "reason": "London designer label with tailoring and nylon pieces, distinct identity and good imagery.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "the ragged priest": {
+  "tier": "B",
+  "reason": "UK grunge denim brand, legitimate but fast-fashion price register.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "tuesday": {
+  "tier": "B",
+  "reason": "Hand-dyed zero-waste kimono and caftan label, legitimate but boho and dated.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "verconiik": {
+  "tier": "A",
+  "reason": "Brooklyn playful knit label with colorful current styling and strong online following.",
+  "based_in": "Brooklyn, USA",
+  "evidence": "Strong Instagram following",
+  "verified": false
+ },
+ "wythe new york": {
+  "tier": "B",
+  "reason": "Real NYC workwear shirt label, menswear-leaning and off her register.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "byvinnik": {
+  "tier": "A",
+  "reason": "Size-inclusive luxury label with theatrical designs, artist collabs and distinct identity.",
+  "based_in": "",
+  "evidence": "Collaborations with notable writers and artists",
+  "verified": false
+ },
+ "a.oei studio": {
+  "tier": "B",
+  "reason": "Small Singapore wearable-art studio with made-to-order pieces and press page, but studio-shot photos on a plain backdrop feel plain and niche/bridal.",
+  "based_in": "Singapore",
+  "evidence": "Press page, active Instagram @a.oei_studio",
+  "verified": false
+ },
+ "afends": {
+  "tier": "B",
+  "reason": "Photos are clean flat-lays of a beige wide-leg jean and navy seersucker shirt; site is a real Byron Bay hemp/streetwear label with concept stores and seasonal drops, but surf-skate mass register.",
+  "based_in": "Byron Bay, Australia",
+  "evidence": "Concept stores, Culture/lookbook section, hemp sustainability line",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "alta reina": {
+  "tier": "B",
+  "reason": "Photos are outdoor trail shots of a teal tall base-layer top and leggings (technical, not fashion-styled); site is a real founder-led brand making tall base layers in the USA but only 2 items and outdoor-gear register.",
+  "based_in": "USA",
+  "evidence": "Founder Suzi (5'11\"); Instagram altareinaclothing; made in the USA",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "anne mulaire": {
+  "tier": "B",
+  "reason": "Genuine indigenous-owned zero-waste Canadian label (20 years) but catalog is mostly RESALE listings and basic leggings/camis.",
+  "based_in": "Canada",
+  "evidence": "20-year-old label",
+  "verified": false
+ },
+ "baacal": {
+  "tier": "A",
+  "reason": "Real plus-size contemporary label with designer trenches, silk dresses and pleated knits at a considered price point and editorial imagery.",
+  "based_in": "New York, USA",
+  "evidence": "Press and founder-led plus-size designer label",
+  "verified": false
+ },
+ "baukjen": {
+  "tier": "B",
+  "reason": "Established UK B-Corp responsible brand with clean but mainstream mid-market catalog styling.",
+  "based_in": "London, UK",
+  "evidence": "B Corp",
+  "verified": false
+ },
+ "ben davis": {
+  "tier": "B",
+  "reason": "Heritage American workwear label, legit but utilitarian and mass catalog, off her register.",
+  "based_in": "California, USA",
+  "evidence": "Heritage since 1935",
+  "verified": false
+ },
+ "bloni": {
+  "tier": "A",
+  "reason": "Indian avant-garde label with sculptural rubber corsets, mesh gowns and conceptual styling at designer pricing.",
+  "based_in": "India",
+  "evidence": "",
+  "verified": false
+ },
+ "by coquette": {
+  "tier": "C",
+  "reason": "Photos are a Hello Kitty gothic hoodie on a hanger and a lolita pink pump on white; site has SEO-stuffed titles, mixed shoes/lingerie/jeans, no founder, and a Shopify bundle placeholder.",
+  "based_in": "Ottawa, Canada",
+  "evidence": "IG @bycoquette_fits; affiliate program; no founder",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "carla fernández": {
+  "tier": "A",
+  "reason": "Mexican designer with long-standing indigenous-textile collaborations, sculptural contemporary pieces and strong identity.",
+  "based_in": "Mexico City, Mexico",
+  "evidence": "Exhibited and widely press-covered designer",
+  "verified": false
+ },
+ "chi chi london": {
+  "tier": "B",
+  "reason": "Photos are a placeholder bundle-builder image and a customer-style mirror selfie of a floral smock dress; real family design house since 1982 in North London but mass occasion-wear with hen party props.",
+  "based_in": "London, UK",
+  "evidence": "founded 1982 family design house; IG @chichiclothing; wholesale division",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "cockpit usa": {
+  "tier": "C",
+  "reason": "Photos are a male model in a navy naval bridge coat and a flat varsity jacket with 'Freedom Isn't Free' fighter-jet patch; site is a heritage military flight-jacket reproduction maker also selling mugs and socks, not her register.",
+  "based_in": "New York, US",
+  "evidence": "50th anniversary 2026; American Airpower Museum sponsor",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "courtney noelle": {
+  "tier": "B",
+  "reason": "Brooklyn made-to-order plus-size designer with a real studio-shot sequin set, but tiny 13-item catalog and basic photography.",
+  "based_in": "Brooklyn, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "dawson denim": {
+  "tier": "B",
+  "reason": "Photos are flat-lay navy selvedge sailor trousers with tags and a type II denim jacket on white, catalog-style but genuine; site says made in Okayama, Japan, with Our Story, stockists and owners club, menswear/heritage register.",
+  "based_in": "UK (made in Okayama, Japan)",
+  "evidence": "Instagram dawsondenim; stockists page; Dawson Owners Club",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "dorsu": {
+  "tier": "B",
+  "reason": "Photos are flat product shots of a plum button-down shirt and a rib slip dress on grey, plain basics; site is a real manufacturer-brand making in its own Kampot workshop from deadstock under fair labor.",
+  "based_in": "Kampot, Cambodia",
+  "evidence": "Instagram dorsu_cambodia; own workshop, deadstock fabrics",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "elka collective": {
+  "tier": "B",
+  "reason": "Melbourne contemporary elevated-basics label with clean current styling, solid but mid-market.",
+  "based_in": "Melbourne, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "farai london": {
+  "tier": "B",
+  "reason": "Small UK going-out label with bold prints and cut-out dresses, legit but party fast-fashion.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "frog skateboards": {
+  "tier": "C",
+  "reason": "Photos are a forest-green logo tee cut-out and an illustrated 'Mystery Box' graphic; catalog is decks, stickers, magnets and fingerboards, skate merch rather than a fashion brand.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Instagram @frogskateboards; LA store",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "geel": {
+  "tier": "B",
+  "reason": "LA soft-knit basics label with clean branding, nice but essentials-level.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "half asleep": {
+  "tier": "B",
+  "reason": "Sleepwear label with ruffled sets and a CasaBarro collab; real small brand but narrow category.",
+  "based_in": "USA",
+  "evidence": "CasaBarro collaboration",
+  "verified": false
+ },
+ "henne": {
+  "tier": "B",
+  "reason": "Australian wardrobe-essentials label with denim and knitwear, tidy but mainstream.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "i was a sari": {
+  "tier": "B",
+  "reason": "Photos are polished editorial portraits of a printed neck scarf and a mustard stole, and the site is a real upcycled-sari brand with impact metrics, but the catalog leans scarves, pouches and slippers at low prices.",
+  "based_in": "Mumbai, India / Milan, Italy",
+  "evidence": "Labels say mumbai | milan; 900 women artisans, 2.2M sqm fabric rescued",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "jacaranda": {
+  "tier": "B",
+  "reason": "Photos are soft natural-light lifestyle shots of olive organic-cotton tee and shorts and a black crop bra top, legitimate eco activewear brand but basics-led with journals and mala necklaces mixed in.",
+  "based_in": "Canada",
+  "evidence": "Instagram @jacarandaeco; founder bio not found on homepage",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "joolz": {
+  "tier": "B",
+  "reason": "Photos are a plain shot of two men in green work shirts and black plus-size trousers with bottom half cropped, unpolished; site shows founder Airdrie making customizable sustainable plus-size clothing, real but dated and homespun.",
+  "based_in": "Australia",
+  "evidence": "Founder Airdrie; Instagram @joolzfashion",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "kanika goyal label": {
+  "tier": "A",
+  "reason": "Delhi designer label with embellished, sculpted pieces, strong identity and editorial imagery.",
+  "based_in": "Delhi, India",
+  "evidence": "Known Indian designer, widely stocked",
+  "verified": false
+ },
+ "kimhekim": {
+  "tier": "A",
+  "reason": "Seoul playful-luxury label with heart-patch denim and knits, strong current styling and designer price.",
+  "based_in": "Seoul, South Korea",
+  "evidence": "Stocked at global luxury retailers",
+  "verified": false
+ },
+ "l.f markey": {
+  "tier": "B",
+  "reason": "London workwear-inspired boilersuits and basics, real brand but plain and utilitarian styling.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "left field nyc": {
+  "tier": "B",
+  "reason": "Real NYC-made americana denim and workwear label, mostly menswear heritage.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "loulou de saison": {
+  "tier": "A",
+  "reason": "French minimalist label with silk-voile dresses, cocoon trousers and leather sandals, editorial imagery.",
+  "based_in": "France",
+  "evidence": "",
+  "verified": false
+ },
+ "manning cartell": {
+  "tier": "B",
+  "reason": "Established Australian edgy-tailoring and gown brand with sequin pieces, legit but commercial.",
+  "based_in": "Sydney, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "merlette nyc": {
+  "tier": "A",
+  "reason": "NYC romantic embroidered label with feminine silhouettes, strong identity and designer pricing.",
+  "based_in": "New York, USA",
+  "evidence": "Widely stocked and press-covered",
+  "verified": false
+ },
+ "missy empire": {
+  "tier": "B",
+  "reason": "UK fast-fashion going-out brand with generic trend styling.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "mola sasa": {
+  "tier": "B",
+  "reason": "Genuine artisan Kuna-mola brand but mostly totes, cushions and placemats rather than clothing.",
+  "based_in": "USA / Panama",
+  "evidence": "",
+  "verified": false
+ },
+ "naked wardrobe": {
+  "tier": "B",
+  "reason": "LA bodycon going-out basics, real brand but mass trend fast fashion.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "nigel cabourn": {
+  "tier": "B",
+  "reason": "Photos are Japanese store-staff styling snapshots of a green denim jacket-and-trouser set and orange fleece with cargos; site is an established heritage label with womenswear line, military-reproduction menswear, off register.",
+  "based_in": "England / Japan",
+  "evidence": "Instagram @nigelcabournjapan, @nigelcabourn_woman_japan; Army Gym flagship Tokyo",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "norse projects": {
+  "tier": "B",
+  "reason": "Respected Danish menswear label with basics; legit but menswear-focused.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "",
+  "verified": false
+ },
+ "olivia rubin": {
+  "tier": "A",
+  "reason": "London colourful sequin dress label with playful identity, rental line and brand collabs.",
+  "based_in": "London, UK",
+  "evidence": "Widely press and retailer covered",
+  "verified": false
+ },
+ "pajotten": {
+  "tier": "B",
+  "reason": "Small UK slow-fashion workwear overshirts and trousers; real but utilitarian.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "petal & pup": {
+  "tier": "B",
+  "reason": "Australian going-out dress brand, legit but mass trend-driven.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "poetic collective": {
+  "tier": "B",
+  "reason": "Stockholm skate/streetwear label with graphic hoodies and boards, real but not her register.",
+  "based_in": "Stockholm, Sweden",
+  "evidence": "",
+  "verified": false
+ },
+ "private white v.c.": {
+  "tier": "B",
+  "reason": "Historic Manchester-made heritage outerwear at premium prices, mainly menswear.",
+  "based_in": "Manchester, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "rat & boa": {
+  "tier": "A",
+  "reason": "London glamorous slip-dress and swim label with distinctive identity and strong imagery.",
+  "based_in": "London, UK",
+  "evidence": "Press-covered, large Instagram",
+  "verified": false
+ },
+ "rixo": {
+  "tier": "A",
+  "reason": "London vintage-inspired print label comparable to reference list with strong identity.",
+  "based_in": "London, UK",
+  "evidence": "Widely stocked and press-covered",
+  "verified": false
+ },
+ "sirplus": {
+  "tier": "B",
+  "reason": "British surplus-inspired knits and chore jackets, real but classic menswear-leaning.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "sean suen": {
+  "tier": "A",
+  "reason": "Avant-garde minimalist tailoring label with asymmetric shirts and suede jackets, strong identity.",
+  "based_in": "Paris / China",
+  "evidence": "",
+  "verified": false
+ },
+ "sir the label": {
+  "tier": "A",
+  "reason": "Reference-list brand: minimal sensual Australian resort label.",
+  "based_in": "Australia",
+  "evidence": "Reference brand",
+  "verified": false
+ },
+ "soluna collective": {
+  "tier": "B",
+  "reason": "Small fair-trade organic basics with seconds sales; sincere but plain.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "standard issue": {
+  "tier": "B",
+  "reason": "NZ merino knitwear label since 1981, real but classic basics.",
+  "based_in": "New Zealand",
+  "evidence": "Since 1981",
+  "verified": false
+ },
+ "sundae school": {
+  "tier": "A",
+  "reason": "Korean-American streetwear label with hanbok-inspired jackets and slacks, clear identity.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "tamara malas": {
+  "tier": "B",
+  "reason": "NYC small-batch size-inclusive label with romantic blouses and lingerie-style pieces, real but small.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "the tweed project": {
+  "tier": "B",
+  "reason": "Irish-made tweed and aran pieces with a craft identity, but niche heritage styling.",
+  "based_in": "Ireland",
+  "evidence": "",
+  "verified": false
+ },
+ "twosisters the label": {
+  "tier": "B",
+  "reason": "Australian going-out mini dresses, legit but mass trend fashion.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "verti petite": {
+  "tier": "B",
+  "reason": "Photos are clean studio shots of navy ponte flare pants and black wide-leg trousers on a model, and the site has a named founder and clear engineered-for-petite story, though only two trouser styles.",
+  "based_in": "",
+  "evidence": "Founder Marissa Taylor (5'2\"); Instagram @vertipetite",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "xenia telunts": {
+  "tier": "A",
+  "reason": "London zero-waste organic workwear-inspired label with distinct identity and considered pieces.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "doublet": {
+  "tier": "A",
+  "reason": "Tokyo designer streetwear label with playful craft pieces, strong identity and designer pricing.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "LVMH Prize winner 2018",
+  "verified": false
+ },
+ "agaati": {
+  "tier": "A",
+  "reason": "Design-led designer label with hand-embroidered silk and organza pieces, bridal-adjacent but distinctive identity at a premium price.",
+  "based_in": "India / UK",
+  "evidence": "",
+  "verified": false
+ },
+ "agua bendita": {
+  "tier": "A",
+  "reason": "Colombian resortwear label with crochet, bold colour and lifestyle-style editorial imagery; known independent brand.",
+  "based_in": "Medellin, Colombia",
+  "evidence": "Widely stocked and press-covered",
+  "verified": false
+ },
+ "alémais": {
+  "tier": "A",
+  "reason": "Australian label with hand-embroidered, vintage-textile resort pieces and strong editorial imagery.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Well-known Instagram following and international stockists",
+  "verified": false
+ },
+ "aoife mcnamara": {
+  "tier": "A",
+  "reason": "Dublin designer with millinery and clothing, editorial collaborations and press features in titles.",
+  "based_in": "Dublin, Ireland",
+  "evidence": "Press features (Ganni Playbook, Lissome)",
+  "verified": false
+ },
+ "bariano": {
+  "tier": "B",
+  "reason": "Legitimate Australian occasion-wear brand but formal gowns and catalog-style dress shots; off her register.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "baum und pferdgarten": {
+  "tier": "A",
+  "reason": "Copenhagen design label with playful prints and current styling, wide international stockists.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "Stocked internationally",
+  "verified": false
+ },
+ "beulah london": {
+  "tier": "B",
+  "reason": "Real London ethical eventwear brand with royal press, but pricey occasion florals that skew traditional.",
+  "based_in": "London, UK",
+  "evidence": "Royal-worn press",
+  "verified": false
+ },
+ "blue blanket": {
+  "tier": "B",
+  "reason": "Small Italian western-inspired denim brand, legitimate and niche but menswear-leaning and off her register.",
+  "based_in": "Italy",
+  "evidence": "",
+  "verified": false
+ },
+ "by kvp": {
+  "tier": "B",
+  "reason": "Small made-to-order genderless loungewear with Instagram and stockist page; legitimate but lifestyle-photo and basic.",
+  "based_in": "USA",
+  "evidence": "Instagram @by.kvp, stockists page, Faire wholesale",
+  "verified": false
+ },
+ "carlota cahis": {
+  "tier": "A",
+  "reason": "Barcelona knitwear label with colourful contemporary pieces and a clear identity and good imagery.",
+  "based_in": "Barcelona, Spain",
+  "evidence": "",
+  "verified": false
+ },
+ "chola the label": {
+  "tier": "B",
+  "reason": "Indian print-led contemporary label with playful designs; legitimate but not clearly reference-tier.",
+  "based_in": "India",
+  "evidence": "",
+  "verified": false
+ },
+ "collina strada": {
+  "tier": "A",
+  "reason": "NYC maximalist label by Hillary Taymour with real press and runway presence.",
+  "based_in": "New York, USA",
+  "evidence": "NYFW runway, major press",
+  "verified": false
+ },
+ "cph muse": {
+  "tier": "B",
+  "reason": "Danish-style minimalist tailoring at fast-fashion price points; fine but mass.",
+  "based_in": "Denmark",
+  "evidence": "",
+  "verified": false
+ },
+ "dear petite": {
+  "tier": "B",
+  "reason": "Affordable Korean-inspired petite-fit brand; legitimate but catalog look.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "dovetail workwear": {
+  "tier": "B",
+  "reason": "Real Portland women's workwear brand but functional trade apparel, off her register.",
+  "based_in": "Portland, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "elle zeitoune": {
+  "tier": "B",
+  "reason": "Australian going-out dress brand at low prices with warehouse sales; fast-fashion.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "fayt the label": {
+  "tier": "B",
+  "reason": "Photos are clean grey-backdrop studio shots of curvy models in white wide-leg pants and a tank with jeans, current styling, and the site shows Australian boutiques and sizes 6-26, but it is mass basics at low prices.",
+  "based_in": "Australia",
+  "evidence": "Instagram @faytlabel; multiple boutiques and store locator",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "fuga studios": {
+  "tier": "C",
+  "reason": "Photos are cropped, backgroundless gothic/techwear model shots (studded denim cargo shorts, beaded-back jacket) in the supplier-catalog style; site claims Berlin since 2015 but sorts goods into SEO niches like Carti/Rick/Berghain, Soft Grunge, Anime/Harajuku.",
+  "based_in": "Berlin, Germany (claimed)",
+  "evidence": "Instagram fuga_studios; no real founder story found",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "ghospell": {
+  "tier": "B",
+  "reason": "UK high-street style going-out brand at low price points; legitimate but fast-fashion.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "hannah couture": {
+  "tier": "B",
+  "reason": "Plus-size bridal and gown maker, legitimate but niche made-to-order gowns off her register.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "high sport": {
+  "tier": "A",
+  "reason": "NYC modern tailoring label with sport-luxe trousers in moire and prints, distinct identity and premium pricing.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "i.am.gia": {
+  "tier": "B",
+  "reason": "Photos are glossy studio shots of an angel-print baby tee with shorts and a white lace angel-wing mini; a real trend-driven party/Y2K label with press section and collabs, mass but current.",
+  "based_in": "Australia / USA",
+  "evidence": "IG @iamgia; press section; T-REX collab",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "jaded london": {
+  "tier": "B",
+  "reason": "Established UK y2k/streetwear brand, legitimate but mass fast-fashion.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "jovonna london": {
+  "tier": "B",
+  "reason": "UK occasion wear brand at moderate prices; legitimate but mass.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "karina dresses": {
+  "tier": "B",
+  "reason": "Small US dress brand mixing in generic jewellery and bags; mid-market styling, merely fine.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "kindom": {
+  "tier": "B",
+  "reason": "Small upcycled gender-free label with Suay collaborations; legitimate but homespun imagery.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "leset": {
+  "tier": "A",
+  "reason": "NYC minimalist elevated-basics label with distinct fabric sets and good editorial imagery.",
+  "based_in": "New York, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "lioness": {
+  "tier": "B",
+  "reason": "Photos are clean studio lookbook shots of a silver pleated top with black pants and a strapless colorblock skirt; real Sydney going-out label with BNPL, trend-led and mass.",
+  "based_in": "Sydney, Australia",
+  "evidence": "IG @lioness_official; wholesale/stockist pages",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "love faustine": {
+  "tier": "B",
+  "reason": "Small LA deadstock resortwear label with only 29 items; legitimate but small and off her register.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "maria mcmanus": {
+  "tier": "A",
+  "reason": "NYC sustainable tailoring designer with refined minimalist pieces, real founder and press.",
+  "based_in": "New York, USA",
+  "evidence": "Press and Instagram",
+  "verified": false
+ },
+ "merz b. schwanen": {
+  "tier": "B",
+  "reason": "Heritage German loopwheel basics brand, genuine but workwear-basics register.",
+  "based_in": "Germany",
+  "evidence": "",
+  "verified": false
+ },
+ "mithridate": {
+  "tier": "A",
+  "reason": "Guangzhou-based design label with embroidered, nightlife-inflected ready-to-wear and clear identity.",
+  "based_in": "Guangzhou, China",
+  "evidence": "",
+  "verified": false
+ },
+ "mossman": {
+  "tier": "B",
+  "reason": "Australian eventwear label at moderate prices; legitimate but mass.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "nana jacqueline": {
+  "tier": "B",
+  "reason": "Fairycore romantic label, real but trend-niche with many final sale items.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "nikki chasin": {
+  "tier": "A",
+  "reason": "Artful knitwear designer with expressive, whimsical pieces and wholesale distribution.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Wholesale stockists",
+  "verified": false
+ },
+ "näz": {
+  "tier": "B",
+  "reason": "Real Portuguese sustainable basics brand since 2018 with Lisbon stockists and warm, current imagery, but simple basics plus accessories.",
+  "based_in": "Portugal",
+  "evidence": "Instagram @naz.fashion, Lisbon stores, 216 reviews",
+  "verified": false
+ },
+ "omnes": {
+  "tier": "B",
+  "reason": "UK sustainable feminine dress brand at low price; legitimate but mass.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "paloma wool": {
+  "tier": "A",
+  "reason": "Barcelona art-driven label, one of the reference brands.",
+  "based_in": "Barcelona, Spain",
+  "evidence": "Reference brand",
+  "verified": false
+ },
+ "phingerin": {
+  "tier": "B",
+  "reason": "Japanese graphic streetwear label, legitimate but off her register.",
+  "based_in": "Japan",
+  "evidence": "",
+  "verified": false
+ },
+ "posse": {
+  "tier": "A",
+  "reason": "Australian vintage-inspired romantic label with a clear identity and strong editorial imagery.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "pyne & smith": {
+  "tier": "B",
+  "reason": "California-sewn linen label with real founder and timeless styling, a bit dated/cottagecore.",
+  "based_in": "California, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "re ona": {
+  "tier": "B",
+  "reason": "Canadian elevated basics, legitimate but small and plain.",
+  "based_in": "Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "romance was born": {
+  "tier": "A",
+  "reason": "Sydney eccentric-print design house with art collaborations and runway presence.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Fashion week and major press",
+  "verified": false
+ },
+ "st mode": {
+  "tier": "B",
+  "reason": "Photos are clean sunlit editorial shots of white fitted-waist midi dresses on a model; the site is a UK modest brand with a debut 'Soft Power' collection and an Instagram, but only 7 items.",
+  "based_in": "UK",
+  "evidence": "IG @stmodebrand; About the Founder page; debut collection",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "selkie": {
+  "tier": "A",
+  "reason": "Distinct puff-dress label with strong identity and huge Instagram following.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Large Instagram following",
+  "verified": false
+ },
+ "sister jane": {
+  "tier": "B",
+  "reason": "UK whimsical occasion-wear label that also resells Ghospell; legitimate but mass.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "son de flor": {
+  "tier": "A",
+  "reason": "Linen romantic made-to-order label with strong identity and good imagery.",
+  "based_in": "Europe",
+  "evidence": "",
+  "verified": false
+ },
+ "staud": {
+  "tier": "A",
+  "reason": "Photos are crisp runway-style studio shots of a mauve chiffon mini dress with boots and a suede strappy sandal, clearly a current LA designer label with a Nashville store.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Known LA designer label; store locator and Nashville store on site; founder not shown on homepage",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "superfit hero": {
+  "tier": "B",
+  "reason": "Photos are clean white-background shots of plus-size models in grey SuperHold leggings and a green sports bra; site is a real women-owned plus activewear brand since 2015 with press (Wirecutter, SELF, WSJ), but activewear-only.",
+  "based_in": "Southern California, US",
+  "evidence": "Wirecutter, SELF, WSJ best plus leggings; Faire wholesale",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "tepin": {
+  "tier": "C",
+  "reason": "Photos are two amateur cut-out snapshots of grey sweatpants on white; only 3 sweatpants indexed and site gives no founder, location or social, just a single-product extra-petite shop.",
+  "based_in": "",
+  "evidence": "",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "thief & bandit": {
+  "tier": "B",
+  "reason": "Halifax made-to-order hand-printed label with real founder; legitimate but homespun imagery.",
+  "based_in": "Halifax, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "ulla johnson": {
+  "tier": "A",
+  "reason": "Established NYC designer label with press and top stockists.",
+  "based_in": "New York, USA",
+  "evidence": "Major press and stockists",
+  "verified": false
+ },
+ "vix paula hermanny": {
+  "tier": "B",
+  "reason": "Established Brazilian swimwear label; legitimate but swim-focused and mid-market.",
+  "based_in": "Brazil",
+  "evidence": "",
+  "verified": false
+ },
+ "yarmo": {
+  "tier": "C",
+  "reason": "Photos are flat-lay navy sailcloth smocks and the site is a 1898 Great Yarmouth heritage workwear maker with no womenswear and only 13 items, not her register.",
+  "based_in": "Great Yarmouth, United Kingdom",
+  "evidence": "Manufacturing workwear since 1898; no Instagram or stockists found",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "imogene + willie": {
+  "tier": "B",
+  "reason": "Nashville small-batch denim and americana tees; real but menswear-leaning and off her register.",
+  "based_in": "Nashville, USA",
+  "evidence": "",
+  "verified": false
+ },
+ "anián": {
+  "tier": "B",
+  "reason": "Legit Canadian recycled-wool workwear label, but photo is a plain supplier-style flat lay and the register is heritage/outdoor basics.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "albus lumen": {
+  "tier": "A",
+  "reason": "Australian designer label with numbered-style statement dresses and capes, distinctive edgy identity and editorial imagery.",
+  "based_in": "Australia",
+  "evidence": "Known independent Australian label with stockists",
+  "verified": false
+ },
+ "amalli talli": {
+  "tier": "B",
+  "reason": "Real sister-founded tall-sizes brand but basics shot on plain white studio backdrop, functional rather than design-led.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "après studio": {
+  "tier": "B",
+  "reason": "Genuine size-inclusive Australian label with current styling (baby tees, picnic dresses) but more mass-market than design-led.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "barney cools": {
+  "tier": "B",
+  "reason": "Real Australian streetwear label with lifestyle photography in an art-filled room, but graphic/basics streetwear is off her register.",
+  "based_in": "Sydney, Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "beare park": {
+  "tier": "A",
+  "reason": "Australian minimalist evening wear with clean, refined imagery and a clear point of view.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Established Australian designer label",
+  "verified": false
+ },
+ "bevza": {
+  "tier": "A",
+  "reason": "Ukrainian architectural minimalist label with a strong designer identity and press history.",
+  "based_in": "Kyiv, Ukraine",
+  "evidence": "Stocked at international retailers; shown at Ukrainian Fashion Week",
+  "verified": false
+ },
+ "bode": {
+  "tier": "A",
+  "reason": "Emily Bode Aujla's NYC label built on vintage textiles and quilting, a critical favourite.",
+  "based_in": "New York, USA",
+  "evidence": "CFDA winner, wide press and stockists",
+  "verified": false
+ },
+ "by viktorija": {
+  "tier": "B",
+  "reason": "Real coquette/going-out label with crystal lace and sequin pieces, but trend-driven and the photo is a cropped casual shot.",
+  "based_in": "",
+  "evidence": "",
+  "verified": false
+ },
+ "cawley studio": {
+  "tier": "A",
+  "reason": "London contemporary label with strong tailoring, shearling and suede and polished editorial photography.",
+  "based_in": "London, UK",
+  "evidence": "Stocked at major UK/intl retailers",
+  "verified": false
+ },
+ "christy dawn": {
+  "tier": "A",
+  "reason": "Established LA romantic prairie label with a founder, sustainability story and strong lookbook imagery.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Extensive press, large Instagram following, own stores",
+  "verified": false
+ },
+ "community clothing": {
+  "tier": "B",
+  "reason": "Photos are a model in an indigo denim sleeveless dress and a flat navy guernsey knit, real made-in-Britain affordable basics from 49 UK factories with no named designer.",
+  "based_in": "United Kingdom",
+  "evidence": "Ten years old, UK manufacturing mission, collabs with Norman Walsh and Mark & Fold",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "cult gaia": {
+  "tier": "A",
+  "reason": "Photos are polished campaign shots of a navy dotted cutout mini dress and an olive sculptural knit set with sheer gloves, and the site shows boutiques in NYC, LA, Miami, Saint-Tropez and Cannes.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Own boutiques in US and France; atelier gown service; widely stocked",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "deer doll": {
+  "tier": "C",
+  "reason": "Photos are AliExpress-style Chinese model shots (denim-velvet set in a forest, tiered satin dress by a night pool) and titles are SEO-stuffed ('Dark Academia Aesthetic Outfit', 'Angelcore Dress') with no founder, no about page and no location.",
+  "based_in": "",
+  "evidence": "",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "dress the population": {
+  "tier": "B",
+  "reason": "Real LA occasion/sequin dress brand, mass-market going-out rather than design-led.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Sold at Nordstrom and similar",
+  "verified": false
+ },
+ "elwin": {
+  "tier": "A",
+  "reason": "Small-batch East London label making British wool knits and made-to-order pieces with a real founder story.",
+  "based_in": "London, UK",
+  "evidence": "Small-batch independent label",
+  "verified": false
+ },
+ "feng chen wang": {
+  "tier": "A",
+  "reason": "London-based designer label with deconstructed tailoring, runway presence and collabs (Lee).",
+  "based_in": "London, UK / Shanghai",
+  "evidence": "London Fashion Week designer, LVMH Prize-linked press",
+  "verified": false
+ },
+ "fullcount": {
+  "tier": "B",
+  "reason": "Respected Japanese selvedge denim brand since 1993 but menswear-heritage catalog with product shots, off her register.",
+  "based_in": "Osaka, Japan",
+  "evidence": "Cult among denim enthusiasts",
+  "verified": false
+ },
+ "gimaguas": {
+  "tier": "A",
+  "reason": "Reference-list brand: Barcelona playful label with strong identity and celebrity collabs.",
+  "based_in": "Barcelona, Spain",
+  "evidence": "Reference brand; collab with Guitarricadelafuente",
+  "verified": false
+ },
+ "hansen & gretel": {
+  "tier": "B",
+  "reason": "Real Australian corset/occasion label with current styling but trend-driven mid-market.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "hilary macmillan": {
+  "tier": "B",
+  "reason": "Small Canadian size-inclusive contemporary label, studio photography on white and middle-of-the-road styling.",
+  "based_in": "Canada",
+  "evidence": "",
+  "verified": false
+ },
+ "inherit co.": {
+  "tier": "C",
+  "reason": "Photos are a brown quilted half-zip and a navy embroidered cardigan on a smiling model in ordinary lifestyle shots; site is a modest boutique mixing an Inherit Designed line with many other brands, generic styling.",
+  "based_in": "",
+  "evidence": "Instagram inheritco; rewards program, birthday sale, church dress collection",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "jaggery london": {
+  "tier": "A",
+  "reason": "London knitwear label with artisanal no-waste organic cotton and highland wool pieces and a clear identity.",
+  "based_in": "London, UK",
+  "evidence": "",
+  "verified": false
+ },
+ "juliette hogan": {
+  "tier": "B",
+  "reason": "Established Auckland contemporary label with NZ Fashion Week shows, polished but more classic than her register.",
+  "based_in": "Auckland, New Zealand",
+  "evidence": "NZ Fashion Week",
+  "verified": false
+ },
+ "kate sheridan": {
+  "tier": "A",
+  "reason": "Photos are a graphic cross-stitch sock close-up and an outdoor editorial of a rust corduroy overshirt-coat styled with trousers and boots; London designer-maker with own Clapton shop and workshop, stocking YMC alongside her own line.",
+  "based_in": "London, UK",
+  "evidence": "Lower Clapton Rd shop + Lauriston Rd workshop; IG @katesheridanbags; stockists page",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "kings of indigo": {
+  "tier": "B",
+  "reason": "Photos are clean denim catalog shots (burgundy jumpsuit, dark straight jeans on a male model) and the site shows an Amsterdam sustainable denim brand with its own store, repair warranty and QR traceability, a solid but standard denim catalog.",
+  "based_in": "Amsterdam, Netherlands",
+  "evidence": "Brand store in Amsterdam; Instagram @kingsofindigo",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "la collection": {
+  "tier": "A",
+  "reason": "Belgian minimalist tailoring house with Paris and Antwerp appointment ateliers and luxury silk pieces.",
+  "based_in": "Antwerp, Belgium",
+  "evidence": "Ateliers in Paris and Antwerp",
+  "verified": false
+ },
+ "lirika matoshi": {
+  "tier": "A",
+  "reason": "Kosovo-born NYC designer known for whimsical tulle dresses with strong signature identity and press.",
+  "based_in": "New York, USA",
+  "evidence": "Extensive press, celebrity wearers, large Instagram",
+  "verified": false
+ },
+ "loveshackfancy": {
+  "tier": "A",
+  "reason": "Founder-led romantic ruffle label with unmistakable identity, big lookbooks and wide retail presence.",
+  "based_in": "New York, USA",
+  "evidence": "Major press, own stores, large following",
+  "verified": false
+ },
+ "marle": {
+  "tier": "A",
+  "reason": "New Zealand natural-fibre minimalist knitwear label with clean current styling.",
+  "based_in": "Mount Maunganui, New Zealand",
+  "evidence": "",
+  "verified": false
+ },
+ "meshki": {
+  "tier": "B",
+  "reason": "Photos are a sheer organza high-neck top over a grey trouser and a brown asymmetric halter top with wide jeans and belt, polished campaign shots; homepage blocked by bot check so brand details come from a web search (Australian founder-led label, Instagram-born 2013).",
+  "based_in": "Australia",
+  "evidence": "Founders Shadi Kord and Natalie Khoei per web search",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": false,
+  "prior_tier": "B"
+ },
+ "mochipan": {
+  "tier": "B",
+  "reason": "Genuine indie whimsical cottagecore label with original designs, but a niche maximalist-cute aesthetic off her register.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "motel rocks": {
+  "tier": "B",
+  "reason": "Photos show a model in a herringbone coat headshot and a leopard-print slip dress in editorial style; site is a long-running UK vintage-print fast-fashion retailer with press page and Instagram, mass but legitimate.",
+  "based_in": "UK",
+  "evidence": "Instagram @motelrocks; press page; Motel Preloved resale",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "nanushka": {
+  "tier": "A",
+  "reason": "Photos show a grey striped knit maxi dress with button slit on a clean studio backdrop and green-rimmed sunglasses, with a clearly designer-led, widely stocked Budapest label and own boutiques.",
+  "based_in": "Budapest, Hungary",
+  "evidence": "Founded by Sandra Sandor; Okobor alt leather; widely stocked and covered",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "niswa fashion": {
+  "tier": "C",
+  "reason": "Photos are a modest abaya on steps and a hijab portrait (decent but plain); the site reads as a curated reseller of modal hijabs with Buy 2 Get 2 promos and $20 median, not design-led.",
+  "based_in": "Lombard, IL, USA",
+  "evidence": "physical store, about 1 year old; IG @niswafashion",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "C"
+ },
+ "oak + fort": {
+  "tier": "B",
+  "reason": "Real Canadian minimalist basics retailer with neutral tones, tidy but mass/essentials register.",
+  "based_in": "Vancouver, Canada",
+  "evidence": "Own stores in Canada",
+  "verified": false
+ },
+ "one addington": {
+  "tier": "B",
+  "reason": "Handmade British bridal/occasion label, legitimate but small bridal niche and off her register.",
+  "based_in": "UK",
+  "evidence": "",
+  "verified": false
+ },
+ "papa don't preach": {
+  "tier": "B",
+  "reason": "Established Indian occasionwear label with embellished shoes and bags, ornate and mostly accessories-heavy.",
+  "based_in": "Mumbai, India",
+  "evidence": "",
+  "verified": false
+ },
+ "phrase studios": {
+  "tier": "B",
+  "reason": "Real Ghent streetwear label (2023) with chapter-based small-batch drops and a press page, but product photo is a plain cutout and range is tiny.",
+  "based_in": "Ghent, Belgium",
+  "evidence": "Press page on site",
+  "verified": false
+ },
+ "post archive faction": {
+  "tier": "A",
+  "reason": "Korean avant-garde conceptual label with strong identity and international following.",
+  "based_in": "Seoul, South Korea",
+  "evidence": "Stocked at global concept stores",
+  "verified": false
+ },
+ "ripndip": {
+  "tier": "B",
+  "reason": "Photos are a Jesus-engraved lighter cover and alien-head socks, and the site is an established LA skate streetwear brand with its own Chapter stores in LA, Mexico City and Osaka, but heavy on novelty items and not her register.",
+  "based_in": "Los Angeles, US",
+  "evidence": "Chapter stores LA/Mexico City/Osaka; Instagram @ripndip",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "rebecca vallance": {
+  "tier": "B",
+  "reason": "Established Australian occasion-wear label, polished but traditional party register.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Major Australian retailers",
+  "verified": false
+ },
+ "rosarium": {
+  "tier": "A",
+  "reason": "Portland made-to-order handcrafted label with botanical hats, jacquard and stripe pieces and lovely styled photography.",
+  "based_in": "Portland, USA",
+  "evidence": "Stockists page, small-batch made in USA",
+  "verified": false
+ },
+ "sabo": {
+  "tier": "B",
+  "reason": "Real Australian trend going-out brand, mid-market resort and party pieces.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "sene": {
+  "tier": "B",
+  "reason": "Real made-to-measure minimalist brand, good basics but plain and more neutral staples than design-led.",
+  "based_in": "USA",
+  "evidence": "",
+  "verified": false
+ },
+ "sisters the label": {
+  "tier": "B",
+  "reason": "Australian silk party dress label, current but occasion-driven mid-market.",
+  "based_in": "Australia",
+  "evidence": "",
+  "verified": false
+ },
+ "sophie et voila": {
+  "tier": "A",
+  "reason": "European minimalist-romantic designer label with refined tailoring and editorial imagery.",
+  "based_in": "Europe",
+  "evidence": "Designer stockists",
+  "verified": false
+ },
+ "stine goya": {
+  "tier": "A",
+  "reason": "Copenhagen designer label with distinctive colourful prints and strong fashion-week identity.",
+  "based_in": "Copenhagen, Denmark",
+  "evidence": "Extensive press, global stockists",
+  "verified": false
+ },
+ "susan fang": {
+  "tier": "A",
+  "reason": "London-based conceptual designer known for beaded and laser-cut romantic pieces and LVMH Prize attention.",
+  "based_in": "London, UK",
+  "evidence": "LVMH Prize finalist, wide press",
+  "verified": false
+ },
+ "thalo denim": {
+  "tier": "A",
+  "reason": "Small-batch LA indie denim made with Italian milled denim, clean product photography and testimonials, though only three styles.",
+  "based_in": "Los Angeles, USA",
+  "evidence": "Instagram @thalodenim",
+  "verified": false
+ },
+ "third form": {
+  "tier": "B",
+  "reason": "Photos are a studio shot of a cream satin-and-lace gown and a leopard-print smocked off-shoulder mini with boots, clean editorial look; site has Our Story and Stockists pages, accessible going-out label.",
+  "based_in": "Sydney, Australia",
+  "evidence": "Instagram third_form; stockists page",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "B"
+ },
+ "universal works": {
+  "tier": "A",
+  "reason": "Respected London contemporary-workwear label with collabs (Taion, F/CE) and strong identity.",
+  "based_in": "London, UK",
+  "evidence": "Long-running label with global stockists",
+  "verified": false
+ },
+ "vickteerut": {
+  "tier": "A",
+  "reason": "Photos are a sequinned matchbox-print tee with amber aviators and a bubble-hem khaki mini in runway-style white-studio shots; site shows AW26/PF26/SS26 collections, Thai baht pricing and NYFW 2026 participation.",
+  "based_in": "Bangkok, Thailand",
+  "evidence": "NYFW 2026 participation per site; collections AW26 CONTOUR, PF26 SUPER EASY",
+  "verified": true,
+  "photos_seen": 2,
+  "site_fetched": true,
+  "prior_tier": "A"
+ },
+ "yueqi qi": {
+  "tier": "A",
+  "reason": "Designer label with sculptural laser-cut pieces and distinctive editorial imagery.",
+  "based_in": "",
+  "evidence": "Designer label with runway presence",
+  "verified": false
+ },
+ "yoshiokubo": {
+  "tier": "A",
+  "reason": "Japanese contemporary tailoring and sportswear-influenced label with artist collabs and strong identity.",
+  "based_in": "Tokyo, Japan",
+  "evidence": "Tokyo Fashion Week brand",
+  "verified": false
+ }
+}

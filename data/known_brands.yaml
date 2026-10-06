@@ -1,0 +1,71 @@
+# Mainstream brands people already shop at. They are not crawled - the description is what gets
+# embedded (as text) when someone lists the brand as a place they buy from, so write them as
+# concrete, visual CLIP-style prompts.
+- name: Aritzia
+  description: minimalist elevated basics, clean tailored silhouettes, wide-leg trousers, sleek knits, structured wool coats, neutral palette of black cream camel and grey
+- name: Zara
+  description: trend-driven contemporary fashion, sharp blazers, satin midi skirts, statement runway-inspired pieces, mixed textures, polished going-out looks
+- name: Brandy Melville
+  description: casual californian girlish basics, tiny cropped baby tees, low-rise jeans, soft knit cardigans, pastels and neutrals, y2k teen aesthetic
+- name: H&M
+  description: affordable fast fashion basics and trend pieces, cotton tees, jersey dresses, simple denim, seasonal prints
+- name: Urban Outfitters
+  description: vintage-inspired youth fashion, graphic tees, baggy jeans, grunge and 90s references, corduroy, mixed retro prints
+- name: Free People
+  description: bohemian flowy dresses, crochet and lace, oversized knits, embroidered peasant blouses, earthy tones, festival styling
+- name: Reformation
+  description: feminine vintage-inspired dresses, slip dresses, floral prints, fitted waists, linen and silk, sustainable LA look
+- name: Princess Polly
+  description: trendy going-out outfits, mini dresses, crop tops, y2k denim, bright colours, tiktok party aesthetic
+- name: Abercrombie & Fitch
+  description: clean preppy american casual, curve-love jeans, tailored trousers, ribbed tanks, soft neutrals, put-together minimal basics
+- name: Uniqlo
+  description: japanese minimalist essentials, technical fabrics, heattech, oversized shirts, simple straight trousers, muted colours
+- name: Mango
+  description: european contemporary chic, linen suits, flowing dresses, tailored trousers, earthy neutrals, mediterranean polish
+- name: "& Other Stories"
+  description: feminine scandinavian contemporary, midi dresses, printed blouses, tailored pieces, soft romantic details
+- name: COS
+  description: architectural minimalism, oversized clean shapes, structured cotton and wool, monochrome palette, quiet luxury
+- name: Madewell
+  description: relaxed american denim, straight-leg jeans, striped tees, leather jackets, everyday casual basics
+- name: Everlane
+  description: pared-back modern basics, straight denim, cashmere, simple tees and trousers, neutral and muted colours
+- name: Skims
+  description: body-hugging shapewear inspired basics, soft stretch fabric, bodysuits, slip dresses, neutral nude tones
+- name: Lululemon
+  description: athleisure leggings and sports bras, technical stretch fabric, sculpted fit, sleek workout-to-street looks
+- name: Anthropologie
+  description: eclectic bohemian feminine, printed maxi dresses, embroidered knits, romantic vintage-inspired details
+- name: J.Crew
+  description: preppy classic american, striped breton tops, chinos, cashmere crewnecks, tailored blazers, nautical colours
+- name: Ganni
+  description: scandi cool-girl, playful prints, ruffled dresses, chunky boots, oversized collars, bold colour
+- name: Sézane
+  description: parisian feminine, embroidered blouses, knit cardigans, midi skirts, vintage-inspired romantic details
+- name: Réalisation Par
+  description: slinky silk slip dresses, leopard and floral prints, mini dresses, fitted 90s LA glamour
+- name: Edikted
+  description: y2k gen-z trend pieces, micro mini skirts, low-rise cargo pants, baby tees, going-out sets
+- name: Cider
+  description: playful affordable y2k fashion, mini dresses, cardigans, floral and cute prints, colourful gen-z looks
+- name: White Fox
+  description: going-out and loungewear, bodycon dresses, oversized hoodies, matching sets, tiktok influencer style
+- name: Oh Polly
+  description: bodycon party dresses, cut-outs, ruched satin, glamorous night-out looks
+- name: Hollister
+  description: casual californian teen basics, hoodies, denim, graphic tees, beachy relaxed style
+- name: American Eagle
+  description: casual american denim and basics, relaxed jeans, soft tees, everyday laid-back style
+- name: Garage
+  description: canadian teen basics and trend pieces, crop tops, denim, matching sets, casual going-out looks
+- name: Dynamite
+  description: polished canadian workwear and going-out, tailored trousers, satin blouses, fitted dresses
+- name: Shein
+  description: ultra fast fashion trend pieces, mini dresses, crop tops, bold prints, cheap going-out looks
+- name: ASOS
+  description: broad trend-led fashion, going-out dresses, streetwear, tailoring, wide mix of styles
+- name: Nike
+  description: sportswear, sneakers, oversized hoodies, track pants, athletic streetwear
+- name: Levi's
+  description: classic denim, straight and loose jeans, trucker jackets, workwear-inspired americana

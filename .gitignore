@@ -1,0 +1,22 @@
+.venv/
+.env
+__pycache__/
+.DS_Store
+
+# derived / regenerable (rebuild with app.crawl -> app.build -> app.categorize)
+data/images/
+data/uploads/
+data/catalog.jsonl
+data/index.jsonl
+data/embeddings.npy
+data/embed_cache.npz
+data/categories.npz
+data/crawl_report.json
+data/grow_rejects.json
+data/brand_signals.json
+
+# per-user / per-install state
+data/profile.json
+data/image_traits.json
+data/brand_descriptions.json
+data/llm_usage.jsonl

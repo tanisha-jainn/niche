@@ -1,0 +1,462 @@
+# Seed list of independent / non-mainstream brands with public Shopify storefronts.
+# Grown by `python -m app.grow`; stores that fail to answer are listed in data/grow_rejects.json.
+- {"name": "Lisa Says Gah", "domain": "lisasaysgah.com", "currency": "USD", "tags": ["playful", "colourful", "vintage-inspired"]}
+- {"name": "House of Sunny", "domain": "houseofsunny.co.uk", "currency": "GBP", "tags": ["retro", "knitwear", "70s"]}
+- {"name": "With Jéan", "domain": "withjean.com", "currency": "AUD", "tags": ["feminine", "floral", "romantic"]}
+- {"name": "Peachy Den", "domain": "peachyden.com", "currency": "GBP", "tags": ["y2k", "going-out", "fitted"]}
+- {"name": "Damson Madder", "domain": "damsonmadder.com", "currency": "GBP", "tags": ["quirky", "prints", "puff-sleeve"]}
+- {"name": "Musier Paris", "domain": "musier-paris.com", "currency": "EUR", "tags": ["parisian", "retro", "feminine"]}
+- {"name": "Dôen", "domain": "shopdoen.com", "currency": "USD", "tags": ["prairie", "romantic", "vintage"]}
+- {"name": "Paloma Wool", "domain": "palomawool.com", "currency": "EUR", "tags": ["artsy", "knitwear", "minimal"]}
+- {"name": "Rouje", "domain": "rouje.com", "currency": "EUR", "tags": ["parisian", "wrap-dress", "feminine"]}
+- {"name": "Ciao Lucia", "domain": "ciaolucia.com", "currency": "USD", "tags": ["italian-summer", "resort", "60s"]}
+- {"name": "Faithfull the Brand", "domain": "faithfullthebrand.com", "currency": "USD", "tags": ["resort", "linen", "vacation"]}
+- {"name": "Sir the Label", "domain": "sirthelabel.com", "currency": "AUD", "tags": ["minimal", "sensual", "resort"]}
+- {"name": "Rat & Boa", "domain": "ratandboa.com", "currency": "GBP", "tags": ["going-out", "slip-dress", "glamorous"]}
+- {"name": "Bec + Bridge", "domain": "becandbridge.com", "currency": "AUD", "tags": ["going-out", "tailored", "glamorous"]}
+- {"name": "Miaou", "domain": "miaou.com", "currency": "USD", "tags": ["y2k", "corset", "LA"]}
+- {"name": "Danielle Guizio", "domain": "danielleguiziony.com", "currency": "USD", "tags": ["y2k", "going-out", "NYC"]}
+- {"name": "The Frankie Shop", "domain": "thefrankieshop.com", "currency": "USD", "tags": ["oversized", "tailoring", "minimal"]}
+- {"name": "Aya Muse", "domain": "ayamuse.com", "currency": "USD", "tags": ["minimal", "cut-out", "elevated"]}
+- {"name": "Omighty", "domain": "omweekend.com", "currency": "USD", "tags": ["y2k", "kitsch", "colourful"]}
+- {"name": "Motel Rocks", "domain": "motelrocks.com", "currency": "GBP", "tags": ["y2k", "prints", "90s"]}
+- {"name": "I.AM.GIA", "domain": "iamgia.com", "currency": "USD", "tags": ["streetwear", "edgy", "utility"]}
+- {"name": "Lioness", "domain": "lionessfashion.com", "currency": "AUD", "tags": ["going-out", "trendy"]}
+- {"name": "Djerf Avenue", "domain": "djerfavenue.com", "currency": "EUR", "tags": ["scandi", "soft", "basics"]}
+- {"name": "Adanola", "domain": "adanola.com", "currency": "GBP", "tags": ["athleisure", "basics", "minimal"]}
+- {"name": "Nadine Merabi", "domain": "nadinemerabi.com", "currency": "GBP", "tags": ["occasion", "embellished", "glamorous"]}
+- {"name": "Ghospell", "domain": "ghospell.com", "currency": "GBP", "tags": ["minimal", "tailored", "going-out"]}
+- {"name": "Meshki", "domain": "meshki.us", "currency": "USD", "tags": ["going-out", "bodycon", "glamorous"]}
+- {"name": "Kowtow", "domain": "kowtowclothing.com", "currency": "NZD", "tags": ["minimal", "organic", "oversized"]}
+- {"name": "Baserange", "domain": "baserange.com", "currency": "EUR", "tags": ["minimal", "loungewear", "natural"]}
+- {"name": "Rixo", "domain": "rixo.co.uk", "currency": "GBP", "tags": ["prints", "vintage-inspired", "dresses"]}
+- {"name": "Olivia Rubin", "domain": "oliviarubinlondon.com", "currency": "GBP", "tags": ["colourful", "sequins", "playful"]}
+- {"name": "Kitri", "domain": "kitristudio.com", "currency": "GBP", "tags": ["feminine", "prints", "workwear"]}
+- {"name": "Omnes", "domain": "omnes.com", "currency": "GBP", "tags": ["sustainable", "feminine", "dresses"]}
+- {"name": "Nobody's Child", "domain": "nobodyschild.com", "currency": "GBP", "tags": ["feminine", "prints", "dresses"]}
+- {"name": "Nanushka", "domain": "nanushka.com", "currency": "USD", "tags": ["vegan-leather", "minimal", "elevated"]}
+- {"name": "Stine Goya", "domain": "stinegoya.com", "currency": "EUR", "tags": ["colourful", "prints", "copenhagen"]}
+- {"name": "Rotate", "domain": "rotatebirgerchristensen.com", "currency": "EUR", "tags": ["party", "puff-sleeve", "copenhagen"]}
+- {"name": "Saks Potts", "domain": "sakspotts.com", "currency": "EUR", "tags": ["copenhagen", "playful", "70s"]}
+- {"name": "Cecilie Bahnsen", "domain": "ceciliebahnsen.com", "currency": "EUR", "tags": ["romantic", "voluminous", "copenhagen"]}
+- {"name": "Baum und Pferdgarten", "domain": "baumundpferdgarten.com", "currency": "EUR", "tags": ["copenhagen", "prints", "playful"]}
+- {"name": "Wray", "domain": "wray.nyc", "currency": "USD", "tags": ["prints", "size-inclusive", "playful"]}
+- {"name": "Big Bud Press", "domain": "bigbudpress.com", "currency": "USD", "tags": ["workwear", "colourful", "unisex"]}
+- {"name": "Christy Dawn", "domain": "christydawn.com", "currency": "USD", "tags": ["prairie", "sustainable", "romantic"]}
+- {"name": "Hill House Home", "domain": "hillhousehome.com", "currency": "USD", "tags": ["nap-dress", "romantic", "smocked"]}
+- {"name": "Sleeper", "domain": "the-sleeper.com", "currency": "USD", "tags": ["feather-trim", "loungewear", "party"]}
+- {"name": "Cult Gaia", "domain": "cultgaia.com", "currency": "USD", "tags": ["resort", "sculptural", "glamorous"]}
+- {"name": "Staud", "domain": "staud.clothing", "currency": "USD", "tags": ["LA", "playful", "retro"]}
+- {"name": "Simon Miller", "domain": "simonmillerusa.com", "currency": "USD", "tags": ["sculptural", "colourful", "70s"]}
+- {"name": "Maryam Nassir Zadeh", "domain": "mnzstore.com", "currency": "USD", "tags": ["artsy", "minimal", "NYC"]}
+- {"name": "Rachel Comey", "domain": "rachelcomey.com", "currency": "USD", "tags": ["artsy", "tailored", "NYC"]}
+- {"name": "Ulla Johnson", "domain": "ullajohnson.com", "currency": "USD", "tags": ["bohemian", "artisanal", "prints"]}
+- {"name": "Sandy Liang", "domain": "sandyliang.info", "currency": "USD", "tags": ["balletcore", "girlish", "NYC"]}
+- {"name": "Collina Strada", "domain": "collinastrada.com", "currency": "USD", "tags": ["maximalist", "prints", "NYC"]}
+- {"name": "Eckhaus Latta", "domain": "eckhauslatta.com", "currency": "USD", "tags": ["avant-garde", "knitwear", "NYC"]}
+- {"name": "Praying", "domain": "praying.com", "currency": "USD", "tags": ["ironic", "graphic", "y2k"]}
+- {"name": "Mirror Palais", "domain": "mirrorpalais.com", "currency": "USD", "tags": ["vintage-glam", "sheer", "feminine"]}
+- {"name": "Jaded London", "domain": "jadedldn.com", "currency": "GBP", "tags": ["streetwear", "y2k", "denim"]}
+- {"name": "The Ragged Priest", "domain": "theraggedpriest.com", "currency": "GBP", "tags": ["grunge", "denim", "edgy"]}
+- {"name": "Minga London", "domain": "mingalondon.com", "currency": "GBP", "tags": ["y2k", "indie", "alt"]}
+- {"name": "Pixie Market", "domain": "pixiemarket.com", "currency": "USD", "tags": ["trendy", "NYC", "minimal"]}
+- {"name": "Lirika Matoshi", "domain": "lirikamatoshi.com", "currency": "USD", "tags": ["whimsical", "tulle", "romantic"]}
+- {"name": "Selkie", "domain": "selkiecollection.com", "currency": "USD", "tags": ["puff-dress", "whimsical", "romantic"]}
+- {"name": "For Love & Lemons", "domain": "forloveandlemons.com", "currency": "USD", "tags": ["lace", "romantic", "going-out"]}
+- {"name": "Are You Am I", "domain": "areyouami.com", "currency": "USD", "tags": ["minimal", "sexy", "LA"]}
+- {"name": "Orseund Iris", "domain": "orseundiris.com", "currency": "USD", "tags": ["corset", "sculptural", "NYC"]}
+- {"name": "Gimaguas", "domain": "gimaguas.com", "currency": "EUR", "tags": ["barcelona", "playful", "resort"]}
+- {"name": "Batsheva", "domain": "batsheva.com", "currency": "USD", "tags": ["prairie", "victorian", "prints"]}
+- {"name": "Dauphinette", "domain": "dauphinette.com", "currency": "USD", "tags": ["whimsical", "upcycled", "NYC"]}
+- {"name": "LoveShackFancy", "domain": "loveshackfancy.com", "currency": "USD", "tags": ["romantic", "floral", "ruffles"]}
+- {"name": "Tach Clothing", "domain": "tachclothing.com", "currency": "USD", "tags": ["boho", "embroidered", "uruguay"]}
+- {"name": "Hunza G", "domain": "hunzag.com", "currency": "GBP", "tags": ["swim", "crinkle", "80s"]}
+- {"name": "Kamperett", "domain": "kamperett.com", "currency": "USD", "tags": ["minimal", "artsy", "SF"]}
+- {"name": "Bode", "domain": "bodenewyork.com", "currency": "USD", "tags": ["quilted", "vintage-textile", "NYC"]}
+- {"name": "Elsie & Fred", "domain": "elsieandfred.com", "currency": "GBP", "tags": ["y2k", "playful", "going-out"]}
+- {"name": "Tiger Mist", "domain": "tigermist.com.au", "currency": "AUD", "tags": ["going-out", "trendy"]}
+- {"name": "Dissh", "domain": "dissh.com", "currency": "AUD", "tags": ["minimal", "elevated-basics", "resort"]}
+- {"name": "Zulu & Zephyr", "domain": "zuluandzephyr.com", "currency": "AUD", "tags": ["resort", "minimal", "coastal"]}
+- {"name": "Ownley", "domain": "ownley.com", "currency": "AUD", "tags": ["feminine", "vintage", "romantic"]}
+- {"name": "Sabo", "domain": "saboskirt.com", "currency": "AUD", "tags": ["going-out", "resort", "trendy"]}
+- {"name": "Peppermayo", "domain": "peppermayo.com", "currency": "AUD", "tags": ["going-out", "trendy"]}
+- {"name": "Envelope1976", "domain": "envelope1976.com", "currency": "NOK", "tags": ["minimalist luxury", "scandinavian", "cashmere", "runway-inspired"]}
+- {"name": "Skall Studio", "domain": "skallstudio.com", "currency": "EUR", "tags": ["scandinavian", "sustainable", "tailoring", "natural fibers"]}
+- {"name": "La Collection", "domain": "lacollection.be", "currency": "EUR", "tags": ["minimalist tailoring", "european", "elegant", "timeless"]}
+- {"name": "TOVE", "domain": "tove-studio.com", "currency": "GBP", "tags": ["modern tailoring", "draping", "london", "considered silhouettes"]}
+- {"name": "Studio Nicholson", "domain": "studionicholson.com", "currency": "GBP", "tags": ["contemporary tailoring", "proportion-led", "london", "everyday luxe"]}
+- {"name": "Róhe", "domain": "roheframes.com", "currency": "EUR", "tags": ["sculptural minimalism", "amsterdam", "modern tailoring", "dutch craft"]}
+- {"name": "Almada Label", "domain": "almadalabel.com", "currency": "EUR", "tags": ["quiet luxury", "knitwear", "cashmere", "seasonless wardrobe"]}
+- {"name": "A Kind Of Guise", "domain": "akindofguise.com", "currency": "EUR", "tags": ["tailoring", "knitwear", "munich", "earth tones"]}
+- {"name": "Bassike", "domain": "bassike.com", "currency": "AUD", "tags": ["elevated basics", "organic jersey", "sydney", "slouchy minimal"]}
+- {"name": "Rejina Pyo", "domain": "rejinapyo.com", "currency": "GBP", "tags": ["modern tailoring", "sculptural", "london", "artistic minimal"]}
+- {"name": "Maria McManus", "domain": "mariamcmanus.com", "currency": "USD", "tags": ["minimalist", "sustainable tailoring", "nyc", "responsible sourcing"]}
+- {"name": "St Agni", "domain": "st-agni.com", "currency": "AUD", "tags": ["minimalist", "elevated basics", "australian", "denim and knitwear"]}
+- {"name": "LESET", "domain": "leset.com", "currency": "USD", "tags": ["minimalist", "fabric sets", "nyc", "elevated loungewear"]}
+- {"name": "Oak + Fort", "domain": "oakandfort.com", "currency": "USD", "tags": ["minimalist basics", "canadian", "neutral tones", "essentials"]}
+- {"name": "Anna Quan", "domain": "annaquan.com", "currency": "USD", "tags": ["modern tailoring", "workwear", "sydney", "polished minimal"]}
+- {"name": "CAES", "domain": "caes-store.com", "currency": "EUR", "tags": ["minimalist", "structured knits", "amsterdam", "sustainable staples"]}
+- {"name": "High Sport", "domain": "high-sport.com", "currency": "USD", "tags": ["modern tailoring", "sport-luxe trousers", "nyc"]}
+- {"name": "Nehera", "domain": "nehera.com", "currency": "EUR", "tags": ["minimalist", "independent slovak label", "understated elegance"]}
+- {"name": "Charcoal Clothing", "domain": "charcoalclothing.com.au", "currency": "AUD", "tags": ["minimalist basics", "workwear edits", "australian"]}
+- {"name": "Source Unknown", "domain": "sourceunknown.com", "currency": "USD", "tags": ["contemporary basics", "tailoring", "minimalist ready-to-wear"]}
+- {"name": "Lauren Manoogian", "domain": "laurenmanoogian.com", "currency": "USD", "tags": ["architectural knitwear", "sculptural", "nyc", "handknit"]}
+- {"name": "Sentaler", "domain": "sentaler.com", "currency": "CAD", "tags": ["luxury outerwear", "alpaca coats", "minimalist", "canadian"]}
+- {"name": "Organic Basics", "domain": "organicbasics.com", "currency": "EUR", "tags": ["sustainable basics", "minimalist essentials", "danish"]}
+- {"name": "Viktoria & Woods", "domain": "viktoriaandwoods.com.au", "currency": "AUD", "tags": ["minimalist", "natural fibers", "australian designer"]}
+- {"name": "Bevza", "domain": "bevza.com", "currency": "USD", "tags": ["minimalist", "architectural", "elegant", "ukrainian"]}
+- {"name": "Naked Cashmere", "domain": "nakedcashmere.com", "currency": "USD", "tags": ["cashmere basics", "minimalist luxury", "essentials"]}
+- {"name": "Re Ona", "domain": "reona.ca", "currency": "USD", "tags": ["elevated basics", "essentials", "canadian minimal"]}
+- {"name": "Rue Sophie", "domain": "ruesophie.com", "currency": "USD", "tags": ["quiet luxury", "transitional essentials", "tailored"]}
+- {"name": "Kallmeyer", "domain": "kallmeyer.nyc", "currency": "USD", "tags": ["modern tailoring", "understated luxury", "nyc"]}
+- {"name": "Ashlyn", "domain": "ashlynnewyork.com", "currency": "USD", "tags": ["architectural tailoring", "nyc", "minimal luxury"]}
+- {"name": "Buci", "domain": "bucibucibuci.com", "currency": "USD", "tags": ["cashmere knitwear", "refined basics", "nyc"]}
+- {"name": "RUS", "domain": "rusthebrand.com", "currency": "EUR", "tags": ["knitwear", "minimalist", "spanish", "slow fashion"]}
+- {"name": "Loulou de Saison", "domain": "louloudesaison.com", "currency": "EUR", "tags": ["minimalist", "effortless", "french", "elevated basics"]}
+- {"name": "Ura", "domain": "wearura.com", "currency": "USD", "tags": ["minimalist tailoring", "quiet luxury", "structured trousers"]}
+- {"name": "AYR", "domain": "ayr.com", "currency": "USD", "tags": ["elevated basics", "denim", "minimalist essentials"]}
+- {"name": "Modern Citizen", "domain": "moderncitizen.com", "currency": "USD", "tags": ["minimalist", "elevated basics", "la", "versatile essentials"]}
+- {"name": "Geel", "domain": "geel.us", "currency": "USD", "tags": ["elevated basics", "soft knitwear", "sustainable", "la"]}
+- {"name": "Flore Flore", "domain": "flore-flore.com", "currency": "EUR", "tags": ["minimalist basics", "amsterdam", "essentials"]}
+- {"name": "Cou Cou Intimates", "domain": "coucouintimates.com", "currency": "USD", "tags": ["organic cotton basics", "minimalist intimates", "loungewear"]}
+- {"name": "Cph Muse", "domain": "cphmuse.com", "currency": "EUR", "tags": ["scandinavian", "minimalist tailoring", "danish design"]}
+- {"name": "Alémais", "domain": "alemais.com", "currency": "AUD", "tags": ["artisanal", "hand-embroidered", "vintage-textiles", "resort-prints"]}
+- {"name": "Sister Jane", "domain": "sisterjane.com", "currency": "GBP", "tags": ["whimsical", "romantic", "statement-prints", "occasion-wear"]}
+- {"name": "Posse", "domain": "posse.com", "currency": "AUD", "tags": ["vintage-inspired", "relaxed-feminine", "contemporary-romantic"]}
+- {"name": "Harly Jae", "domain": "harlyjae.com", "currency": "CAD", "tags": ["vintage-inspired", "feminine", "natural-fibers", "ethical"]}
+- {"name": "L'été Indien The Label", "domain": "leteindienthelabel.com", "currency": "EUR", "tags": ["bohemian", "silk", "resort", "romantic"]}
+- {"name": "Maya Meyer", "domain": "mayameyer.com", "currency": "USD", "tags": ["vintage-fabric", "upcycled", "romantic", "relaxed"]}
+- {"name": "Merlette NYC", "domain": "merlettenyc.com", "currency": "USD", "tags": ["romantic", "feminine-silhouettes", "embroidery", "jewel-tones"]}
+- {"name": "Nikki Chasin", "domain": "nikkichasin.com", "currency": "USD", "tags": ["whimsical", "artful", "knits", "expressive"]}
+- {"name": "Jaggery London", "domain": "jaggerylondon.co.uk", "currency": "GBP", "tags": ["knitwear", "alpaca", "artisanal", "natural-materials"]}
+- {"name": "Cabbages & Roses", "domain": "cabbagesandroses.com", "currency": "GBP", "tags": ["floral", "vintage-inspired", "cottagecore", "family-run"]}
+- {"name": "Hope Macaulay", "domain": "hopemacaulay.com", "currency": "GBP", "tags": ["chunky-knitwear", "handmade", "artisanal", "statement"]}
+- {"name": "&Daughter", "domain": "and-daughter.com", "currency": "GBP", "tags": ["knitwear", "heritage", "scottish-irish-made", "feminine"]}
+- {"name": "Carlota Cahis", "domain": "carlotacahis.com", "currency": "EUR", "tags": ["knitwear", "colorful", "small-batch", "contemporary"]}
+- {"name": "The Amateur Weather Observers", "domain": "amateurweatherobservers.com", "currency": "GBP", "tags": ["whimsical", "artistic", "narrative", "knitwear"]}
+- {"name": "Faible and Failure", "domain": "faibleandfailure.com", "currency": "EUR", "tags": ["knitwear", "minimalist", "handcrafted", "sustainable"]}
+- {"name": "Modern Prairie", "domain": "modernprairie.com", "currency": "USD", "tags": ["prairie", "vintage-inspired", "americana", "farmhouse"]}
+- {"name": "Pink City Prints", "domain": "pinkcityprints.com", "currency": "GBP", "tags": ["vintage-sensibility", "handcrafted", "block-print", "romantic"]}
+- {"name": "Prairie Girl the Label", "domain": "prairiegirlthelabel.com", "currency": "CAD", "tags": ["prairie", "playful", "lifestyle", "feminine"]}
+- {"name": "Mochipan", "domain": "mochipan.com", "currency": "USD", "tags": ["whimsical", "cottagecore", "fairycore", "maximalist-cute"]}
+- {"name": "Deer Doll", "domain": "deerdoll.com", "currency": "USD", "tags": ["coquette", "cottagecore", "fairycore", "dreamy"]}
+- {"name": "Nana Jacqueline", "domain": "nanajacqueline.com", "currency": "USD", "tags": ["fairycore", "ethereal", "dreamy", "feminine"]}
+- {"name": "Molly Goddard", "domain": "mollygoddard.com", "currency": "GBP", "tags": ["tulle", "whimsical", "voluminous", "designer"]}
+- {"name": "Samantha Pleet", "domain": "samanthapleet.com", "currency": "USD", "tags": ["romantic", "witchy", "whimsical", "vintage-inspired"]}
+- {"name": "Rentrayage", "domain": "rentrayage.com", "currency": "USD", "tags": ["deadstock", "upcycled", "pastoral", "romantic"]}
+- {"name": "One Addington", "domain": "oneaddington.com", "currency": "GBP", "tags": ["bridal", "occasionwear", "handmade", "romantic"]}
+- {"name": "Son de Flor", "domain": "sondeflor.com", "currency": "EUR", "tags": ["linen", "cottagecore", "romantic", "handmade"]}
+- {"name": "Little Women Atelier", "domain": "littlewomenatelier.com", "currency": "USD", "tags": ["cottagecore", "literary", "linen", "handmade"]}
+- {"name": "Rachel Antonoff", "domain": "rachelantonoff.com", "currency": "USD", "tags": ["quirky", "vintage-inspired", "playful", "feminine"]}
+- {"name": "Amy Lynn", "domain": "amylynn.co.uk", "currency": "GBP", "tags": ["romantic", "printed", "feminine", "london"]}
+- {"name": "Celia B", "domain": "celiab.com", "currency": "GBP", "tags": ["bold-prints", "whimsical", "statement", "artisanal"]}
+- {"name": "Mary Benson", "domain": "marybenson.london", "currency": "GBP", "tags": ["bridal", "textile-artist", "romantic", "heirloom"]}
+- {"name": "Little Tienda", "domain": "littletienda.com.au", "currency": "AUD", "tags": ["handmade", "sustainable", "feminine", "slow-fashion"]}
+- {"name": "Sophie et Voila", "domain": "sophieetvoila.com", "currency": "EUR", "tags": ["minimalist-romantic", "feminine", "contemporary", "european"]}
+- {"name": "Memery", "domain": "memery.co.uk", "currency": "GBP", "tags": ["vintage-inspired", "1940s-style", "shoes", "knitwear"]}
+- {"name": "Tradlands", "domain": "tradlands.com", "currency": "USD", "tags": ["classic", "vintage-inspired", "size-inclusive", "linen-cotton"]}
+- {"name": "Kiltane", "domain": "kiltane.com", "currency": "GBP", "tags": ["cashmere", "heritage", "knitwear", "edinburgh"]}
+- {"name": "Verconiik", "domain": "verconiik.com", "currency": "USD", "tags": ["knitwear", "playful", "brooklyn", "colorful"]}
+- {"name": "Giveh", "domain": "givehgiveh.com", "currency": "CAD", "tags": ["knitwear", "artisanal", "female-artisans", "handcrafted"]}
+- {"name": "Boyko", "domain": "helloboyko.com", "currency": "USD", "tags": ["colorful", "playful", "whimsical", "woman-owned"]}
+- {"name": "Sea New York", "domain": "sea-ny.com", "currency": "USD", "tags": ["romantic", "boyish", "lace", "embroidery"]}
+- {"name": "Cleobella", "domain": "cleobella.com", "currency": "USD", "tags": ["bohemian", "artisan-made", "embroidery", "heritage-technique"]}
+- {"name": "By Coquette", "domain": "bycoquette.com", "currency": "USD", "tags": ["coquette", "balletcore", "romantic", "ribbon-details"]}
+- {"name": "Ivy City Co", "domain": "ivycityco.com", "currency": "USD", "tags": ["modest", "romantic", "balletcore", "size-inclusive"]}
+- {"name": "Oh Seven Days", "domain": "ohsevendays.com", "currency": "USD", "tags": ["deadstock", "slow-fashion", "minimalist", "womenswear"]}
+- {"name": "ES Made by Me", "domain": "esmadebyme.com", "currency": "USD", "tags": ["made-to-order", "natural-fibers", "minimalist", "slow-fashion"]}
+- {"name": "The Drift Collective", "domain": "thedriftcollective.com", "currency": "USD", "tags": ["upcycled", "small-batch", "deadstock", "streetwear"]}
+- {"name": "Zero Waste Daniel", "domain": "zerowastedaniel.com", "currency": "USD", "tags": ["upcycled", "zero-waste", "patchwork", "genderless"]}
+- {"name": "E.L.V. Denim", "domain": "elvdenim.com", "currency": "GBP", "tags": ["upcycled-denim", "small-batch", "london-made"]}
+- {"name": "Tamara Malas", "domain": "tamaramalas.com", "currency": "USD", "tags": ["small-batch", "size-inclusive", "nyc-made", "contemporary"]}
+- {"name": "Tuesday", "domain": "tuesdayshop.com", "currency": "USD", "tags": ["zero-waste", "hand-dyed", "kimono", "artisanal"]}
+- {"name": "Harvest & Mill", "domain": "harvestandmill.com", "currency": "USD", "tags": ["us-grown-cotton", "organic", "traceable", "basics"]}
+- {"name": "Isabella Eve", "domain": "shopisabellaeve.com", "currency": "USD", "tags": ["made-to-order", "size-inclusive", "minimalist"]}
+- {"name": "I Was A Sari", "domain": "iwasasari.com", "currency": "EUR", "tags": ["upcycled-saris", "artisan-made", "colorful"]}
+- {"name": "Half Asleep", "domain": "halfasleep.co", "currency": "USD", "tags": ["sleepwear", "loungewear", "sustainable"]}
+- {"name": "All The Wild Roses", "domain": "allthewildroses.com", "currency": "AUD", "tags": ["upcycled", "vintage-fabric", "bohemian", "b-corp"]}
+- {"name": "By KVP", "domain": "bykvp.com", "currency": "USD", "tags": ["made-to-order", "genderless", "loungewear", "minimalist"]}
+- {"name": "RŪPAHAUS", "domain": "rupahaus.com", "currency": "AUD", "tags": ["slow-fashion", "artisan-made", "organic-cotton", "plant-dyed"]}
+- {"name": "Jacaranda", "domain": "jacarandaeco.ca", "currency": "CAD", "tags": ["organic-cotton", "activewear", "minimalist", "eco"]}
+- {"name": "Soluna Collective", "domain": "solunacollective.com", "currency": "USD", "tags": ["organic", "fair-trade", "handmade", "elevated-basics"]}
+- {"name": "Neems", "domain": "neemsjeans.com", "currency": "USD", "tags": ["custom-fit", "denim", "made-to-order", "size-inclusive"]}
+- {"name": "JOYTOAST", "domain": "shopjoytoast.com", "currency": "USD", "tags": ["size-inclusive", "colorful", "playful", "body-positive"]}
+- {"name": "Swahlee", "domain": "swahlee.com", "currency": "USD", "tags": ["natural-fibers", "minimalist", "artisan-made"]}
+- {"name": "Encircled", "domain": "encircled.co", "currency": "USD", "tags": ["travel-wear", "b-corp", "made-in-canada", "minimalist"]}
+- {"name": "Sustain By Kat", "domain": "sustainbykat.com", "currency": "USD", "tags": ["plant-dyed", "organic", "natural-fibers", "basics"]}
+- {"name": "Flood Clothing", "domain": "floodclothing.com", "currency": "USD", "tags": ["upcycled", "one-of-a-kind", "handmade", "portland-made"]}
+- {"name": "A.Oei Studio", "domain": "aoei-studio.com", "currency": "USD", "tags": ["made-to-order", "wearable-art", "bridal", "artisanal"]}
+- {"name": "ESSE", "domain": "essethelabel.com", "currency": "SGD", "tags": ["minimalist", "b-corp", "sustainable-basics", "plant-based-fibers"]}
+- {"name": "Doodlage", "domain": "doodlage.in", "currency": "INR", "tags": ["upcycled", "deadstock", "streetwear", "zero-waste"]}
+- {"name": "Sene", "domain": "senestudio.com", "currency": "USD", "tags": ["made-to-measure", "custom-fit", "tailoring", "minimalist"]}
+- {"name": "ANIÁN", "domain": "anianmfg.com", "currency": "CAD", "tags": ["recycled-fibers", "workwear", "heritage", "durable"]}
+- {"name": "Frankie Collective", "domain": "frankiecollective.com", "currency": "USD", "tags": ["reworked-vintage", "streetwear", "one-of-one", "y2k"]}
+- {"name": "Kindom", "domain": "kindomshop.com", "currency": "USD", "tags": ["upcycled", "gender-free", "minimalist", "eco-conscious"]}
+- {"name": "Anekdot", "domain": "anekdotboutique.com", "currency": "EUR", "tags": ["deadstock", "lingerie", "swimwear", "handmade"]}
+- {"name": "Bastet Noir", "domain": "bastetnoir.com", "currency": "EUR", "tags": ["modular", "minimalist", "travel-wear", "sustainable-tailoring"]}
+- {"name": "Dorsu", "domain": "shopdorsu.com", "currency": "USD", "tags": ["ethical-basics", "cambodia-made", "minimalist", "fair-wage"]}
+- {"name": "Love Faustine", "domain": "lovefaustine.com", "currency": "USD", "tags": ["deadstock", "resortwear", "la-made", "limited-edition"]}
+- {"name": "NÄZ", "domain": "naz.pt", "currency": "EUR", "tags": ["minimalist", "linen", "portugal-made", "timeless-basics"]}
+- {"name": "Anne Mulaire", "domain": "annemulaire.com", "currency": "CAD", "tags": ["zero-waste", "indigenous-owned", "heritage", "tailored"]}
+- {"name": "Rosarium", "domain": "rosarium.world", "currency": "USD", "tags": ["made-to-order", "botanical", "slow-fashion", "handcrafted"]}
+- {"name": "Marree", "domain": "marree.co", "currency": "USD", "tags": ["natural-dye", "shibori", "handmade", "artisan"]}
+- {"name": "Gaia Conceptions", "domain": "gaiaconceptions.com", "currency": "USD", "tags": ["made-to-order", "natural-dye", "bohemian", "artisanal"]}
+- {"name": "Pyne & Smith", "domain": "pyneandsmith.com", "currency": "USD", "tags": ["linen", "made-to-last", "california-sewn", "timeless"]}
+- {"name": "Connally Goods", "domain": "connallygoods.com", "currency": "CAD", "tags": ["size-inclusive", "made-to-order", "zero-waste", "vancouver-made"]}
+- {"name": "Trash Queen", "domain": "shoptrashqueen.com", "currency": "USD", "tags": ["plus-size", "made-to-order", "alt-fashion", "small-batch"]}
+- {"name": "Oge Ajibe", "domain": "ogeajibe.com", "currency": "CAD", "tags": ["size-inclusive", "handcrafted", "colorful", "deadstock"]}
+- {"name": "AGAATI", "domain": "agaati.com", "currency": "USD", "tags": ["artisanal", "handmade", "bridal", "sustainable"]}
+- {"name": "BAACAL", "domain": "baacal.com", "currency": "USD", "tags": ["plus-size", "contemporary", "sustainable", "sizes 10-28"]}
+- {"name": "Sante Grace", "domain": "santegrace.com", "currency": "USD", "tags": ["plus-size", "luxury", "silk", "up to 5x"]}
+- {"name": "Cherri Cheeks", "domain": "cherricheeks.com", "currency": "USD", "tags": ["plus-size", "swimwear", "beachwear", "curvy"]}
+- {"name": "GIA/irl", "domain": "giairl.com", "currency": "USD", "tags": ["plus-size", "body-positive", "contemporary", "sizes 10-32"]}
+- {"name": "LeaLeaLove Clothing", "domain": "lealealoveclothing.com", "currency": "USD", "tags": ["plus-size", "dresses", "inclusive", "occasionwear"]}
+- {"name": "Hannah Couture", "domain": "hccdesign.co", "currency": "USD", "tags": ["plus-size", "bridal", "made-to-order", "gowns"]}
+- {"name": "Courtney Noelle", "domain": "courtneynoelle.com", "currency": "USD", "tags": ["plus-size", "made-to-order", "custom", "brooklyn"]}
+- {"name": "G'wan By Charon", "domain": "gwanbycharon.com", "currency": "USD", "tags": ["inclusive-sizing", "prints", "in-house design", "new jersey"]}
+- {"name": "Copper Union Apparel", "domain": "copperunionapparel.com", "currency": "USD", "tags": ["plus-size", "slow-fashion", "sizes 1x-7x", "portland"]}
+- {"name": "Rainbeau Curves", "domain": "rainbeaucurves.com", "currency": "USD", "tags": ["plus-size", "activewear", "athleisure", "sizes 1x-5x"]}
+- {"name": "Superfit Hero", "domain": "superfithero.com", "currency": "USD", "tags": ["plus-size", "activewear", "size-inclusive", "sizes l-5x"]}
+- {"name": "Nooworks", "domain": "nooworks.com", "currency": "USD", "tags": ["size-inclusive", "artist-prints", "california-made", "dresses"]}
+- {"name": "byVINNIK", "domain": "byvinnik.com", "currency": "USD", "tags": ["size-inclusive", "luxury", "ethical", "sizes s-3x"]}
+- {"name": "Hilary MacMillan", "domain": "hilarymacmillan.com", "currency": "USD", "tags": ["size-inclusive", "contemporary", "canadian", "sizes xs-4x"]}
+- {"name": "Kai Collective", "domain": "kaicollective.com", "currency": "GBP", "tags": ["size-inclusive", "contemporary", "luxury", "sizes 2xs-3xl"]}
+- {"name": "Playful Promises", "domain": "playfulpromises.com", "currency": "GBP", "tags": ["size-inclusive", "lingerie", "swimwear", "d+ bras"]}
+- {"name": "Dewey", "domain": "deweyclothing.com", "currency": "GBP", "tags": ["petite", "shortened-inseams", "sizes 4-22", "uk"]}
+- {"name": "Avo Activewear", "domain": "avoactivewear.com", "currency": "GBP", "tags": ["petite", "activewear", "under 5'3\"", "uk"]}
+- {"name": "ST MODE", "domain": "stmode.com", "currency": "GBP", "tags": ["modest", "dresses", "elegant", "uk"]}
+- {"name": "Move Modestly", "domain": "movemodestly.com", "currency": "GBP", "tags": ["modest", "activewear", "coverage", "uk"]}
+- {"name": "Olim London", "domain": "olimlondon.com", "currency": "GBP", "tags": ["tall", "trousers", "jumpsuits", "uk"]}
+- {"name": "Long Legs London", "domain": "longlegslondon.com", "currency": "GBP", "tags": ["tall", "trousers", "loungewear", "sizes 5'8\"+"]}
+- {"name": "Harlow", "domain": "harlowstore.com", "currency": "AUD", "tags": ["plus-size", "premium", "australian", "sizes 12-26"]}
+- {"name": "Joolz", "domain": "joolz.com.au", "currency": "AUD", "tags": ["plus-size", "sustainable", "customizable", "australian"]}
+- {"name": "Après Studio", "domain": "apresstudio.com.au", "currency": "AUD", "tags": ["size-inclusive", "sustainable", "australian", "sizes xxs-4xl"]}
+- {"name": "Clothing The Gaps", "domain": "clothingthegaps.com.au", "currency": "AUD", "tags": ["size-inclusive", "aboriginal-owned", "streetwear", "sizes xs-7xl"]}
+- {"name": "Fayt The Label", "domain": "faytthelabel.com", "currency": "AUD", "tags": ["size-inclusive", "denim", "basics", "sizes 6-26"]}
+- {"name": "Allison Izu", "domain": "allisonizu.com", "currency": "USD", "tags": ["petite", "hawaii-designed", "comfortable", "inclusive-fit"]}
+- {"name": "Ameris Bloomer", "domain": "amerisbloomer.com", "currency": "USD", "tags": ["petite", "intimates", "loungewear"]}
+- {"name": "DIIMA Apparel", "domain": "diimaapparel.com", "currency": "USD", "tags": ["petite", "tailored fit", "heights 4'9\"-5'4\""]}
+- {"name": "Bee Petite", "domain": "shopbeepetite.com", "currency": "USD", "tags": ["petite", "timeless", "sizes 5'3\" and under"]}
+- {"name": "Dear Petite", "domain": "dearpetite.com", "currency": "USD", "tags": ["petite", "korean-inspired", "affordable"]}
+- {"name": "Verti Petite", "domain": "vertipetite.com", "currency": "USD", "tags": ["petite", "trousers", "engineered fit"]}
+- {"name": "Short Girl Jean", "domain": "shortgirljean.com", "currency": "USD", "tags": ["petite", "denim", "no-hem jeans"]}
+- {"name": "Nelle Atelier", "domain": "nelleatelier.com", "currency": "USD", "tags": ["petite", "tailored", "off-the-rack fit"]}
+- {"name": "Pretty & Petite", "domain": "shopprettyandpetite.com", "currency": "USD", "tags": ["petite", "leggings", "handmade"]}
+- {"name": "Tepin", "domain": "tepinpetite.com", "currency": "USD", "tags": ["petite", "under 5 feet", "specialty fit"]}
+- {"name": "Liv Tall", "domain": "livtall.com", "currency": "USD", "tags": ["tall", "sustainable", "made-in-usa"]}
+- {"name": "Alta Reina", "domain": "altareina.com", "currency": "USD", "tags": ["tall", "outdoor", "base-layers", "5'9\"+"]}
+- {"name": "Amalli Talli", "domain": "amallitalli.com", "currency": "USD", "tags": ["tall", "extended-inseams", "sister-founded"]}
+- {"name": "Modaccio", "domain": "modaccio.com", "currency": "USD", "tags": ["tall", "quiet-luxury", "tailoring", "5'10\"-6'7\"+"]}
+- {"name": "TJL Collection", "domain": "tjlcollection.com", "currency": "USD", "tags": ["tall", "5'9\"+", "jumpsuits", "dresses"]}
+- {"name": "Sky Dolls", "domain": "sky-dolls.com", "currency": "USD", "tags": ["tall", "athleisure", "denim", "loungewear"]}
+- {"name": "Inherit Co.", "domain": "inheritco.com", "currency": "USD", "tags": ["modest", "faith-aligned", "maxi-dresses"]}
+- {"name": "Modest Pop", "domain": "modestpop.com", "currency": "USD", "tags": ["modest", "conservative", "everyday"]}
+- {"name": "The Modest Barbie", "domain": "themodestbarbie.com", "currency": "USD", "tags": ["modest", "evening", "bridal", "hijabs"]}
+- {"name": "Kabayare Fashion", "domain": "kabayarefashion.com", "currency": "USD", "tags": ["modest", "abayas", "hijabs", "family-run"]}
+- {"name": "Niswa Fashion", "domain": "niswafashion.com", "currency": "USD", "tags": ["modest", "islamic", "abayas", "hijabs"]}
+- {"name": "LaMeera Moda", "domain": "lameeramoda.com", "currency": "USD", "tags": ["modest", "abayas", "kaftans", "hijabs"]}
+- {"name": "Michaela Corning", "domain": "michaelacorning.com", "currency": "USD", "tags": ["modest", "hijabs", "ethical", "handmade"]}
+- {"name": "Online Ceramics", "domain": "online-ceramics.com", "currency": "USD", "tags": ["graphic tees", "tie-dye", "skate-adjacent", "unisex"]}
+- {"name": "Jiberish", "domain": "jiberish.com", "currency": "USD", "tags": ["streetwear", "ski-influenced", "graphic", "outerwear"]}
+- {"name": "RIPNDIP", "domain": "ripndip.com", "currency": "USD", "tags": ["skate", "graphic tees", "streetwear", "unisex"]}
+- {"name": "Noon Goons", "domain": "noongoons.com", "currency": "USD", "tags": ["streetwear", "graphic", "la", "unisex"]}
+- {"name": "Brain Dead", "domain": "wearebraindead.com", "currency": "USD", "tags": ["streetwear", "art-driven", "graphic", "unisex"]}
+- {"name": "Sundae School", "domain": "sundae.school", "currency": "USD", "tags": ["streetwear", "korean-american", "graphic", "unisex"]}
+- {"name": "Mishka NYC", "domain": "mishkanyc.com", "currency": "USD", "tags": ["streetwear", "graphic tees", "nyc", "cut-and-sew"]}
+- {"name": "Frog Skateboards", "domain": "frogskateboards.com", "currency": "USD", "tags": ["skate", "graphic tees", "la", "unisex"]}
+- {"name": "GX1000", "domain": "gx1000.com", "currency": "USD", "tags": ["skate", "graphic", "sf", "streetwear"]}
+- {"name": "Pizza Skateboards", "domain": "pizzaskateboards.com", "currency": "USD", "tags": ["skate", "graphic tees", "nyc", "unisex"]}
+- {"name": "Cherry LA", "domain": "cherryla.com", "currency": "USD", "tags": ["menswear", "leather", "biker-inspired", "la"]}
+- {"name": "Dime MTL", "domain": "dimemtl.com", "currency": "CAD", "tags": ["skate", "graphic tees", "montreal", "streetwear"]}
+- {"name": "FullyPaidLDN", "domain": "fullypaidldn.com", "currency": "GBP", "tags": ["streetwear", "london", "graphic", "menswear"]}
+- {"name": "Batch1", "domain": "batch1.com", "currency": "GBP", "tags": ["graphic tees", "small-batch", "organic", "london"]}
+- {"name": "Story mfg.", "domain": "storymfg.com", "currency": "GBP", "tags": ["unisex", "craft", "natural dyes", "workwear"]}
+- {"name": "Percival", "domain": "percivalclo.com", "currency": "GBP", "tags": ["menswear", "london", "knitwear", "reworked classics"]}
+- {"name": "Kestin", "domain": "kestin.co", "currency": "GBP", "tags": ["menswear", "scottish", "workwear-inspired", "outerwear"]}
+- {"name": "Xenia Telunts", "domain": "xeniatelunts.com", "currency": "GBP", "tags": ["unisex", "workwear", "organic", "zero-waste"]}
+- {"name": "Skateboard Cafe", "domain": "skateboardcafe.com", "currency": "GBP", "tags": ["skate", "graphic tees", "london", "unisex"]}
+- {"name": "Sports Banger", "domain": "sportsbanger.com", "currency": "GBP", "tags": ["streetwear", "satirical", "graphic", "unisex"]}
+- {"name": "Drôle de Monsieur", "domain": "droledemonsieur.com", "currency": "EUR", "tags": ["menswear", "retro", "paris", "streetwear-adjacent"]}
+- {"name": "Helas", "domain": "helascaps.com", "currency": "EUR", "tags": ["streetwear", "graphic", "skate-adjacent", "unisex"]}
+- {"name": "Scuffers", "domain": "scuffers.com", "currency": "EUR", "tags": ["streetwear", "unisex", "urban", "madrid"]}
+- {"name": "WRSTBHVR", "domain": "worst-behavior.com", "currency": "EUR", "tags": ["streetwear", "gender-fluid", "minimalist", "berlin"]}
+- {"name": "Phrase Studios", "domain": "phrasestudios.com", "currency": "EUR", "tags": ["streetwear", "small-batch", "heavyweight cotton", "unisex"]}
+- {"name": "Poetic Collective", "domain": "poeticcollective.com", "currency": "EUR", "tags": ["skate", "graphic tees", "stockholm", "unisex"]}
+- {"name": "Soulland", "domain": "soulland.com", "currency": "EUR", "tags": ["menswear", "copenhagen", "streetwear-leaning", "unisex"]}
+- {"name": "Norse Projects", "domain": "norseprojects.com", "currency": "DKK", "tags": ["menswear", "scandinavian", "basics", "unisex"]}
+- {"name": "Fuga Studios", "domain": "fuga-studios.com", "currency": "EUR", "tags": ["streetwear", "techwear", "graphic", "unisex"]}
+- {"name": "Butter Goods", "domain": "buttergoods.com", "currency": "AUD", "tags": ["skate", "streetwear", "graphic", "perth"]}
+- {"name": "Afends", "domain": "afends.com", "currency": "AUD", "tags": ["streetwear", "hemp", "surf-skate", "byron bay"]}
+- {"name": "Thrills Co", "domain": "thrills.co", "currency": "AUD", "tags": ["streetwear", "unisex", "byron bay", "graphic"]}
+- {"name": "Barney Cools", "domain": "b-cools.com", "currency": "AUD", "tags": ["unisex", "streetwear", "laid-back", "graphic"]}
+- {"name": "Scarlet & Sam", "domain": "scarletandsam.com", "currency": "AUD", "tags": ["vintage-inspired", "capsule drops", "melbourne", "going out basics"]}
+- {"name": "Hansen & Gretel", "domain": "hansenandgretel.com", "currency": "AUD", "tags": ["corset tops", "mini dress", "occasion wear", "structured"]}
+- {"name": "Runaway The Label", "domain": "runawaythelabel.com", "currency": "AUD", "tags": ["festival", "going out", "boho party", "mini dress"]}
+- {"name": "Sisters The Label", "domain": "au.sistersthelabel.com", "currency": "AUD", "tags": ["silk mini dress", "party edit", "going out", "occasion"]}
+- {"name": "Twosisters The Label", "domain": "twosistersthelabel.com", "currency": "AUD", "tags": ["mini dress", "going out", "party dresses"]}
+- {"name": "Mode Mischief Studios", "domain": "modemischiefstudios.com", "currency": "AUD", "tags": ["it-girl", "mini dress", "going out"]}
+- {"name": "Albus Lumen", "domain": "albuslumen.com", "currency": "AUD", "tags": ["edgy occasion wear", "statement dresses", "going out"]}
+- {"name": "Beare Park", "domain": "bearepark.com", "currency": "AUD", "tags": ["minimalist evening wear", "going out", "occasion"]}
+- {"name": "Mossman", "domain": "mossman.com.au", "currency": "AUD", "tags": ["eventwear", "mini dress", "going out"]}
+- {"name": "Suboo", "domain": "suboo.com.au", "currency": "AUD", "tags": ["resort", "going out", "mini dress"]}
+- {"name": "Rebecca Vallance", "domain": "rebeccavallance.com", "currency": "AUD", "tags": ["occasion wear", "party dress", "statement sleeves"]}
+- {"name": "Nookie", "domain": "nookie.com.au", "currency": "AUD", "tags": ["cocktail dresses", "party", "going out"]}
+- {"name": "Third Form", "domain": "thirdform.com.au", "currency": "AUD", "tags": ["occasion wear", "going out", "contemporary"]}
+- {"name": "Manning Cartell", "domain": "manningcartell.com.au", "currency": "AUD", "tags": ["edgy tailoring", "going out", "statement"]}
+- {"name": "VRG GRL", "domain": "vrggrl.com", "currency": "AUD", "tags": ["y2k", "streetwear", "going out", "gen-z"]}
+- {"name": "Elle Zeitoune", "domain": "ellezeitoune.com.au", "currency": "AUD", "tags": ["occasion wear", "mini dress", "going out"]}
+- {"name": "Bariano", "domain": "bariano.com.au", "currency": "AUD", "tags": ["sequin", "occasion dress", "party"]}
+- {"name": "Black Milk Clothing", "domain": "blackmilkclothing.com", "currency": "AUD", "tags": ["y2k prints", "festival", "rave", "bodycon"]}
+- {"name": "Petal & Pup", "domain": "petalandpup.com", "currency": "USD", "tags": ["going out dress", "mini dress", "y2k", "party"]}
+- {"name": "Farai London", "domain": "farailondon.com", "currency": "GBP", "tags": ["cut-out dress", "bold prints", "going out", "occasion"]}
+- {"name": "Poster Girl", "domain": "poster-girl.com", "currency": "GBP", "tags": ["shapewear dress", "mini dress", "going out", "celeb-worn"]}
+- {"name": "Jovonna London", "domain": "jovonnalondon.com", "currency": "GBP", "tags": ["occasion wear", "embellished", "going out"]}
+- {"name": "Rebellious Fashion", "domain": "rebelliousfashion.com", "currency": "GBP", "tags": ["going out dresses", "party", "bodycon"]}
+- {"name": "AX Paris", "domain": "axparis.com", "currency": "GBP", "tags": ["going out dresses", "celebrity fashion", "party"]}
+- {"name": "Little Mistress", "domain": "little-mistress.com", "currency": "GBP", "tags": ["occasion wear", "going out", "party dress"]}
+- {"name": "Nazz Collection", "domain": "nazzcollection.com", "currency": "GBP", "tags": ["going out dresses", "party", "mini dress"]}
+- {"name": "Never Fully Dressed", "domain": "neverfullydressed.com", "currency": "GBP", "tags": ["wrap skirts", "going out", "colourful party"]}
+- {"name": "Missy Empire", "domain": "missyempire.com", "currency": "GBP", "tags": ["going out dresses", "party", "y2k"]}
+- {"name": "Dancing Leopard", "domain": "dancingleopard.com", "currency": "GBP", "tags": ["going out", "holiday", "mini dress"]}
+- {"name": "Club L London", "domain": "clubllondon.com", "currency": "GBP", "tags": ["cut-out dress", "going out", "party"]}
+- {"name": "Chi Chi London", "domain": "chichiclothing.com", "currency": "GBP", "tags": ["occasion wear", "going out", "party dress"]}
+- {"name": "Goddiva", "domain": "goddiva.co.uk", "currency": "GBP", "tags": ["occasion wear", "going out", "party dress"]}
+- {"name": "VICI Collection", "domain": "vicicollection.com", "currency": "USD", "tags": ["going out dresses", "boutique", "mini dress"]}
+- {"name": "Show Me Your Mumu", "domain": "showmeyourmumu.com", "currency": "USD", "tags": ["festival", "resort", "party dress"]}
+- {"name": "Karina Dresses", "domain": "karinadresses.com", "currency": "USD", "tags": ["slip dress", "going out", "mini dress"]}
+- {"name": "Naked Wardrobe", "domain": "nakedwardrobe.com", "currency": "USD", "tags": ["bodycon", "going out basics", "y2k"]}
+- {"name": "Dolls Kill", "domain": "dollskill.com", "currency": "USD", "tags": ["y2k", "rave", "alt party", "festival"]}
+- {"name": "By Viktorija", "domain": "byviktorija.com", "currency": "USD", "tags": ["coquette", "crystal dress", "going out"]}
+- {"name": "NIA", "domain": "niathebrand.com", "currency": "USD", "tags": ["slip dress", "mini dress", "occasion wear"]}
+- {"name": "Belle Anna", "domain": "belle-anna.com", "currency": "USD", "tags": ["mini dress", "swim", "going out", "la"]}
+- {"name": "Retrofete", "domain": "retrofete.com", "currency": "USD", "tags": ["sequin", "going out", "party dress"]}
+- {"name": "Dress the Population", "domain": "dressthepopulation.com", "currency": "USD", "tags": ["sequin", "going out", "party dress"]}
+- {"name": "Yumi Kim", "domain": "yumikim.com", "currency": "USD", "tags": ["going out dresses", "mini dress", "print"]}
+- {"name": "ASTR the Label", "domain": "astrthelabel.com", "currency": "USD", "tags": ["going out dresses", "mini dress", "party"]}
+- {"name": "Thalo Denim", "domain": "thalodenim.com", "currency": "USD", "tags": ["indigo denim", "small-batch", "indie label", "made-in-usa"]}
+- {"name": "James Street Co.", "domain": "jamesstreetco.com", "currency": "USD", "tags": ["knitwear", "denim", "small-batch", "ethically made"]}
+- {"name": "Iron & Resin", "domain": "ironandresin.com", "currency": "USD", "tags": ["workwear", "surf-inspired", "duck canvas", "california"]}
+- {"name": "Cockpit USA", "domain": "cockpitusa.com", "currency": "USD", "tags": ["flight jackets", "military heritage", "made-in-usa", "outerwear"]}
+- {"name": "Left Field NYC", "domain": "leftfieldnyc.com", "currency": "USD", "tags": ["denim", "americana", "workwear", "made-in-nyc"]}
+- {"name": "Wythe New York", "domain": "wythenewyork.com", "currency": "USD", "tags": ["corduroy", "indigo dye", "workwear", "nyc label"]}
+- {"name": "Dovetail Workwear", "domain": "dovetailworkwear.com", "currency": "USD", "tags": ["women's workwear", "utility", "functional", "portland"]}
+- {"name": "Dawson Denim", "domain": "dawsondenim.com", "currency": "GBP", "tags": ["selvedge denim", "workwear", "heritage"]}
+- {"name": "Freenote Cloth", "domain": "freenotecloth.com", "currency": "USD", "tags": ["western workwear", "raw denim", "california"]}
+- {"name": "3sixteen", "domain": "3sixteen.com", "currency": "USD", "tags": ["raw denim", "workwear", "made-in-nyc"]}
+- {"name": "Merz b. Schwanen", "domain": "merzbschwanen.com", "currency": "EUR", "tags": ["loopwheel tees", "heritage", "germany", "workwear basics"]}
+- {"name": "Ginew", "domain": "ginewusa.com", "currency": "USD", "tags": ["native-owned", "selvedge denim", "americana"]}
+- {"name": "Gramicci", "domain": "gramicci.com", "currency": "USD", "tags": ["gorpcore-lite", "climbing-inspired", "functional pants"]}
+- {"name": "Houdini Sportswear", "domain": "houdinisportswear.com", "currency": "SEK", "tags": ["sustainable outdoor", "technical", "sweden"]}
+- {"name": "Ben Davis", "domain": "bendavis.com", "currency": "USD", "tags": ["workwear", "americana", "heritage", "made-in-usa"]}
+- {"name": "Nigel Cabourn", "domain": "cabourn.com", "currency": "GBP", "tags": ["heritage menswear", "military-inspired", "vintage reproduction"]}
+- {"name": "SIRPLUS", "domain": "sirplus.co.uk", "currency": "GBP", "tags": ["chore jackets", "british workwear", "surplus-inspired"]}
+- {"name": "Pajotten", "domain": "pajotten.com", "currency": "GBP", "tags": ["slow fashion", "british workwear", "small-batch"]}
+- {"name": "Yarmo", "domain": "yarmo.co.uk", "currency": "GBP", "tags": ["british-made workwear", "heritage", "since 1898"]}
+- {"name": "Private White V.C.", "domain": "privatewhitevc.com", "currency": "GBP", "tags": ["manchester-made", "heritage outerwear", "british"]}
+- {"name": "Universal Works", "domain": "universalworks.co.uk", "currency": "GBP", "tags": ["british workwear", "contemporary utility", "chore jacket"]}
+- {"name": "Kato", "domain": "kato-brand.com", "currency": "USD", "tags": ["selvedge denim", "stretch denim", "japan"]}
+- {"name": "Fullcount", "domain": "fullcount.co", "currency": "USD", "tags": ["selvedge denim", "vintage-inspired", "japan", "since 1993"]}
+- {"name": "imogene + willie", "domain": "imogeneandwillie.com", "currency": "USD", "tags": ["nashville denim", "americana", "small-batch"]}
+- {"name": "Railcar Fine Goods", "domain": "railcarfinegoods.com", "currency": "USD", "tags": ["raw denim", "selvedge", "americana"]}
+- {"name": "Blue Blanket", "domain": "blueblanketjeans.com", "currency": "EUR", "tags": ["western-inspired denim", "small-batch", "italy"]}
+- {"name": "Outland Denim", "domain": "outlanddenim.com", "currency": "AUD", "tags": ["ethical denim", "australia", "sustainable"]}
+- {"name": "Kings of Indigo", "domain": "kingsofindigo.com", "currency": "EUR", "tags": ["sustainable denim", "amsterdam", "organic cotton"]}
+- {"name": "Blackhorse Lane Ateliers", "domain": "blackhorselane.com", "currency": "GBP", "tags": ["london craft denim", "selvedge", "small-batch"]}
+- {"name": "Mame Kurogouchi", "domain": "mamekurogouchi.com", "currency": "JPY", "tags": ["contemporary", "knitwear", "sculptural", "ready-to-wear"]}
+- {"name": "HYKE", "domain": "hyke.jp", "currency": "JPY", "tags": ["minimalist", "military-inspired", "contemporary", "unisex"]}
+- {"name": "beautiful people", "domain": "beautiful-people.jp", "currency": "JPY", "tags": ["contemporary", "tokyo", "minimalist", "layered"]}
+- {"name": "yoshiokubo", "domain": "yoshiokubo.jp", "currency": "JPY", "tags": ["tailoring", "contemporary", "unisex", "sportswear-influenced"]}
+- {"name": "doublet", "domain": "shop.doublet-jp.com", "currency": "JPY", "tags": ["streetwear", "playful", "craft", "unisex"]}
+- {"name": "CFCL", "domain": "cfcl.jp", "currency": "JPY", "tags": ["knitwear", "technical", "minimalist", "contemporary"]}
+- {"name": "Feng Chen Wang", "domain": "fengchenwang.com", "currency": "GBP", "tags": ["streetwear-influenced", "deconstructed", "unisex", "tailoring"]}
+- {"name": "MUKZIN", "domain": "shop.mukzin.com", "currency": "USD", "tags": ["chinoiserie", "playful", "contemporary", "streetwear"]}
+- {"name": "MARRKNULL", "domain": "marrknull.com", "currency": "EUR", "tags": ["minimalist", "contemporary", "unisex", "deconstructed"]}
+- {"name": "Yueqi Qi", "domain": "yueqiqi.com", "currency": "USD", "tags": ["sculptural", "feminine", "contemporary", "eveningwear"]}
+- {"name": "Ong Shunmugam", "domain": "ongshunmugam.com", "currency": "SGD", "tags": ["heritage-modern", "tailoring", "kebaya-inspired", "contemporary"]}
+- {"name": "Vickteerut", "domain": "vickteerut.com", "currency": "THB", "tags": ["romantic", "feminine", "ready-to-wear", "contemporary"]}
+- {"name": "Pipatchara", "domain": "pipatchara.com", "currency": "THB", "tags": ["artisanal", "colorful", "handwoven", "resortwear"]}
+- {"name": "Chula Fashion House", "domain": "chulafashion.com", "currency": "USD", "tags": ["hand-painted", "artisanal", "colorful", "unisex"]}
+- {"name": "SukkhaCitta", "domain": "sukkhacitta.com", "currency": "IDR", "tags": ["sustainable", "handwoven", "artisanal", "natural-dye"]}
+- {"name": "Bodice", "domain": "bodicestudio.com", "currency": "USD", "tags": ["contemporary", "tailoring", "minimalist", "sculptural"]}
+- {"name": "Chola The Label", "domain": "cholathelabel.com", "currency": "INR", "tags": ["colorful", "playful", "contemporary", "print-led"]}
+- {"name": "Papa Don't Preach", "domain": "papadontpreach.com", "currency": "INR", "tags": ["contemporary", "occasionwear", "fusion", "feminine"]}
+- {"name": "Carla Fernández", "domain": "carlafernandez.com", "currency": "MXN", "tags": ["artisanal", "indigenous-textiles", "contemporary", "sculptural"]}
+- {"name": "Agua Bendita", "domain": "aguabendita.com", "currency": "USD", "tags": ["resortwear", "handmade", "colorful", "crochet"]}
+- {"name": "Mola Sasa", "domain": "molasasa.com", "currency": "USD", "tags": ["artisanal", "resortwear", "colorful", "handmade"]}
+- {"name": "Leal Daccarett", "domain": "lealdaccarett.com", "currency": "USD", "tags": ["resortwear", "romantic", "handmade", "colorful"]}
+- {"name": "Kika Vargas", "domain": "kikavargas.com", "currency": "USD", "tags": ["feminine", "occasionwear", "tailoring", "contemporary"]}
+- {"name": "Kimhekim", "domain": "kimhekim.com", "currency": "KRW", "tags": ["contemporary", "unisex", "seoul", "playful-luxury"]}
+- {"name": "KUSIKOHC", "domain": "kusikohc.com", "currency": "USD", "tags": ["streetwear", "minimalist", "unisex", "seoul"]}
+- {"name": "Storets", "domain": "storets.com", "currency": "USD", "tags": ["contemporary", "everyday", "feminine", "casual"]}
+- {"name": "Allison Wonderland", "domain": "allisonwonderland.ca", "currency": "CAD", "tags": ["slow-fashion", "feminine", "ethically-made", "vancouver"]}
+- {"name": "Wildflo Studio", "domain": "wildflostudio.com", "currency": "CAD", "tags": ["loungewear", "organic-cotton", "minimalist", "toronto"]}
+- {"name": "Amanda Moss", "domain": "amandamoss.ca", "currency": "CAD", "tags": ["minimalist", "linen", "timeless", "montreal"]}
+- {"name": "Priory", "domain": "shop.priorypriory.com", "currency": "CAD", "tags": ["relaxed-fit", "natural-fabrics", "considered", "vancouver"]}
+- {"name": "Birds of North America", "domain": "birdsofnorthamerica.com", "currency": "CAD", "tags": ["vegan", "colourful-prints", "sustainable", "montreal"]}
+- {"name": "Thief & Bandit", "domain": "thiefandbandit.com", "currency": "CAD", "tags": ["hand-printed", "made-to-order", "inclusive-sizing", "halifax"]}
+- {"name": "Meemoza", "domain": "meemoza.ca", "currency": "CAD", "tags": ["ethical", "casual-chic", "sustainable-fabrics", "montreal"]}
+- {"name": "Jennifer Glasgow", "domain": "jenniferglasgowdesign.com", "currency": "CAD", "tags": ["minimalist", "eco-conscious", "ready-to-wear", "montreal"]}
+- {"name": "Beaufille", "domain": "beaufille.com", "currency": "USD", "tags": ["minimalist", "sophisticated", "contemporary", "toronto"]}
+- {"name": "Hayley Elsaesser", "domain": "hayleyelsaesser.com", "currency": "CAD", "tags": ["graphic-prints", "playful", "streetwear", "toronto"]}
+- {"name": "Obakki", "domain": "obakki.com", "currency": "CAD", "tags": ["artisan-made", "lifestyle", "resortwear", "vancouver"]}
+- {"name": "CHLO. by Cokluch", "domain": "cokluch.com", "currency": "CAD", "tags": ["made-in-montreal", "casual-chic", "knitwear", "sustainable"]}
+- {"name": "Atelier b", "domain": "atelier-b.ca", "currency": "CAD", "tags": ["natural-fibers", "zero-waste", "minimalist", "montreal"]}
+- {"name": "A Bronze Age", "domain": "abronzeage.com", "currency": "CAD", "tags": ["contemporary", "joyful-dressing", "made-in-canada", "vancouver"]}
+- {"name": "Free Label", "domain": "freelabel.com", "currency": "CAD", "tags": ["wire-free-bras", "natural-fibers", "inclusive-sizing", "vancouver"]}
+- {"name": "MAS Montréal", "domain": "masmontreal.com", "currency": "CAD", "tags": ["natural-fibers", "minimalist", "sustainable", "montreal"]}
+- {"name": "Pradegal", "domain": "pradegal.com", "currency": "CAD", "tags": ["wardrobe-staples", "luxury-fabrics", "sustainable", "vancouver"]}
+- {"name": "Bianca Spender", "domain": "biancaspender.com", "currency": "AUD", "tags": ["designer", "draping", "carbon-neutral", "sydney"]}
+- {"name": "Venroy", "domain": "venroy.com.au", "currency": "AUD", "tags": ["leisurewear", "resort", "knitwear", "bondi"]}
+- {"name": "Auguste The Label", "domain": "augustethelabel.com", "currency": "AUD", "tags": ["boho", "dresses", "resortwear", "byron-bay"]}
+- {"name": "Romance Was Born", "domain": "romancewasborn.com", "currency": "AUD", "tags": ["eccentric-prints", "maximalist", "made-to-order", "sydney"]}
+- {"name": "Elka Collective", "domain": "elkacollective.com", "currency": "AUD", "tags": ["elevated-basics", "tailoring", "contemporary", "melbourne"]}
+- {"name": "Maggie Marilyn", "domain": "maggiemarilyn.com", "currency": "NZD", "tags": ["sustainable", "contemporary", "feminine", "auckland"]}
+- {"name": "Standard Issue", "domain": "standardissue.co.nz", "currency": "NZD", "tags": ["knitwear", "merino", "sustainable", "since-1981"]}
+- {"name": "Juliette Hogan", "domain": "juliettehogan.com", "currency": "NZD", "tags": ["contemporary", "feminine", "tailored", "auckland"]}
+- {"name": "Stolen Girlfriends Club", "domain": "stolengirlfriendsclub.com", "currency": "NZD", "tags": ["rebellious-romantic", "edgy", "auckland"]}
+- {"name": "Kate Sylvester", "domain": "katesylvester.com", "currency": "NZD", "tags": ["designer", "dresses", "wellington"]}
+- {"name": "Company of Strangers", "domain": "companyofstrangers.co.nz", "currency": "NZD", "tags": ["minimalist", "clothing-and-jewelry", "wellington"]}
+- {"name": "Nom*D", "domain": "nomdstore.com", "currency": "NZD", "tags": ["avant-garde", "iconic", "dunedin"]}
+- {"name": "Cawley Studio", "domain": "cawleystudio.com", "currency": "GBP", "tags": ["tailoring", "contemporary", "shearling", "london"]}
+- {"name": "Baukjen", "domain": "baukjen.com", "currency": "GBP", "tags": ["sustainable", "responsible-fashion", "b-corp"]}
+- {"name": "Beulah London", "domain": "beulahlondon.com", "currency": "GBP", "tags": ["ethical", "eveningwear", "social-impact", "london"]}
+- {"name": "Talia Byre", "domain": "taliabyre.com", "currency": "GBP", "tags": ["ready-to-wear", "tailoring", "london"]}
+- {"name": "L.F Markey", "domain": "lfmarkey.com", "currency": "GBP", "tags": ["workwear-inspired", "boilersuits", "london"]}
+- {"name": "Beaumont Organic", "domain": "beaumontorganic.com", "currency": "GBP", "tags": ["organic", "sustainable", "ready-to-wear"]}
+- {"name": "Alex Eagle", "domain": "alexeagle.com", "currency": "GBP", "tags": ["concept-store", "elevated-basics", "london"]}
+- {"name": "Aligne", "domain": "aligne.co", "currency": "GBP", "tags": ["contemporary", "relaxed-tailoring", "east-london"]}
+- {"name": "The Tweed Project", "domain": "thetweedproject.com", "currency": "EUR", "tags": ["tweed", "outerwear", "irish-made"]}
+- {"name": "Aoife McNamara", "domain": "aoifemcnamara.com", "currency": "EUR", "tags": ["millinery", "clothing", "dublin"]}
+- {"name": "Post Archive Faction", "domain": "postarchivefaction.com", "currency": "USD", "tags": ["avant-garde", "uniform", "conceptual", "unisex"]}
+- {"name": "Phingerin", "domain": "phingerin.com", "currency": "JPY", "tags": ["streetwear", "graphic", "layered", "unisex"]}
+- {"name": "Jieda", "domain": "jieda.store", "currency": "JPY", "tags": ["tailoring", "streetwear", "90s-retro", "tokyo"]}
+- {"name": "45R", "domain": "45rglobal.com", "currency": "USD", "tags": ["indigo-dyed", "artisanal", "natural-fibers", "heritage"]}
+- {"name": "Kolor", "domain": "kolor.jp", "currency": "JPY", "tags": ["architectural", "color-blocked", "tailored", "contemporary"]}
+- {"name": "Sean Suen", "domain": "seansuen.com", "currency": "EUR", "tags": ["unisex", "tailoring", "minimalist", "avant-garde"]}
+- {"name": "Mithridate", "domain": "shop.mithridate.com", "currency": "GBP", "tags": ["nightlife", "ready-to-wear", "guangzhou", "unisex"]}
+- {"name": "Susan Fang", "domain": "susanfangofficial.com", "currency": "GBP", "tags": ["romantic", "beaded", "conceptual", "feminine"]}
+- {"name": "Peggy Hartanto", "domain": "peggyhartanto.com", "currency": "IDR", "tags": ["contemporary", "structured", "ready-to-wear", "jakarta"]}
+- {"name": "Filip + Inna", "domain": "filipinna.com", "currency": "PHP", "tags": ["indigenous-textiles", "artisanal", "hand-embroidered", "heritage"]}
+- {"name": "Innai&Co", "domain": "innaiandco.com", "currency": "MYR", "tags": ["contemporary", "minimalist-elegance", "kuala-lumpur", "eveningwear"]}
+- {"name": "Cotton Ink", "domain": "cottonink.co.id", "currency": "IDR", "tags": ["everyday", "feminine", "jakarta", "contemporary"]}
+- {"name": "Payal Khandwala", "domain": "payalkhandwala.com", "currency": "INR", "tags": ["color-blocked", "contemporary", "painterly", "feminine"]}
+- {"name": "Rimzim Dadu", "domain": "rimzimdadu.com", "currency": "INR", "tags": ["textile-innovation", "sculptural", "contemporary", "structured"]}
+- {"name": "Bloni", "domain": "bloni.in", "currency": "INR", "tags": ["avant-garde", "sculptural", "unisex", "conceptual"]}
+- {"name": "Kanika Goyal Label", "domain": "kglabel.com", "currency": "INR", "tags": ["contemporary", "minimal", "delhi", "unisex"]}
+- {"name": "Adriana Degreas", "domain": "adrianadegreas.com", "currency": "USD", "tags": ["resortwear", "swimwear", "prints", "sculptural"]}
+- {"name": "CIHUAH", "domain": "cihuah.com", "currency": "MXN", "tags": ["minimal", "architectural", "mexico-city", "womenswear"]}
+- {"name": "Kuna", "domain": "kunastores.com", "currency": "USD", "tags": ["alpaca", "knitwear", "heritage", "minimalist"]}
+- {"name": "Sol Alpaca", "domain": "solalpaca.com", "currency": "USD", "tags": ["alpaca", "knitwear", "artisanal", "cozy"]}
+- {"name": "ViX Paula Hermanny", "domain": "vixpaulahermanny.com", "currency": "USD", "tags": ["swimwear", "resortwear", "brazilian", "beach"]}
+- {"name": "Okayok", "domain": "okayok.ca", "currency": "CAD", "tags": ["socks", "basics", "made-in-canada", "toronto"]}
+- {"name": "Sid Neigum", "domain": "sidneigum.com", "currency": "CAD", "tags": ["avant-garde", "sculptural", "edmonton", "designer"]}
+- {"name": "Henne", "domain": "henne.com.au", "currency": "AUD", "tags": ["denim", "knitwear", "wardrobe-essentials", "australia"]}
+- {"name": "Ena Pelly", "domain": "enapelly.com.au", "currency": "AUD", "tags": ["premium-basics", "shirting", "australia"]}
+- {"name": "Marle", "domain": "marle.co.nz", "currency": "NZD", "tags": ["knitwear", "natural-fibres", "minimalist", "mount-maunganui"]}
+- {"name": "Community Clothing", "domain": "communityclothing.co.uk", "currency": "GBP", "tags": ["basics", "made-in-britain", "denim", "affordable"]}
+- {"name": "Elwin", "domain": "elwinstudio.com", "currency": "GBP", "tags": ["small-batch", "east-london", "sustainable", "made-to-order"]}
+- {"name": "Kate Sheridan", "domain": "katesheridan.com", "currency": "GBP", "tags": ["eclectic", "designer", "playful"]}
+- {"name": "Le Kilt", "domain": "lekilt.co.uk", "currency": "GBP", "tags": ["tartan", "kilts", "scottish-heritage", "knitwear"]}
+- {"name": "Paynter", "domain": "paynter.co.uk", "currency": "GBP", "tags": ["jackets", "small-batch", "drop-release"]}
+- {"name": "Stable of Ireland", "domain": "stableofireland.com", "currency": "EUR", "tags": ["country-style", "knitwear", "irish-linen", "heritage"]}
+- {"name": "Jennifer Rothwell", "domain": "jenniferrothwell.com", "currency": "EUR", "tags": ["silk-scarves", "irish-heritage", "tunics", "accessories"]}

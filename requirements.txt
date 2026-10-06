@@ -1,0 +1,10 @@
+torch
+open_clip_torch
+fastapi
+uvicorn[standard]
+pillow
+numpy
+httpx
+pyyaml
+python-multipart
+anthropic

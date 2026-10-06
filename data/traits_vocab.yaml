@@ -1,0 +1,192 @@
+# Concrete, shopper-language traits. CLIP matches screenshots and quiz picks against these locally, for free.
+# Rules: garment + cut + fabric/detail + colour. No scene labels (-core, decades, "vibe", "chic", brands).
+# Phrases Claude produces that aren't here get appended to data/traits_vocab_learned.json automatically.
+
+# denim & trousers
+- low-rise flared jeans
+- baggy wide-leg jeans
+- straight-leg light wash jeans
+- dark rinse bootcut jeans
+- distressed ripped jeans
+- lace-trimmed denim
+- embellished denim with studs or rhinestones
+- patchwork denim
+- denim maxi skirt
+- denim mini skirt
+- cargo pants with big pockets
+- parachute pants
+- tailored wide-leg trousers
+- high-waisted wide-leg trousers
+- pleated front trousers
+- slim cigarette trousers
+- leather pants
+- track pants with side stripes
+- knit lounge pants
+- bike shorts
+- tailored shorts
+- micro mini skirt
+- pleated tennis skirt
+- satin slip skirt
+- maxi skirt with high slit
+- asymmetric draped skirt
+- cargo skirt
+- bubble hem skirt
+- tiered ruffle skirt
+
+# tops
+- cropped baby tee
+- oversized graphic tee
+- ribbed tank top
+- sheer mesh top
+- lace camisole
+- corset top with boning
+- halter neck top
+- off-the-shoulder top
+- one-shoulder top
+- bandeau top
+- fitted bodysuit
+- cropped boxy knit
+- oversized cable-knit sweater
+- fitted ribbed knit top
+- cropped cardigan with buttons
+- chunky knit cardigan
+- fair isle knit cardigan
+- fuzzy mohair sweater
+- striped long-sleeve tee
+- oversized button-up shirt
+- fitted poplin shirt
+- tie-front blouse
+- puff-sleeve blouse
+- ruffle-trim blouse
+- oversized hooded sweatshirt
+- zip-up fleece
+- collared polo shirt
+- crochet knit top
+- backless top with ties
+- wrap top
+- fitted turtleneck knit
+
+# dresses
+- satin slip dress
+- bodycon mini dress
+- smocked puff-sleeve dress
+- floral midi dress
+- tiered ruffle maxi dress
+- knit maxi dress
+- wrap dress
+- shirt dress
+- sheer lace dress
+- cut-out dress
+- sequin mini dress
+- babydoll dress
+- drop-waist dress
+- corset dress
+- halter maxi dress
+- strapless dress
+- knitted mini dress
+- denim dress
+- bubble hem midi dress
+- lace-trimmed slip dress
+- eyelet white cotton dress
+- ruffle-trim sweetheart neckline dress
+- thin spaghetti strap dress
+
+# outerwear
+- oversized blazer
+- cropped fitted blazer
+- cropped leather jacket
+- oversized leather jacket
+- bomber jacket
+- trench coat
+- long wool overcoat
+- double-breasted camel wool coat
+- puffer jacket
+- denim jacket
+- shearling jacket
+- varsity jacket
+- quilted jacket
+- utility vest
+- fur-trim coat
+- track jacket
+
+# sets & other
+- matching knit set
+- co-ord top and skirt set
+- jumpsuit
+- denim overalls
+- linen two-piece set
+- athletic leggings and sports bra
+- tennis dress
+- one-piece swimsuit
+- bikini with ties
+- pyjama-style satin set
+- slip nightgown
+
+# details & fabrics
+- lace trim details
+- sheer layering
+- ruched detailing
+- cut-out details
+- bow details
+- feather trim
+- fringe details
+- embroidery details
+- sequins and sparkle
+- metallic fabric
+- velvet fabric
+- satin fabric
+- crochet knit
+- cable knit
+- ribbed knit
+- mesh fabric
+- faux fur
+- leather and faux leather
+- raw distressed edges
+- pleated fabric
+- smocked fabric
+- exposed seams
+- contrast stitching
+- buckles and hardware
+- studs and rhinestones
+
+# prints & colours
+- floral print
+- ditsy floral print
+- animal print
+- polka dot print
+- gingham check
+- plaid tartan
+- stripes
+- paisley print
+- graphic print
+- tie-dye
+- all-black outfit
+- cream and oatmeal neutrals
+- camel and cream neutral tailoring
+- pastel colours
+- bright colour-blocking
+- earth tones brown and olive
+- red accents
+- all-white outfit
+- grey marle
+
+# fit & silhouette
+- oversized loose fit
+- fitted body-hugging
+- cropped length
+- high-waisted
+- low-rise
+- wide-leg
+- flared leg
+- dropped shoulders
+- boxy shape
+- asymmetric hem
+- floor-length
+- mini length
+- midi length
+- high slit
+- open back
+- plunging neckline
+- square neckline
+- sweetheart neckline
+- draped cowl neck

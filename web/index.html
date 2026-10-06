@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niche · search small brands</title>
+<style>
+:root{--bg:#fbfaf8;--fg:#17150f;--muted:#76715f;--line:#e6e1d8;--card:#fff;--pill:#f1ede6;--accent:#17150f;--accent-fg:#fff;--ok:#2f7d4f;--warn:#a35f12;--shadow:0 10px 40px rgba(0,0,0,.12)}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--fg:#f0ede6;--muted:#9c978a;--line:#2a2824;--card:#1a1917;--pill:#242220;--accent:#f0ede6;--accent-fg:#121110;--ok:#7fd39a;--warn:#e0a35a;--shadow:0 10px 40px rgba(0,0,0,.5)}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+button.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+button.quiet{border:0;color:var(--muted);padding:4px 6px}
+button.on{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+button:disabled{opacity:.4;cursor:default}
+input[type=text],input[type=number],select{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+label.tog{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer}
+.hint{color:var(--muted);font-size:13px}
+/* header */
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;padding:12px 24px;max-width:1400px;margin:0 auto}
+.bar h1{font-size:19px;margin:0;letter-spacing:.01em;cursor:pointer}
+.search{flex:1;display:flex;gap:8px;max-width:720px}
+.search input{flex:1;font-size:16px;padding:10px 14px;border-radius:999px}
+.nav{display:flex;gap:6px;align-items:center}
+.nav .usage{font-size:12px;color:var(--muted);margin-left:6px;white-space:nowrap}
+.filters{display:flex;gap:8px;align-items:center;padding:8px 24px 12px;max-width:1400px;margin:0 auto;flex-wrap:wrap}
+.filters .cats{display:flex;gap:6px;flex-wrap:wrap}
+.filters .cats button{font-size:12.5px;padding:4px 10px}
+.filters .sp{flex:1}
+.filters input[type=number]{width:84px;padding:5px 8px;font-size:13px}
+.filters select{padding:5px 8px;font-size:13px}
+/* main */
+main{max-width:1400px;margin:0 auto;padding:16px 24px 80px}
+.rh{display:flex;align-items:baseline;gap:12px;margin:4px 0 14px;flex-wrap:wrap}
+.rh h2{font-size:16px;margin:0;font-weight:600}
+.rh .hint{flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px 14px}
+.pc{position:relative;cursor:pointer}
+.gal{position:relative;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:var(--pill)}
+.track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.track img{flex:0 0 100%;height:100%;object-fit:cover;scroll-snap-align:start;display:block}
+.gal .arr{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.85);color:#111;border:0;width:28px;height:28px;padding:0;border-radius:50%;opacity:0;transition:opacity .15s;font-size:14px;line-height:28px}
+.gal .arr.l{left:8px}.gal .arr.r{right:8px}
+.pc:hover .arr{opacity:1}
+.gal .dots{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:4px;pointer-events:none}
+.gal .dots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.55)}
+.gal .dots i.on{background:#fff}
+.heart{position:absolute;top:8px;right:8px;background:rgba(255,255,255,.9);color:#111;border:0;width:30px;height:30px;padding:0;border-radius:50%;font-size:14px}
+.heart.on{background:#111;color:#fff}
+.pc .meta{padding:8px 2px 0}
+.pc .brand{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.pc .title{font-size:14px;line-height:1.3;margin:2px 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pc .price{font-size:13.5px}
+.pc .price .orig{color:var(--muted);font-size:12px;margin-left:5px}
+.pc .sz{font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.04em}
+.pc .why{font-size:11px;color:var(--muted);margin-top:2px;font-style:italic}
+.more{display:flex;justify-content:center;margin:28px 0}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+.sugg{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.banner{background:var(--pill);border-radius:10px;padding:12px 14px;font-size:13.5px;margin-bottom:16px}
+.banner.warn{color:var(--warn)}
+/* drawer & modals */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:20;display:none}
+.scrim.on{display:block}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--bg);z-index:21;overflow:auto;transform:translateX(100%);transition:transform .25s;box-shadow:var(--shadow)}
+.drawer.on{transform:none}
+.drawer .close{position:sticky;top:10px;float:right;margin:0 14px 0 0;background:var(--card);z-index:2}
+.dg{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;aspect-ratio:3/4;background:var(--pill);scrollbar-width:none}
+.dg::-webkit-scrollbar{display:none}
+.dg img{flex:0 0 100%;object-fit:cover;scroll-snap-align:start}
+.thumbs{display:flex;gap:6px;padding:8px 20px 0;overflow-x:auto}
+.thumbs img{width:54px;height:68px;object-fit:cover;border-radius:5px;cursor:pointer;opacity:.7}
+.thumbs img.on{opacity:1;outline:2px solid var(--fg)}
+.dbody{padding:14px 20px 40px}
+.dbody .brand{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.dbody .brand a{text-decoration:none}
+.dbody h2{font-size:20px;margin:4px 0 6px;font-weight:600;letter-spacing:-.01em}
+.dbody .price{font-size:17px}
+.dbody .price .orig{color:var(--muted);font-size:13px;margin-left:6px}
+.sizes{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.sizes span{border:1px solid var(--line);border-radius:6px;padding:4px 10px;font-size:13px}
+.sizes span.out{color:var(--muted);text-decoration:line-through;opacity:.6}
+.sizes span.mine{border-color:var(--fg);font-weight:600}
+.acts{display:flex;gap:8px;margin:14px 0}
+.desc{color:var(--muted);font-size:14px;line-height:1.55;max-height:7.5em;overflow:hidden;position:relative}
+.desc.open{max-height:none}
+.strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}
+.mini{flex:0 0 118px;cursor:pointer}
+.mini img{width:118px;height:150px;object-fit:cover;border-radius:8px;background:var(--pill);display:block}
+.mini .cap{font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.3}
+.mini .cap b{color:var(--fg);font-weight:500;display:block}
+h3.sec{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:22px 0 10px}
+.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:min(520px,calc(100% - 32px));background:var(--bg);border-radius:14px;z-index:22;display:none;box-shadow:var(--shadow);max-height:90vh;overflow:auto}
+.modal.on{display:block}
+.modal .in{padding:22px}
+.modal h2{font-size:18px;margin:0 0 14px}
+.row{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;margin:8px 0}
+.row .hint{font-size:12px}
+/* taste panel */
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.tchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 11px;font-size:13.5px;cursor:pointer;user-select:none}
+.tchip.off{opacity:.45;text-decoration:line-through}
+.tchip img{width:16px;height:16px;border-radius:3px;object-fit:cover}
+.tchip .n{font-size:11px;color:var(--muted)}
+.drop{border:1.5px dashed var(--line);border-radius:10px;padding:16px;text-align:center;color:var(--muted);font-size:13px;cursor:pointer}
+.drop.over{border-color:var(--fg);color:var(--fg)}
+.tgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;margin-top:8px}
+.tgrid div{position:relative;aspect-ratio:1;border-radius:5px;overflow:hidden;background:var(--pill)}
+.tgrid img{width:100%;height:100%;object-fit:cover}
+.tgrid button{position:absolute;top:1px;right:1px;background:rgba(0,0,0,.55);color:#fff;border:0;width:16px;height:16px;padding:0;font-size:10px;line-height:16px}
+/* brands & quiz */
+.bl{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.bl .pv{display:flex;gap:4px}
+.bl .pv img{width:44px;height:56px;object-fit:cover;border-radius:5px}
+.bl .bn{font-weight:600;font-size:16px}
+.bl .bt{font-size:13px;color:var(--muted)}
+.bl .sp{flex:1}
+.bcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px}
+.bcard .why b{font-weight:600;background:var(--pill);border-radius:5px;padding:0 5px}
+.tabs{display:inline-flex;gap:2px;background:var(--pill);border-radius:999px;padding:3px;margin-bottom:14px}
+.tabs button{border:0;padding:5px 12px;font-size:13px;color:var(--muted)}
+.tabs button.on{background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin:14px 0}
+.q{position:relative;border-radius:10px;overflow:hidden;cursor:pointer;background:var(--pill);aspect-ratio:3/4;border:2px solid transparent}
+.q img{width:100%;height:100%;object-fit:cover;display:block}
+.q.on{border-color:var(--fg)}
+.q.on::after{content:"✓";position:absolute;top:6px;right:6px;background:var(--fg);color:var(--bg);border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;font-size:13px}
+@media (max-width:760px){.bar{flex-wrap:wrap}.search{order:3;flex-basis:100%;max-width:none}.nav .lbl{display:none}main{padding:12px 14px 80px}.grid{grid-template-columns:repeat(2,1fr);gap:14px 10px}.filters{padding:6px 14px 10px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <h1 id="logo">Niche</h1>
+    <form class="search" id="form"><input type="text" id="q" placeholder="low-rise black pants · fall jacket · lace trim denim…" autocomplete="off"><button class="primary" type="submit">Search</button></form>
+    <div class="nav">
+      <button id="navTaste">✦ <span class="lbl">Your taste</span></button>
+      <button id="navSaved">♥ <span class="lbl">Saved</span></button>
+      <button id="navBrands">◎ <span class="lbl">Brands</span></button>
+      <button id="navSettings" title="Sizes & currency">⚙</button>
+      <span class="usage" id="usage"></span>
+    </div>
+  </div>
+  <div class="filters" id="filters" hidden>
+    <div class="cats" id="cats"></div>
+    <span class="sp"></span>
+    <label class="tog"><input type="checkbox" id="fSize"> in my size</label>
+    <label class="tog"><input type="checkbox" id="fPers"> personalize</label>
+    <input type="number" id="fMin" placeholder="min" min="0"> <input type="number" id="fMax" placeholder="max" min="0">
+    <select id="fSort"><option value="relevance">relevance</option><option value="price_asc">price ↑</option><option value="price_desc">price ↓</option></select>
+  </div>
+</header>
+
+<main id="main"></main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer"></aside>
+
+<div class="modal" id="settings"><div class="in">
+  <h2>Sizes & currency</h2>
+  <p class="hint">Approximate — every brand sizes differently, so the filter works on one letter scale and the brand's own chart is a click away.</p>
+  <div class="row"><span>Tops</span><select id="sTops"></select></div>
+  <div class="row"><span>Bottoms</span><select id="sBottoms"></select></div>
+  <div class="row"><span>Dresses</span><select id="sDresses"></select></div>
+  <div class="row"><span>Show prices in</span><select id="sCur"><option>USD</option><option>CAD</option><option>GBP</option><option>EUR</option><option>AUD</option></select></div>
+  <p class="hint" id="sizeHint"></p>
+  <div class="acts"><button class="primary" id="sSave">Save</button><button id="sClose">Cancel</button><span class="sp" style="flex:1"></span><button class="quiet" id="sReset">reset everything</button></div>
+</div></div>
+
+<div class="modal" id="taste"><div class="in">
+  <h2>Your taste <span class="hint" style="font-weight:400">— optional. Search works without it.</span></h2>
+  <p class="hint">Add looks you've saved and Niche can nudge results toward them (the "personalize" switch), and tell you which brands carry what you keep coming back to.</p>
+  <div class="drop" id="drop"><span id="dropText">Drop screenshots or images from any site here, or click to choose</span><input type="file" id="file" accept="image/*" multiple hidden></div>
+  <div class="tgrid" id="tgrid"></div>
+  <div class="row" style="grid-template-columns:1fr auto;margin-top:12px"><input type="text" id="pinUrl" placeholder="Pinterest board link (public), e.g. pinterest.com/you/clothes"><button id="pinAdd">Import pins</button></div>
+  <div class="acts"><button id="quizBtn">Tap what you'd wear</button><span class="hint" style="align-self:center">20 pieces, 30 seconds</span></div>
+  <h3 class="sec">What we keep seeing</h3>
+  <div class="chips" id="tchips"></div>
+  <p class="hint" style="margin-top:8px"><span id="tnote"></span> <span id="refineWrap" hidden>· <a href="#" id="refine" title="One small text-only Claude call, about a tenth of a cent">sharpen wording with Claude</a></span></p>
+  <div class="acts"><button class="primary" id="forYou">Brands for you</button><button id="tClose">Close</button></div>
+</div></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const api = async (path, opts = {}) => { const r = await fetch(path, opts); if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || r.statusText); return r.json(); };
+const json = (method, body) => ({ method, headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+const LETTERS = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
+const SIZE_HELP = { XXS: 'US 0 · UK 4 · EU 32', XS: 'US 0–2 · UK 6 · EU 34', S: 'US 4–6 · UK 8–10 · EU 36–38', M: 'US 8–10 · UK 12 · EU 40–42', L: 'US 12–14 · UK 14–16 · EU 44', XL: 'US 16–18 · UK 18–20 · EU 46–48', XXL: 'US 20+ · UK 22+ · EU 50+' };
+const CAT_LABEL = { dress: 'Dresses', top: 'Tops', knitwear: 'Knitwear', trousers: 'Pants', jeans: 'Jeans', skirt: 'Skirts', shorts: 'Shorts', jacket: 'Jackets', coat: 'Coats', blazer: 'Blazers', jumpsuit: 'Jumpsuits', set: 'Sets', swimwear: 'Swim', lingerie: 'Lingerie', activewear: 'Active', shoes: 'Shoes', bag: 'Bags', accessory: 'Accessories' };
+const state = { meta: null, profile: null, view: 'search', q: '', category: '', page: 0, pages: 0, results: [], lastQ: '', quizPicked: new Set(), brandsTab: 'found' };
+
+const curOf = () => state.profile?.currency || 'USD';
+const fmt = (v, cur) => new Intl.NumberFormat(undefined, { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(v);
+function price(it) {
+  if (it.price == null) return '';
+  const cur = curOf();
+  if (it.currency === cur) return `<span class="price">${fmt(it.price, cur)}</span>`;
+  const conv = it.price_usd != null ? it.price_usd / (state.meta.fx[cur] || 1) : null;
+  return `<span class="price">${conv != null ? '≈ ' + fmt(conv, cur) : ''}<span class="orig">${fmt(it.price, it.currency)}</span></span>`;
+}
+const mySize = it => { const g = { dress: 'dresses', jumpsuit: 'dresses', set: 'dresses', trousers: 'bottoms', jeans: 'bottoms', skirt: 'bottoms', shorts: 'bottoms' }[it.category] || 'tops'; return (state.profile?.sizes || {})[g]; };
+const hasTaste = () => state.profile && (state.profile.images.length || (state.profile.pins || []).length || (state.profile.quiz_picks || []).length);
+function showUsage(u) { if (u) $('#usage').textContent = `Claude $${u.cost_usd.toFixed(2)}`; }
+async function refreshUsage() { try { showUsage(await api('/api/usage')); } catch (e) {} }
+
+async function boot() {
+  const [m, p] = await Promise.all([api('/api/meta'), api('/api/profile')]);
+  state.meta = m; state.profile = p.profile; showUsage(m.usage);
+  $('#cats').innerHTML = `<button data-cat="" class="on">All</button>` + m.categories.filter(c => !['shoes', 'bag', 'accessory'].includes(c)).map(c => `<button data-cat="${c}">${CAT_LABEL[c] || c}</button>`).join('');
+  for (const id of ['sTops', 'sBottoms', 'sDresses']) $('#' + id).innerHTML = `<option value="">any</option>` + LETTERS.map(l => `<option>${l}</option>`).join('');
+  $('#sizeHint').innerHTML = LETTERS.map(l => `<b>${l}</b> ${SIZE_HELP[l]}`).join(' &nbsp;·&nbsp; ');
+  syncControls(); renderHome();
+}
+function syncControls() {
+  const p = state.profile, hasSizes = p.sizes && Object.keys(p.sizes).length;
+  $('#fSize').disabled = !hasSizes; $('#fSize').parentElement.title = hasSizes ? '' : 'Set your sizes under ⚙ first';
+  if (!hasSizes) $('#fSize').checked = false;
+  $('#fPers').disabled = !hasTaste(); $('#fPers').parentElement.title = hasTaste() ? '' : 'Add a screenshot, pins or take the quiz under ✦ first';
+  if (!hasTaste()) $('#fPers').checked = false;
+}
+
+// ---------- search ----------
+$('#form').addEventListener('submit', e => { e.preventDefault(); state.q = $('#q').value.trim(); state.category = state.category || ''; runSearch(true); });
+$('#cats').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; document.querySelectorAll('#cats button').forEach(x => x.classList.toggle('on', x === b)); state.category = b.dataset.cat; runSearch(true); });
+for (const id of ['fSize', 'fPers', 'fSort']) $('#' + id).addEventListener('change', () => runSearch(true));
+for (const id of ['fMin', 'fMax']) $('#' + id).addEventListener('change', () => runSearch(true));
+$('#logo').addEventListener('click', () => { state.view = 'search'; state.q = ''; $('#q').value = ''; renderHome(); });
+
+async function runSearch(fresh) {
+  state.view = 'search';
+  if (!state.q && !state.category) { renderHome(); return; }
+  $('#filters').hidden = false;
+  if (fresh) { state.page = 0; state.results = []; }
+  const params = new URLSearchParams({ q: state.q, page: state.page, sort: $('#fSort').value, size: $('#fSize').checked, personalize: $('#fPers').checked });
+  if (state.category) params.set('category', state.category);
+  if ($('#fMin').value) params.set('price_min', $('#fMin').value);
+  if ($('#fMax').value) params.set('price_max', $('#fMax').value);
+  if (fresh) $('#main').innerHTML = '<div class="empty">Searching 400+ small brands…</div>';
+  try {
+    const r = await api('/api/search?' + params);
+    state.pages = r.pages; state.results = fresh ? r.items : state.results.concat(r.items); state.lastQ = r.query;
+    renderResults(r);
+  } catch (err) { $('#main').innerHTML = `<div class="empty">${esc(err.message)}</div>`; }
+}
+function renderHome() {
+  $('#filters').hidden = true;
+  const m = state.meta;
+  $('#main').innerHTML = `<div class="empty" style="padding-top:60px">
+    <div style="font-size:22px;color:var(--fg);font-weight:600;letter-spacing:-.01em">Search ${m.stats.brands} independent brands. No ads, no sponsored results.</div>
+    <div style="margin-top:6px">${m.stats.items.toLocaleString()} pieces, ranked by what you asked for — in your size, priced in your currency, from brands you haven't met yet.</div>
+    <div class="sugg">${['low-rise black pants', 'fall jacket', 'lace trim denim', 'satin slip dress', 'oversized grey blazer', 'knit maxi dress'].map(s => `<button data-q="${s}">${s}</button>`).join('')}</div></div>`;
+}
+$('#main').addEventListener('click', e => { const b = e.target.closest('button[data-q]'); if (b) { $('#q').value = b.dataset.q; state.q = b.dataset.q; runSearch(true); } });
+function renderResults(r) {
+  const sizeNote = $('#fSize').checked ? ' · in your size' : '';
+  const persNote = r.personalized ? ' · nudged toward your saved looks' : '';
+  const head = `<div class="rh"><h2>${r.total.toLocaleString()} pieces${r.query ? ` for “${esc(r.query)}”` : ''}</h2><span class="hint">${r.brands_on_page} brands on this page${sizeNote}${persNote}</span>${r.category ? `<span class="hint">category: ${CAT_LABEL[r.category] || r.category}</span>` : ''}</div>`;
+  const more = state.page + 1 < state.pages ? `<div class="more"><button id="moreBtn">More pieces</button></div>` : '';
+  $('#main').innerHTML = head + (state.results.length ? `<div class="grid">${state.results.map(card).join('')}</div>${more}` : `<div class="empty">Nothing in stock for that${sizeNote ? ' in your size' : ''}. Try fewer words, or turn a filter off.</div>`);
+  const mb = $('#moreBtn'); if (mb) mb.addEventListener('click', () => { state.page += 1; runSearch(false); });
+}
+function card(it) {
+  const imgs = it.images.slice(0, 5);
+  const mine = mySize(it), stock = it.sizes_in_stock || [];
+  const sz = stock.length ? stock.map(s => `<b style="${s === mine ? 'color:var(--fg)' : 'font-weight:400'}">${s}</b>`).join(' ') : (it.sizes_offered.length ? 'sold out in all sizes' : '');
+  return `<article class="pc" data-id="${esc(it.id)}">
+    <div class="gal"><div class="track">${imgs.map(u => `<img src="${esc(u)}" loading="lazy" alt="">`).join('')}</div>
+      ${imgs.length > 1 ? `<button class="arr l" data-dir="-1">‹</button><button class="arr r" data-dir="1">›</button><div class="dots">${imgs.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('')}</div>` : ''}
+      <button class="heart ${it.saved ? 'on' : ''}" data-act="save" title="Save">♥</button></div>
+    <div class="meta"><div class="brand">${esc(it.brand)}</div><div class="title">${esc(it.title)}</div>${price(it)}<div class="sz">${sz}</div>${it.why ? `<div class="why">${esc(it.why[0])}</div>` : ''}</div>
+  </article>`;
+}
+$('#main').addEventListener('click', async e => {
+  const pc = e.target.closest('.pc'); if (!pc) return;
+  const id = pc.dataset.id;
+  const arr = e.target.closest('.arr');
+  if (arr) { e.stopPropagation(); const t = pc.querySelector('.track'); t.scrollBy({ left: t.clientWidth * +arr.dataset.dir, behavior: 'smooth' }); return; }
+  if (e.target.closest('[data-act=save]')) { e.stopPropagation(); await toggleSave(id, e.target.closest('.heart')); return; }
+  openItem(id);
+});
+$('#main').addEventListener('scroll', e => {}, true);
+document.addEventListener('scroll', e => {
+  const t = e.target; if (!t.classList || !t.classList.contains('track')) return;
+  const i = Math.round(t.scrollLeft / t.clientWidth); t.parentElement.querySelectorAll('.dots i').forEach((d, j) => d.classList.toggle('on', j === i));
+}, true);
+async function toggleSave(id, btn) {
+  const on = btn.classList.contains('on');
+  await api('/api/items/feedback', json('POST', { id, action: on ? 'unsave' : 'save', via: state.lastQ ? `searched “${state.lastQ}”` : 'saved a piece' }));
+  document.querySelectorAll(`[data-id="${CSS.escape(id)}"] .heart, .drawer .heart[data-id="${CSS.escape(id)}"]`).forEach(b => b.classList.toggle('on', !on));
+}
+
+// ---------- item drawer ----------
+async function openItem(id) {
+  $('#scrim').classList.add('on'); $('#drawer').classList.add('on');
+  $('#drawer').innerHTML = '<div class="empty">Loading…</div>';
+  const r = await api('/api/items?id=' + encodeURIComponent(id));
+  const it = r.item, mine = mySize(it);
+  const sizes = it.sizes.length ? it.sizes.map(s => `<span class="${s.available ? '' : 'out'} ${s.canon.includes(mine) ? 'mine' : ''}" title="${esc(s.canon.join('/') || 'size unknown')}">${esc(s.label)}</span>`).join('') : '<span class="hint">sizes not listed</span>';
+  const mini = x => `<div class="mini" data-open="${esc(x.id)}"><img src="${esc(x.image)}" loading="lazy" alt=""><div class="cap"><b>${esc(x.brand)}</b>${esc(x.title)}</div></div>`;
+  $('#drawer').innerHTML = `<button class="close quiet" id="dClose">✕</button>
+    <div class="dg" id="dg">${it.images.map(u => `<img src="${esc(u)}" alt="">`).join('')}</div>
+    ${it.images.length > 1 ? `<div class="thumbs">${it.images.map((u, i) => `<img src="${esc(u)}" data-i="${i}" class="${i ? '' : 'on'}" alt="">`).join('')}</div>` : ''}
+    <div class="dbody">
+      <div class="brand"><a href="${esc(it.url)}" target="_blank" rel="noopener" data-visit="${esc(it.brand)}">${esc(it.brand)} ↗</a></div>
+      <h2>${esc(it.title)}</h2>${price(it)}
+      <div class="sizes">${sizes}</div>
+      <div class="acts"><a class="primary" style="text-decoration:none;border-radius:999px;padding:8px 16px;background:var(--accent);color:var(--accent-fg)" href="${esc(it.url)}" target="_blank" rel="noopener" data-visit="${esc(it.brand)}">Shop at ${esc(it.brand)} →</a><button class="heart ${it.saved ? 'on' : ''}" style="position:static;width:auto;padding:0 14px;border:1px solid var(--line)" data-id="${esc(it.id)}" data-act="save">♥ save</button></div>
+      ${it.description ? `<div class="desc" id="desc">${esc(it.description)}</div><button class="quiet" id="descMore">read more</button>` : ''}
+      <h3 class="sec">Similar from other brands</h3><div class="strip">${r.similar.map(mini).join('') || '<span class="hint">nothing close</span>'}</div>
+      <h3 class="sec">More from ${esc(it.brand)}</h3><div class="strip">${r.more.map(mini).join('')}</div>
+    </div>`;
+  $('#dClose').addEventListener('click', closeDrawer);
+  $('#descMore')?.addEventListener('click', e => { $('#desc').classList.toggle('open'); e.target.textContent = $('#desc').classList.contains('open') ? 'less' : 'read more'; });
+  $('#drawer').scrollTop = 0;
+}
+function closeDrawer() { $('#scrim').classList.remove('on'); $('#drawer').classList.remove('on'); }
+$('#scrim').addEventListener('click', () => { closeDrawer(); closeModals(); });
+$('#drawer').addEventListener('click', async e => {
+  const open = e.target.closest('[data-open]'); if (open) { openItem(open.dataset.open); return; }
+  const th = e.target.closest('.thumbs img'); if (th) { const dg = $('#dg'); dg.scrollTo({ left: dg.clientWidth * +th.dataset.i, behavior: 'smooth' }); document.querySelectorAll('.thumbs img').forEach(x => x.classList.toggle('on', x === th)); return; }
+  const visit = e.target.closest('[data-visit]'); if (visit) { api('/api/brands/discovered', json('POST', { brand: visit.dataset.visit, via: state.lastQ ? `searched “${state.lastQ}”` : 'browsing' })).catch(() => {}); return; }
+  const save = e.target.closest('[data-act=save]'); if (save) { await toggleSave(save.dataset.id, save); }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeDrawer(); closeModals(); } });
+
+// ---------- saved & brands views ----------
+$('#navSaved').addEventListener('click', async () => {
+  state.view = 'saved'; $('#filters').hidden = true;
+  const r = await api('/api/saved/items'); state.results = r.items;
+  $('#main').innerHTML = `<div class="rh"><h2>Saved pieces</h2><span class="hint">${r.items.length}</span></div>` + (r.items.length ? `<div class="grid">${r.items.map(card).join('')}</div>` : '<div class="empty">Nothing saved yet — tap ♥ on anything.</div>');
+});
+$('#navBrands').addEventListener('click', () => renderBrands());
+async function renderBrands() {
+  state.view = 'brands'; $('#filters').hidden = true;
+  const tabs = `<div class="tabs"><button data-t="found" class="${state.brandsTab === 'found' ? 'on' : ''}">You've found</button><button data-t="foryou" class="${state.brandsTab === 'foryou' ? 'on' : ''}">For you</button><button data-t="saved" class="${state.brandsTab === 'saved' ? 'on' : ''}">Saved</button></div>`;
+  $('#main').innerHTML = tabs + '<div id="bl"><div class="empty">Loading…</div></div>';
+  $('#main').querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => { state.brandsTab = b.dataset.t; renderBrands(); }));
+  if (state.brandsTab === 'found') {
+    const r = await api('/api/brands/discovered');
+    $('#bl').innerHTML = r.brands.length ? r.brands.map(b => `<div class="bl"><div class="pv">${b.preview.map(u => `<img src="${esc(u)}" alt="">`).join('')}</div><div><div class="bn">${esc(b.brand)}</div><div class="bt">${esc(b.traits.slice(0, 3).join(' · ') || b.tags.join(' · '))}</div><div class="bt">found via ${esc(b.via)} · ${b.count_items} pieces in stock</div></div><span class="sp"></span><button data-brandq="${esc(b.brand)}">browse</button><a href="https://${esc(b.domain)}" target="_blank" rel="noopener"><button>visit ↗</button></a></div>`).join('')
+      : '<div class="empty">Brands you save, shop or visit through Niche collect here — so you stop forgetting them.</div>';
+  } else {
+    const r = state.brandsTab === 'saved' ? await api('/api/brands/saved') : await api('/api/recommend?limit=12');
+    const cards = r.brands.map(c => `<div class="bcard"><div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap"><span class="bn" style="font-size:17px;font-weight:600">${esc(c.brand)}</span><span class="hint">${c.price_low != null ? fmt(c.price_low, c.currency) + '–' + fmt(c.price_high, c.currency) : ''} · ${c.count} pieces</span><span style="flex:1"></span><button data-brandq="${esc(c.brand)}">browse</button><button data-bact="${c.saved ? 'clear' : 'save'}" data-brand="${esc(c.brand)}">${c.saved ? '♥ saved' : '♥ save'}</button>${state.brandsTab === 'saved' ? '' : `<button data-bact="dismiss" data-brand="${esc(c.brand)}">not for me</button>`}</div>
+      <p class="why">${c.matched.length ? 'Carries ' + c.matched.slice(0, 3).map(m => `<b>${esc(m.trait)}</b>`).join(', ') + (c.matched.length > 3 ? ` (+${c.matched.length - 3} more)` : '') + ` — ${c.coverage} of what you keep coming back to.` : 'None of your traits seen yet.'}</p>
+      <div class="strip">${c.matched.slice(0, 5).map(m => `<div class="mini" data-open="${esc(m.evidence.id)}"><img src="${esc(m.evidence.image)}" loading="lazy" alt=""><div class="cap"><b>${esc(m.trait)}</b>${esc(m.evidence.title)}</div></div>`).join('')}</div></div>`).join('');
+    const note = r.confidence ? `<div class="banner">${r.candidates ?? 0} brands carry at least one of the ${r.trait_count} things you keep coming back to — ${esc(r.confidence.note)}.</div>` : '';
+    $('#bl').innerHTML = (state.brandsTab === 'foryou' ? note : '') + (cards || `<div class="empty">${state.brandsTab === 'saved' ? 'No saved brands yet.' : 'Add a screenshot, pins, a brand you shop or take the quiz (✦) and brands that carry what you like show up here.'}</div>`);
+  }
+}
+$('#main').addEventListener('click', async e => {
+  const bq = e.target.closest('[data-brandq]'); if (bq) { state.view = 'search'; state.q = ''; $('#q').value = ''; $('#filters').hidden = false; $('#main').innerHTML = '<div class="empty">Loading…</div>'; const r = await api('/api/search?' + new URLSearchParams({ q: '', brand: bq.dataset.brandq, page: 0 })); state.results = r.items; state.pages = r.pages; state.page = 0; state.lastQ = ''; renderResults({ ...r, query: bq.dataset.brandq }); return; }
+  const ba = e.target.closest('[data-bact]'); if (ba) { await api('/api/brands/feedback', json('POST', { brand: ba.dataset.brand, action: ba.dataset.bact })); renderBrands(); return; }
+  const op = e.target.closest('[data-open]'); if (op) openItem(op.dataset.open);
+});
+
+// ---------- settings ----------
+function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('on')); if (!$('#drawer').classList.contains('on')) $('#scrim').classList.remove('on'); }
+function openModal(id) { closeModals(); $('#scrim').classList.add('on'); $('#' + id).classList.add('on'); }
+$('#navSettings').addEventListener('click', () => { const s = state.profile.sizes || {}; $('#sTops').value = s.tops || ''; $('#sBottoms').value = s.bottoms || ''; $('#sDresses').value = s.dresses || ''; $('#sCur').value = curOf(); openModal('settings'); });
+$('#sClose').addEventListener('click', closeModals);
+$('#sSave').addEventListener('click', async () => {
+  state.profile = await api('/api/profile/settings', json('POST', { sizes: { tops: $('#sTops').value, bottoms: $('#sBottoms').value, dresses: $('#sDresses').value }, currency: $('#sCur').value }));
+  syncControls(); closeModals(); if (state.view === 'search' && (state.q || state.category)) runSearch(true);
+});
+$('#sReset').addEventListener('click', async () => { if (!confirm('Clear sizes, saved pieces, brands and taste?')) return; state.profile = await api('/api/profile/reset', { method: 'POST' }); syncControls(); closeModals(); renderHome(); });
+
+// ---------- taste panel ----------
+$('#navTaste').addEventListener('click', () => { renderTaste(); openModal('taste'); });
+$('#tClose').addEventListener('click', closeModals);
+function renderTaste() {
+  const p = state.profile;
+  const imgs = [...p.images, ...(p.pins || [])];
+  $('#tgrid').innerHTML = imgs.map(im => `<div title="${esc((im.traits || []).join(' · '))}"><img src="${im.url}" alt=""><button data-del="${im.id}">×</button></div>`).join('');
+  $('#tchips').innerHTML = p.traits.map(t => { const img = t.sources.find(s => s.url); return `<span class="tchip ${t.enabled ? '' : 'off'}" data-id="${t.id}" title="tap to ${t.enabled ? 'mute' : 'unmute'}">${img ? `<img src="${esc(img.url)}" alt="">` : ''}${esc(t.text)}${t.sources.length > 1 ? `<span class="n">×${t.sources.length}</span>` : ''}</span>`; }).join('') || '<span class="hint">nothing yet</span>';
+  $('#tnote').textContent = p.traits.length ? `${p.traits.length} things read from ${imgs.length} image${imgs.length === 1 ? '' : 's'}${(p.quiz_picks || []).length ? ` and ${p.quiz_picks.length} quiz picks` : ''} — free, no AI calls. Tap to mute.` : '';
+  $('#refineWrap').hidden = !(state.meta.llm && p.traits.some(t => t.sources.some(s => ['image', 'quiz', 'pin'].includes(s.kind))));
+  syncControls();
+}
+const drop = $('#drop'), fileInput = $('#file');
+drop.addEventListener('click', () => fileInput.click());
+drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
+drop.addEventListener('dragleave', () => drop.classList.remove('over'));
+drop.addEventListener('drop', async e => {
+  e.preventDefault(); drop.classList.remove('over');
+  if (e.dataTransfer.files.length) return upload(e.dataTransfer.files);
+  const uri = e.dataTransfer.getData('text/uri-list') || e.dataTransfer.getData('text/plain');
+  if (uri) { await busy(async () => { state.profile = (await api('/api/profile/image_urls', json('POST', { urls: uri.split('\n').filter(Boolean) }))).profile; }); }
+});
+fileInput.addEventListener('change', () => { upload(fileInput.files); fileInput.value = ''; });
+async function busy(fn, label = 'Reading…') { const t = $('#dropText'), o = t.textContent; t.textContent = label; try { await fn(); } catch (err) { alert(err.message); } t.textContent = o; renderTaste(); refreshUsage(); }
+async function upload(files) { if (!files.length) return; const fd = new FormData(); [...files].forEach(f => fd.append('files', f)); await busy(async () => { state.profile = (await api('/api/profile/images', { method: 'POST', body: fd })).profile; }, `Reading ${files.length} image${files.length > 1 ? 's' : ''}…`); }
+$('#tgrid').addEventListener('click', async e => { const id = e.target.dataset.del; if (!id) return; state.profile = await api(`/api/profile/images/${id}`, { method: 'DELETE' }); renderTaste(); });
+$('#pinAdd').addEventListener('click', () => busy(async () => { const r = await api('/api/profile/pinterest', json('POST', { url: $('#pinUrl').value.trim() })); state.profile = r.profile; $('#pinUrl').value = ''; alert(`Imported ${r.added} pins from ${r.board}`); }, 'Importing pins…'));
+$('#tchips').addEventListener('click', async e => { const c = e.target.closest('.tchip'); if (!c) return; const t = state.profile.traits.find(t => t.id === c.dataset.id); Object.assign(t, await api(`/api/traits/${t.id}`, json('PATCH', { enabled: !t.enabled }))); renderTaste(); });
+$('#refine').addEventListener('click', async e => { e.preventDefault(); const a = e.target, o = a.textContent; a.textContent = 'sharpening…'; try { state.profile = (await api('/api/traits/refine', { method: 'POST' })).profile; } catch (err) { alert(err.message); } a.textContent = o; renderTaste(); refreshUsage(); });
+$('#forYou').addEventListener('click', () => { closeModals(); state.brandsTab = 'foryou'; renderBrands(); });
+
+// ---------- quiz ----------
+$('#quizBtn').addEventListener('click', async () => {
+  closeModals(); state.view = 'quiz'; $('#filters').hidden = true; state.quizPicked = new Set();
+  $('#main').innerHTML = '<div class="empty">Picking a spread…</div>';
+  const r = await api('/api/quiz?n=20');
+  $('#main').innerHTML = `<div class="rh"><h2>Tap what you'd wear</h2><span class="hint">ignore price and brand — the more you tap, the sharper the read</span></div><div class="qgrid">${r.items.map(it => `<div class="q" data-id="${esc(it.id)}" title="${esc(it.title)}"><img src="${esc(it.image)}" loading="lazy" alt=""></div>`).join('')}</div><div class="acts"><button class="primary" id="qDone" disabled>Done</button><button id="qMore">different ones</button><span class="hint" id="qCount" style="align-self:center"></span></div>`;
+  $('#main').querySelector('.qgrid').addEventListener('click', e => { const q = e.target.closest('.q'); if (!q) return; const id = q.dataset.id; state.quizPicked.has(id) ? state.quizPicked.delete(id) : state.quizPicked.add(id); q.classList.toggle('on', state.quizPicked.has(id)); $('#qDone').disabled = !state.quizPicked.size; $('#qCount').textContent = state.quizPicked.size ? `${state.quizPicked.size} picked` : ''; });
+  $('#qMore').addEventListener('click', () => $('#quizBtn').click());
+  $('#qDone').addEventListener('click', async () => { $('#qDone').disabled = true; try { state.profile = (await api('/api/quiz', json('POST', { picked: [...state.quizPicked] }))).profile; } catch (err) { alert(err.message); } syncControls(); state.brandsTab = 'foryou'; renderBrands(); });
+});
+
+boot().catch(err => { $('#main').innerHTML = `<div class="empty">${esc(err.message)}</div>`; });
+</script>
+</body>
+</html>
