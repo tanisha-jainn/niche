@@ -3,8 +3,8 @@
   "framework": null,
   "outputDirectory": "web",
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://tanisha-jainn-niche.hf.space/api/:path*" },
-    { "source": "/uploads/:path*", "destination": "https://tanisha-jainn-niche.hf.space/uploads/:path*" },
+    { "source": "/api/:path*", "destination": "https://niche.onrender.com/api/:path*" },
+    { "source": "/uploads/:path*", "destination": "https://niche.onrender.com/uploads/:path*" },
     { "source": "/curate", "destination": "/curate.html" }
   ]
 }

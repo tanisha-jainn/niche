@@ -73,24 +73,28 @@ data/known_brands.yaml  mainstream brands + descriptions used as text anchors
 
 ## Deploying
 
-The app is two halves with very different needs, so it deploys as two things:
+Two pieces, both on free tiers:
 
-- **API** — needs PyTorch + the CLIP model (~1.5 GB), so it runs in a container, not a serverless
-  function. `Dockerfile` installs CPU-only torch; `start.sh` downloads the precomputed index from
-  the GitHub release in `NICHE_DATA_RELEASE` (no 40-minute CPU re-embed on deploy) and serves on
-  `$PORT` (7860, the Hugging Face Spaces default). Tested target: a **Hugging Face Space (Docker)**;
-  Fly.io / Railway / any Docker host works the same. Set `ANTHROPIC_API_KEY` (optional) and
-  `NICHE_ADMIN_TOKEN` (locks `/curate` writes) as secrets.
-- **Front-end** — static files in `web/`, hosted on **Vercel**. `vercel.json` proxies `/api/*` and
-  `/uploads/*` to the API host and `.vercelignore` keeps Vercel from trying to bundle the Python
-  (that's the "5 GB function" error). Same-origin proxying means the visitor cookie just works.
+- **API on Render (free).** The server doesn't use PyTorch at all: the CLIP encoders were exported to
+  ONNX (`app/export_onnx.py`) with 8-bit weights for the text encoder (search results 99% identical to
+  the original model) and 4-bit for the image encoder (0.98 similarity; it only reads uploaded
+  screenshots). Together with compact in-memory records (full records are read from disk only for
+  cards on screen), fp16 embeddings and a numpy BM25 index, the server peaks at ~500 MB - down from
+  5 GB with torch - so it fits Render's free 512 MB instance. `render.yaml` is a Blueprint:
+  Render dashboard → New → Blueprint → this repo. The Docker build bakes in the index and models
+  from the `data-v1` GitHub release, so nothing is re-embedded on deploy.
+- **Front-end on Vercel.** Static files in `web/`. `vercel.json` proxies `/api/*` and `/uploads/*` to
+  the Render URL (update it if Render assigns a different subdomain), and `.vercelignore` keeps
+  Vercel from bundling the Python (the old "5 GB function" error).
 
-Each browser gets its own profile (an opaque `nid` cookie → `data/profiles/<id>.json`). On a host
-without a persistent disk, profiles reset on restart — fine for a demo.
+Each browser gets its own profile (`x-niche-id` header / `nid` cookie → `data/profiles/`). Render's
+free disk is ephemeral and the service sleeps after 15 idle minutes (first request then takes ~1 min),
+so profiles reset on redeploy or sleep - fine for a demo. `/curate` writes need `NICHE_ADMIN_TOKEN`
+(Render generates one; find it under the service's Environment tab).
 
-Refreshing the data: rerun crawl → build → categorize locally, then
-`gh release create data-vN data/index.jsonl.gz data/embeddings.npy data/categories.npz` and bump
-`NICHE_DATA_RELEASE`.
+Refreshing the data: rerun crawl → build → categorize (→ export_onnx if the model changes) locally,
+then upload `index.jsonl.gz`, `embeddings.npy`, `categories.npz` (and the `clip_*.onnx*` files) to a
+new release and point `NICHE_DATA_RELEASE` at it.
 
 ## Growing the brand list
 

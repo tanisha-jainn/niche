@@ -86,12 +86,27 @@ def vocab() -> list[str]:
     return clean([str(x) for x in base] + [str(x) for x in learned])
 
 
+VOCAB_VECS_FILE = DATA / "traits_vocab_vectors.npz"   # precomputed; only new phrases are encoded at runtime
+
+
+def _encode_vocab(embedder: Embedder, phrases: list[str]) -> np.ndarray:
+    cached: dict[str, np.ndarray] = {}
+    if VOCAB_VECS_FILE.exists():
+        z = np.load(VOCAB_VECS_FILE)
+        cached = dict(zip(z["phrases"].tolist(), z["vecs"]))
+    missing = [p for p in phrases if p not in cached]
+    if missing:
+        cached.update(zip(missing, embedder.texts(missing).astype(np.float16)))
+        np.savez(VOCAB_VECS_FILE, phrases=np.array(phrases), vecs=np.stack([cached[p] for p in phrases]))
+    return np.stack([cached[p] for p in phrases]).astype(np.float32)
+
+
 def vocab_vectors(embedder: Embedder) -> tuple[list[str], np.ndarray]:
     stamp = _vocab_stamp()
     with _lock:
         if _vocab["phrases"] is None or _vocab["stamp"] != stamp:
             phrases = vocab()
-            _vocab.update(phrases=phrases, vecs=embedder.texts(phrases), stamp=stamp)
+            _vocab.update(phrases=phrases, vecs=_encode_vocab(embedder, phrases), stamp=stamp)
         return _vocab["phrases"], _vocab["vecs"]
 
 

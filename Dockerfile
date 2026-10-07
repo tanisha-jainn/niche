@@ -1,29 +1,26 @@
-# Niche API container. CPU-only torch keeps the image ~1.5 GB instead of ~6 GB.
-# The precomputed index (embeddings, items, categories) is downloaded at startup from the GitHub
-# release named in NICHE_DATA_RELEASE, so a deploy never has to re-embed 45k images on a CPU.
+# Niche API. No torch: the CLIP encoders run as small ONNX models, so the image is ~450 MB and the
+# server peaks under 512 MB of memory (fits free hosting tiers).
+# The precomputed index and the models are baked into the image at build time from the GitHub release,
+# so a cold start doesn't re-download anything.
 FROM python:3.12-slim
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl gzip \
-    && rm -rf /var/lib/apt/lists/*
-
-# Hugging Face Spaces runs containers as uid 1000; make everything writable for it.
-RUN useradd -m -u 1000 user
 WORKDIR /app
-
 COPY requirements-deploy.txt .
-RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu \
-    && pip install --no-cache-dir -r requirements-deploy.txt
+RUN pip install --no-cache-dir -r requirements-deploy.txt
+
+ARG NICHE_DATA_RELEASE=https://github.com/tanisha-jainn/niche/releases/download/data-v1
+ENV NICHE_DATA_RELEASE=$NICHE_DATA_RELEASE
+COPY start.sh .
+RUN mkdir -p data && sh start.sh --fetch-only
 
 COPY app app
 COPY web web
-COPY start.sh .
 COPY data/brands.yaml data/known_brands.yaml data/traits_vocab.yaml data/traits_vocab_learned.json \
-     data/brand_traits.json data/brand_tiers.json data/
-RUN chown -R user:user /app
+     data/traits_vocab_vectors.npz data/brand_traits.json data/brand_tiers.json data/
+
+RUN useradd -m -u 1000 user && mkdir -p data/uploads data/profiles && chown -R user:user /app
 USER user
 
-ENV PORT=7860 \
-    HF_HOME=/tmp/hf \
-    NICHE_DATA_RELEASE=https://github.com/tanisha-jainn/niche/releases/download/data-v1
-EXPOSE 7860
+ENV PORT=10000
+EXPOSE 10000
 CMD ["sh", "start.sh"]

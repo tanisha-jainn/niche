@@ -1,5 +1,7 @@
 """In-memory product index: metadata + CLIP embeddings, grouped by brand."""
 import json
+import sys
+import threading
 from collections import defaultdict
 
 import numpy as np
@@ -16,38 +18,113 @@ def _load_json(path) -> dict:
     return json.load(open(path)) if path.exists() else {}
 
 
+_shared: dict = {}
+
+
+def _share(v):
+    """One shared copy of repeated values (size tuples, tag tuples) across 45k items."""
+    return _shared.setdefault(v, v)
+
+
 def _apply_sizes(it: dict) -> None:
+    """Sizes are normalised at load, so rules can change without a recrawl. Stored compactly as
+    ((label, available), ...); size_rows() expands them for the item drawer."""
     rows = it.get("sizes") or []
+    it["sizes"] = _share(tuple((sys.intern(r["label"]), bool(r["available"])) for r in rows))
     if not rows:
-        it["sizes_in_stock"], it["sizes_offered"] = [], []
+        it["sizes_in_stock"], it["sizes_offered"] = (), ()
         return
     canon = sizes.normalise([r["label"] for r in rows], it.get("currency", "USD"), it.get("title", ""))
     order = lambda s: sizes.LETTERS.index(s) if s in sizes.LETTERS else 99
-    for r in rows:
-        r["canon"] = canon.get(r["label"], [])
-    it["sizes_in_stock"] = sorted({c for r in rows if r["available"] for c in r["canon"]}, key=order)
-    it["sizes_offered"] = sorted({c for r in rows for c in r["canon"]}, key=order)
+    it["sizes_in_stock"] = _share(tuple(sorted({c for r in rows if r["available"] for c in canon.get(r["label"], [])}, key=order)))
+    it["sizes_offered"] = _share(tuple(sorted({c for r in rows for c in canon.get(r["label"], [])}, key=order)))
+
+
+def size_rows(it: dict) -> list[dict]:
+    canon = sizes.normalise([lab for lab, _ in it["sizes"]], it.get("currency", "USD"), it.get("title", ""))
+    return [{"label": lab, "canon": canon.get(lab, []), "available": avail} for lab, avail in it["sizes"]]
+
+
+LEAN_KEYS = ("id", "brand", "domain", "title", "url", "image", "price", "currency", "product_type",
+             "available", "sizes_in_stock", "sizes_offered")
+
+
+def _full(it: dict) -> dict:
+    """The complete record as the UI needs it (galleries, description, tags, per-size stock)."""
+    for k in ("brand", "domain", "currency", "product_type"):
+        it[k] = sys.intern(it.get(k) or "")
+    it["tags"] = _share(tuple(sys.intern(t) for t in (it.get("tags") or [])[:6]))
+    it["images"] = tuple((it.get("images") or [it["image"]])[:5])
+    it["image"] = it["images"][0]
+    it["description"] = (it.get("description") or "")[:400]
+    it.pop("vendor", None)
+    it.pop("published_at", None)
+    _apply_sizes(it)
+    return it
+
+
+def _lean(it: dict) -> dict:
+    """What every item keeps in memory - ranking and filtering only. ~5x smaller than the full record."""
+    _full(it)
+    return {k: it[k] for k in LEAN_KEYS}
+
+
+class HalfMatrix:
+    """The item-embedding table kept in fp16 (half the memory); `E @ v` and `E[rows]` return fp32,
+    computed in small chunks so no full-size fp32 copy ever exists. Rankings are bit-identical."""
+    CHUNK = 8192
+
+    def __init__(self, data: np.ndarray):
+        self.data = data
+        self.shape = data.shape
+
+    def __len__(self) -> int:
+        return len(self.data)
+
+    def __getitem__(self, idx) -> np.ndarray:
+        return np.asarray(self.data[idx], dtype=np.float32)
+
+    def __matmul__(self, v: np.ndarray) -> np.ndarray:
+        v = np.asarray(v, dtype=np.float32)
+        out = np.empty((len(self.data),) + v.shape[1:], dtype=np.float32)
+        for i in range(0, len(self.data), self.CHUNK):
+            out[i:i + self.CHUNK] = self.data[i:i + self.CHUNK].astype(np.float32) @ v
+        return out
 
 
 class Catalog:
     def __init__(self, curated: bool = True):
         if not INDEX_FILE.exists() or not EMBEDDINGS_FILE.exists():
             raise FileNotFoundError("No index yet - run `python -m app.crawl` then `python -m app.build`.")
-        self.items: list[dict] = [json.loads(line) for line in open(INDEX_FILE)]
-        self.E: np.ndarray = np.load(EMBEDDINGS_FILE).astype(np.float32)   # stored fp16 to halve the download
-        assert len(self.items) == len(self.E), "index.jsonl and embeddings.npy are out of sync - rerun app.build"
-        # Curation: brands graded C by the research pass, or dropped by the owner on /curate, leave the index.
         self.tiers = _load_json(BRAND_TIERS_FILE)
         self.review = _load_json(BRAND_REVIEW_FILE)
-        keep = np.array([self.allowed(it["brand"]) if curated else True for it in self.items], dtype=bool)
+        # Stream the index: each record is filtered (curation) and compacted as it's read, so the full
+        # 45k raw dicts never sit in memory at once.
+        self.items, keep, excluded, offsets = [], [], set(), []
+        with open(INDEX_FILE, "rb") as f:
+            pos = 0
+            for raw in f:
+                it = json.loads(raw)
+                ok = self.allowed(it["brand"]) if curated else True
+                keep.append(ok)
+                if ok:
+                    self.items.append(_lean(it))
+                    offsets.append(pos)
+                else:
+                    excluded.add(it["brand"])
+                pos += len(raw)
+        self.offsets = np.array(offsets, dtype=np.int64)
+        self._fh = open(INDEX_FILE, "rb")
+        self._fh_lock = threading.Lock()
+        keep = np.array(keep, dtype=bool)
+        E = np.load(EMBEDDINGS_FILE, mmap_mode="r")
+        assert len(keep) == len(E), "index.jsonl and embeddings.npy are out of sync - rerun app.build"
+        self.E = HalfMatrix(np.ascontiguousarray(E[keep], dtype=np.float16))
+        del E
         self.row_mask = keep                        # over the original index rows; categories.npz follows it
-        self.excluded_brands = sorted({it["brand"] for it, k in zip(self.items, keep) if not k})
-        self.items = [it for it, k in zip(self.items, keep) if k]
-        self.E = self.E[keep]
+        self.excluded_brands = sorted(excluded)
         from . import categorize                    # (categorize imports Catalog only inside its main)
         self.cats = categorize.load(self.row_mask)
-        for it in self.items:                       # sizes are normalised at load, so rules can change without a recrawl
-            _apply_sizes(it)
         self.by_id = {it["id"]: i for i, it in enumerate(self.items)}
         self.brand_rows: dict[str, list[int]] = defaultdict(list)
         for i, it in enumerate(self.items):
@@ -65,6 +142,20 @@ class Catalog:
             }
             for name, rows in sorted(self.brand_rows.items())
         ]
+
+    def full(self, i: int) -> dict:
+        """Complete record for row i, read from disk (only ever needed for what's on screen)."""
+        with self._fh_lock:
+            self._fh.seek(int(self.offsets[i]))
+            raw = self._fh.readline()
+        return _full(json.loads(raw))
+
+    def iter_full(self):
+        """All kept records in row order, streamed (used once to build the text index)."""
+        with open(INDEX_FILE, "rb") as f:
+            for off in self.offsets:
+                f.seek(int(off))
+                yield _full(json.loads(f.readline()))
 
     def allowed(self, brand: str) -> bool:
         """Owner's decision wins; otherwise the research tier; otherwise in."""

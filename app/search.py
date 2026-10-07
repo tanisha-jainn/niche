@@ -8,6 +8,8 @@ Ranking = visual meaning (CLIP text->image, so "fall jacket" finds shackets it h
 """
 import math
 import re
+import sys
+from array import array
 from collections import Counter, defaultdict
 
 import numpy as np
@@ -60,12 +62,14 @@ class TextIndex:
     """Small BM25 over title (x3), product type (x2), tags (x1), description (x0.5)."""
 
     def __init__(self, catalog: Catalog):
-        self.postings: dict[str, list[tuple[int, float]]] = defaultdict(list)
+        # Build postings in flat typed arrays (no per-entry Python tuples), then group by token with numpy.
+        vocab: dict[str, int] = {}
+        tok_ids, docs, weights = array("i"), array("i"), array("f")
         self.length = np.zeros(len(catalog.items), dtype=np.float32)
-        self.title_tokens: list[list[str]] = []
-        for i, it in enumerate(catalog.items):
+        self.title_tokens: list[tuple[str, ...]] = []
+        for i, it in enumerate(catalog.iter_full()):
             tf: Counter = Counter()
-            title = tokens(it["title"])
+            title = tuple(sys.intern(t) for t in tokens(it["title"]))
             self.title_tokens.append(title)
             for t in title:
                 tf[t] += 3.0
@@ -77,7 +81,14 @@ class TextIndex:
                 tf[t] += 0.5
             self.length[i] = sum(tf.values())
             for t, w in tf.items():
-                self.postings[t].append((i, w))
+                tok_ids.append(vocab.setdefault(t, len(vocab)))
+                docs.append(i)
+                weights.append(w)
+        tid = np.frombuffer(tok_ids, dtype=np.int32)
+        order = np.argsort(tid, kind="stable")
+        tid, d, w = tid[order], np.frombuffer(docs, dtype=np.int32)[order], np.frombuffer(weights, dtype=np.float32)[order]
+        bounds = np.searchsorted(tid, np.arange(len(vocab) + 1))
+        self.postings = {t: (d[bounds[k]:bounds[k + 1]], w[bounds[k]:bounds[k + 1]]) for t, k in vocab.items()}
         self.avg_len = float(self.length.mean()) if len(self.length) else 1.0
         self.N = len(catalog.items)
 
@@ -85,12 +96,12 @@ class TextIndex:
         s = np.zeros(self.N, dtype=np.float32)
         k1, b = 1.2, 0.75
         for t in set(query_tokens):
-            plist = self.postings.get(t)
-            if not plist:
+            hit = self.postings.get(t)
+            if hit is None:
                 continue
-            idf = math.log(1 + (self.N - len(plist) + 0.5) / (len(plist) + 0.5))
-            for i, tf in plist:
-                s[i] += idf * tf * (k1 + 1) / (tf + k1 * (1 - b + b * self.length[i] / self.avg_len))
+            idx, tf = hit
+            idf = math.log(1 + (self.N - len(idx) + 0.5) / (len(idx) + 0.5))
+            s[idx] += idf * tf * (k1 + 1) / (tf + k1 * (1 - b + b * self.length[idx] / self.avg_len))
         return s
 
 
@@ -251,7 +262,7 @@ class Search:
         return mask
 
     def result(self, i: int, score: float, text_score: float, parsed: dict) -> dict:
-        it = self.catalog.items[i]
+        it = self.catalog.full(i)
         why = []
         tt = set(self.text.title_tokens[i])
         hits = [t for t in parsed["tokens"] if t in tt]
@@ -263,7 +274,7 @@ class Search:
             why.append("looks like what you asked for")
         return {
             "id": it["id"], "brand": it["brand"], "title": it["title"], "url": it["url"],
-            "image": it["image"], "images": it.get("images") or [it["image"]],
+            "image": it["image"], "images": list(it["images"]),
             "price": it["price"], "currency": it["currency"], "price_usd": round(float(self.usd[i]), 2) or None,
             "sizes_in_stock": it.get("sizes_in_stock") or [], "sizes_offered": it.get("sizes_offered") or [],
             "product_type": it.get("product_type") or "", "score": round(float(score), 2), "why": why,

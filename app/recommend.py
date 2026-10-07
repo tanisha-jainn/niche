@@ -116,7 +116,7 @@ def score_brands(
             "score": round(score, 2),
             "matched": [{"trait_id": enabled[ti]["id"], "trait": enabled[ti]["text"],
                          "strength": round(float(strength[ti]), 2), "bar": round(float(bar[ti]), 2),
-                         "evidence": _item(catalog.items[best[ti]])} for ti in matched_sorted],
+                         "evidence": _item(catalog.full(int(best[ti])))} for ti in matched_sorted],
             "missing": [enabled[ti]["text"] for ti in range(len(enabled)) if ti not in matched],
         })
 
@@ -155,4 +155,4 @@ def brand_items(catalog: Catalog, brand: str, trait: dict | None = None, limit: 
     if trait is not None and rows:
         z = catalog.E[rows] @ np.asarray(trait["embedding"], dtype=np.float32)
         rows = [rows[i] for i in np.argsort(-z)]
-    return [_item(catalog.items[i]) for i in rows[:limit]]
+    return [_item(catalog.full(i)) for i in rows[:limit]]

@@ -20,3 +20,9 @@ data/profile.json
 data/image_traits.json
 data/brand_descriptions.json
 data/llm_usage.jsonl
+
+# ONNX models (~185 MB) live in the data-v1 GitHub release; regenerate with app.export_onnx
+data/clip_*.onnx
+data/clip_*.onnx.data
+data/profiles/
+data/index.jsonl.gz

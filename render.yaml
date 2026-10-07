@@ -1,0 +1,13 @@
+# Render Blueprint: dashboard -> New -> Blueprint -> pick this repo. Free plan, no card needed.
+services:
+  - type: web
+    name: niche
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/usage
+    envVars:
+      - key: NICHE_ADMIN_TOKEN        # password for /curate writes; Render generates one
+        generateValue: true
+      - key: ANTHROPIC_API_KEY        # optional; only the "sharpen with Claude" button uses it
+        sync: false

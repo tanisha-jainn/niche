@@ -20,15 +20,15 @@ from pydantic import BaseModel
 from . import curate, llm, quiz, recommend, search, taste, traits
 from .config import UPLOADS, WEB
 from .crawl import UA
-from .embed import Embedder
-from .index import Catalog
+from .embed import Embedder, get_embedder
+from .index import Catalog, size_rows
 
 app = FastAPI(title="Niche")
+_embedder = get_embedder()   # before the catalog: the model-load spike happens while the process is small
 catalog = Catalog()
 UPLOADS.mkdir(parents=True, exist_ok=True)
 app.mount("/uploads", StaticFiles(directory=UPLOADS), name="uploads")
 
-_embedder: Embedder | None = None
 _search: search.Search | None = None
 _lock = threading.Lock()
 
@@ -37,7 +37,7 @@ def embedder() -> Embedder:
     global _embedder
     with _lock:
         if _embedder is None:
-            _embedder = Embedder()
+            _embedder = get_embedder()
     return _embedder
 
 
@@ -219,15 +219,15 @@ def do_search(q: str = "", category: str | None = None, size: bool = False, unkn
 
 @app.get("/api/items")
 def item_detail(id: str, pid: str = Depends(profile_id)):
-    it = catalog.item(id)
-    if it is None:
+    if catalog.item(id) is None:
         raise HTTPException(404, "unknown item")
     p = taste.load_profile(pid)
     eng = engine()
     i = catalog.by_id[id]
+    it = catalog.full(i)
     detail = eng.result(i, 0.0, 0.0, {"tokens": []})
-    detail.update({"description": it.get("description") or "", "sizes": it.get("sizes") or [],
-                   "tags": (it.get("tags") or [])[:8], "domain": it["domain"],
+    detail.update({"description": it.get("description") or "", "sizes": size_rows(it),
+                   "tags": list(it.get("tags") or []), "domain": it["domain"],
                    "saved": id in set(p.get("saved_items", []))})
     return {"item": detail, "similar": eng.similar(id, limit=12), "more": eng.similar(id, limit=8, same_brand=True)}
 
