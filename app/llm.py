@@ -41,6 +41,9 @@ class BudgetExceeded(RuntimeError):
 
 
 def available() -> bool:
+    """NICHE_LLM=off disables every paid call (public deploys) even if a key happens to be set."""
+    if os.environ.get("NICHE_LLM", "on").lower() in ("off", "0", "false"):
+        return False
     return bool(os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
 
 

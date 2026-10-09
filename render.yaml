@@ -9,5 +9,5 @@ services:
     envVars:
       - key: NICHE_ADMIN_TOKEN        # password for /curate writes; Render generates one
         generateValue: true
-      - key: ANTHROPIC_API_KEY        # optional; only the "sharpen with Claude" button uses it
-        sync: false
+      - key: NICHE_LLM                # public site: no paid Claude calls, free local reading only
+        value: "off"

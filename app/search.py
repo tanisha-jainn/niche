@@ -114,7 +114,9 @@ class Search:
         self.usd = np.array([to_usd(it["price"], it["currency"]) or 0.0 for it in catalog.items], dtype=np.float32)
         self.available = np.array([bool(it["available"]) and not JUNK.search(it["title"]) for it in catalog.items])
         self.available &= self.usd >= MIN_USD
-        self.title_cat = [categorize.trait_category(it["title"]) for it in catalog.items]
+        # garment named in the title, else in the store's own product type ("Briefs" -> lingerie)
+        self.title_cat = [categorize.trait_category(it["title"]) or categorize.trait_category(it["product_type"])
+                          for it in catalog.items]
         self._query_cache: dict[str, np.ndarray] = {}
 
     # ---------- query understanding ----------
